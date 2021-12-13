@@ -1,0 +1,33 @@
+@import "../../variables";
+
+.header {
+	background-color: $dark-secondary;
+	margin-bottom: 40px;
+
+	&__inner {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		@media (min-width: $desktop) {
+			width: 1100px;
+			margin: 0 auto;
+		}
+	}
+
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100px;
+
+		@media (min-width: $desktop) {
+			width: 100%;
+		}
+	}
+}

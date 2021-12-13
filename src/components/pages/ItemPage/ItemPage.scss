@@ -1,0 +1,152 @@
+@import "../../../variables";
+
+.item-page {
+	padding-left: 10px;
+	padding-right: 10px;
+
+	&__inner {
+		// display: flex;
+		// justify-content: space-between;
+		// align-items: center;
+		// padding-left: 10px;
+		// padding-right: 10px;
+		// padding-top: 20px;
+		// padding-bottom: 20px;
+
+		@media (min-width: $desktop) {
+			width: 1100px;
+			margin: 0 auto;
+		}
+	}
+
+	&__links {
+		display: flex;
+		margin-bottom: 40px;
+	}
+
+	&__category-link {
+		margin-right: 10px;
+	}
+	&__current-link {
+		margin-left: 10px;
+	}
+
+	&__title {
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	&__price-wrap {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 20px;
+	}
+	&__price-inner {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+		@media (min-width: $desktop) {
+			width: 300px;
+		}
+	}
+
+	&__price {
+		margin-bottom: 10px;
+		margin-right: 40px;
+	}
+
+	&__rating {
+		display: block;
+		width: 30px;
+		text-align: center;
+	}
+
+	&__main-wrap {
+		margin-bottom: 50px;
+		@media (min-width: $desktop) {
+			display: flex;
+		}
+	}
+
+	&__slider-wrap {
+		margin-bottom: 20px;
+		width: auto;
+
+		@media (min-width: $desktop) {
+			position: relative;
+			width: 500px;
+			margin-right: 50px;
+			margin-bottom: 0;
+		}
+	}
+
+	&__colors-title {
+		margin-bottom: 10px;
+	}
+
+	&__colors-list {
+		display: flex;
+		margin-bottom: 20px;
+	}
+
+	&__color {
+		margin-right: 20px;
+	}
+
+	&__color-btn {
+		width: 40px;
+		height: 40px;
+
+		&--black {
+			background-color: black;
+		}
+	}
+
+	&__img-wrap {
+		background-color: $light;
+	}
+
+	&__img {
+		// width: 100%;
+		height: 300px;
+		margin: 0 auto;
+		background-color: $dark-secondary;
+	}
+}
+
+.reviews {
+	.section-title {
+		padding-left: 0;
+	}
+
+	&__item {
+		margin-bottom: 20px;
+	}
+
+	&__user-name-wrap {
+		display: flex;
+	}
+
+	&__date {
+		opacity: 0.7;
+	}
+
+	&__user-title {
+		font-size: 16px;
+		font-weight: 700;
+		margin-right: 20px;
+		margin-bottom: 5px;
+	}
+
+	&__user-rating {
+		font-size: 16px;
+		font-weight: 700;
+		margin-bottom: 5px;
+	}
+
+	&__message-title {
+		font-size: 16px;
+		font-weight: 700;
+		margin-bottom: 5px;
+	}
+}

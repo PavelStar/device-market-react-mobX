@@ -1,0 +1,11 @@
+@import "../../../variables";
+
+.logo {
+	@media (min-width: $desktop) {
+		margin-right: 100px;
+	}
+	svg {
+		height: 40px;
+		width: auto;
+	}
+}

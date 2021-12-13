@@ -1,0 +1,94 @@
+@import "./variables";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+ul,
+button {
+	padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+	margin: 0;
+}
+
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	display: block;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	line-height: 140%;
+	color: $light;
+	background-color: $dark;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	font: inherit;
+	display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
+
+button {
+	cursor: pointer;
+	color: $light;
+	border: none;
+	background-color: transparent;
+}
+
+.section-title {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.show {
+	display: block;
+}
+
+.lock-scroll {
+	overflow: hidden;
+}
+
+.unclock-scroll {
+	overflow: scroll;
+}

@@ -1,0 +1,437 @@
+{
+    "categories": [
+        {
+            "categoryName": "смартфоны",
+            "image": "https://nsk.shop.megafon.ru/images/goods/1359/135934_p_20.png"
+        },
+        {
+            "categoryName": "ноутбуки",
+            "image": "https://image.pngaaa.com/682/2875682-middle.png"
+        },
+        {
+            "categoryName": "аксессуары",
+            "image": "https://w7.pngwing.com/pngs/470/784/png-transparent-battery-charger-mobile-phone-google-s-search-engine-apple-data-cable-angle-computer-cable.png"
+        },
+        {
+            "categoryName": "планшеты",
+            "image": "https://key0.cc/images/preview/76046_f974f5f4b5355d7f7bff9179dcb5cc60.png"
+        }
+    ],
+    "brands": ["apple", "asus", "xiaomi", "sony", "samsung"],
+    "items": [
+        {
+            "id": 1,
+            "count": 1,
+            "title": "iphone 13",
+            "releaseDate": 2019,
+            "isAvailable": true,
+            "category": "смартфоны",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "128 гб."
+            },
+            "images": {
+                "snippetImage": "https://1734811051.rsc.cdn77.org/data/images/full/392451/apple-limits-mmwave-5g-connectivity-to-iphone-13-units-sold-in-the-us.png",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5252617/img_id3680753824268263737.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 90000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 4.5,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "count": 1,
+            "title": "iphone 11",
+            "releaseDate": 2020,
+            "isAvailable": true,
+            "category": "смартфоны",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "128 гб."
+            },
+            "images": {
+                "snippetImage": "https://pngimg.com/uploads/iphone_11/iphone_11_PNG38.png",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5252617/img_id3680753824268263737.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 40000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 7.5,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "count": 1,
+            "title": "iphone 12",
+            "releaseDate": 2018,
+            "isAvailable": true,
+            "category": "смартфоны",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "128 гб."
+            },
+            "images": {
+                "snippetImage": "https://app-room76.ru/wp-content/uploads/2020/10/iphone-12-blue-select-2020.png",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5252617/img_id3680753824268263737.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 60000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 9.5,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "count": 1,
+            "title": "macbook pro 1",
+            "releaseDate": 2017,
+            "isAvailable": true,
+            "category": "ноутбуки",
+            "brand": "apple",
+            "features": {
+                "platform": "ios mac",
+                "diagonal": "6.0",
+                "memory": "512 гб."
+            },
+            "images": {
+                "snippetImage": "https://pngimg.com/uploads/macbook/macbook_PNG101753.png",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5252617/img_id3680753824268263737.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 160000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 6.1,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "count": 1,
+            "title": "asus pro 1",
+            "releaseDate": 2016,
+            "isAvailable": true,
+            "category": "ноутбуки",
+            "brand": "asus",
+            "features": {
+                "platform": "windows",
+                "diagonal": "6.0",
+                "memory": "512 гб."
+            },
+            "images": {
+                "snippetImage": "https://www.kindpng.com/picc/m/733-7334648_asus-vivobook-s14-s412-hd-png-download.png",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5252617/img_id3680753824268263737.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 80000,
+                "discount": true,
+                "discountAmount": 2000
+            },
+            "rating": 8.8,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 6,
+            "count": 1,
+            "title": "air pods",
+            "releaseDate": 2017,
+            "isAvailable": true,
+            "category": "аксессуары",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "128 гб."
+            },
+            "images": {
+                "snippetImage": "https://w7.pngwing.com/pngs/167/383/png-transparent-apple-airpods-headphones-apple-earbuds-apple-bluetooth-sound-fruit-nut.png",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5252617/img_id3680753824268263737.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 10000,
+                "discount": true,
+                "discountAmount": 1000
+            },
+            "rating": 9,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "count": 1,
+            "title": "air pods 1",
+            "releaseDate": 2017,
+            "isAvailable": false,
+            "category": "аксессуары",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "128 гб."
+            },
+            "images": {
+                "snippetImage": "https://w7.pngwing.com/pngs/167/383/png-transparent-apple-airpods-headphones-apple-earbuds-apple-bluetooth-sound-fruit-nut.png",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5252617/img_id3680753824268263737.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 10000,
+                "discount": false,
+                "discountAmount": 20
+            },
+            "rating": 9,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "count": 1,
+            "title": "iphone 10",
+            "releaseDate": 2019,
+            "isAvailable": false,
+            "category": "смартфоны",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "128 гб."
+            },
+            "images": {
+                "snippetImage": "https://1734811051.rsc.cdn77.org/data/images/full/392451/apple-limits-mmwave-5g-connectivity-to-iphone-13-units-sold-in-the-us.png",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5252617/img_id3680753824268263737.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 90000,
+                "discount": false,
+                "discountAmount": 20
+            },
+            "rating": 4.5,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "count": 1,
+            "title": "asus pro 2",
+            "releaseDate": 2016,
+            "isAvailable": false,
+            "category": "ноутбуки",
+            "brand": "asus",
+            "features": {
+                "platform": "windows",
+                "diagonal": "6.0",
+                "memory": "1 тб."
+            },
+            "images": {
+                "snippetImage": "https://www.kindpng.com/picc/m/733-7334648_asus-vivobook-s14-s412-hd-png-download.png",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5252617/img_id3680753824268263737.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 80000,
+                "discount": false,
+                "discountAmount": 20
+            },
+            "rating": 8.8,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        }
+    ]
+}

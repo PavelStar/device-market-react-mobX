@@ -1,0 +1,18 @@
+@import "../../variables";
+
+.to-cart-btn {
+	color: $light;
+	background-color: $accent;
+	font-size: 14px;
+	padding: 7px 25px;
+	border-radius: 25px;
+	margin-bottom: auto;
+
+	@media (min-width: $desktop) {
+		// margin-left: auto;
+	}
+
+	&:hover {
+		opacity: 0.7;
+	}
+}
