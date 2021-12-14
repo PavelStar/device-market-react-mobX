@@ -7,10 +7,11 @@ import "./ItemPage.scss";
 import ToCartBtn from "../../ToCartBtn/ToCartBtn";
 import CartState from "../../../store/CartState";
 import DeleteFromCartBtn from "../../DeleteFromCartBtn/DeleteFromCartBtn";
-import { ICategoryPageItem, Ifeatures, Ireview } from "../../categories/Categories";
 import { toJS } from "mobx";
 import ItemPageLoader from "../../loaders/ItemPageLoader/ItemPageLoader";
 import { sortAndDeduplicateDiagnostics } from "typescript";
+import { ICategoryPageItem } from "../../../interfaces/ICategoryPageItem";
+import { Ireview } from "../../../interfaces/IReview";
 
 
 

@@ -1,5 +1,5 @@
 import { makeAutoObservable } from "mobx";
-import { ICategoryPageItem } from "../components/categories/Categories";
+import { ICategoryPageItem } from "../interfaces/ICategoryPageItem";
 
 class CartState {
 	itemsInCart: ICategoryPageItem[] = [];

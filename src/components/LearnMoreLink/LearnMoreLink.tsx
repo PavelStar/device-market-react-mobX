@@ -3,7 +3,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import FiltersState from "../../store/FiltersState";
 import store from "../../store/store";
-import { ICategoryPageItem } from "../categories/Categories";
 import "./LearnMoreLink.scss";
 
 const LearnMoreLink = ({ linkType }: any) => {

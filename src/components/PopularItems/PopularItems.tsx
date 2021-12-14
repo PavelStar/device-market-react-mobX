@@ -5,9 +5,9 @@ import store from "../../store/store";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/swiper.scss";
 import LearnMoreLink from "../LearnMoreLink/LearnMoreLink";
-import { ICategoryPageItem } from "../categories/Categories";
 import "./PopularItems.scss";
 import ToItemPage from "../../classes/ToItemPage";
+import { ICategoryPageItem } from "../../interfaces/ICategoryPageItem";
 
 
 const PopularItems = observer(() => {

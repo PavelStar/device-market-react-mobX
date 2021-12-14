@@ -2,8 +2,8 @@ import React from "react";
 import { observer } from "mobx-react-lite";
 import CartState from "../../../store/CartState";
 import { Link, useNavigate } from "react-router-dom";
-import { ICategoryPageItem } from "../../categories/Categories";
 import "./CartPage.scss";
+import { ICategoryPageItem } from "../../../interfaces/ICategoryPageItem";
 
 
 const CartPage: React.FC = observer(() => {

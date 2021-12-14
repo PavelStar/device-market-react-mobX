@@ -6,12 +6,12 @@ import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import LearnMoreLink from "../LearnMoreLink/LearnMoreLink";
 import "./NewItems.scss";
-import { ICategoryPageItem } from "../categories/Categories";
 
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import ToItemPage from "../../classes/ToItemPage";
+import { ICategoryPageItem } from "../../interfaces/ICategoryPageItem";
 
 const NewItems: React.FunctionComponent = observer(() => {
 	let newItems: string = "Новинки";

@@ -2,8 +2,9 @@ import { toJS } from "mobx";
 import { listenerCount } from "process";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { ICategory } from "../../../interfaces/ICategory";
+import { ICategoryPageItem } from "../../../interfaces/ICategoryPageItem";
 import store from "../../../store/store";
-import { ICategory, ICategoryPageItem } from "../../categories/Categories";
 import "./Search.scss";
 
 const Search = () => {

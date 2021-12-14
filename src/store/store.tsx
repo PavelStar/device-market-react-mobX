@@ -1,6 +1,6 @@
 import { makeAutoObservable } from "mobx";
-import { ICategoryPageItem } from "../components/categories/Categories";
-import { ICategory } from "../components/categories/Categories";
+import { ICategory } from "../interfaces/ICategory";
+import { ICategoryPageItem } from "../interfaces/ICategoryPageItem";
 
 class Store {
 
@@ -20,7 +20,7 @@ class Store {
 		makeAutoObservable(this);
 	}
 
-	getItems(res: []) {
+	getResponseItems(res: []) {
 		this.allItems = res;
 	}
 

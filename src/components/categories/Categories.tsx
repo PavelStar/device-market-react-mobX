@@ -6,46 +6,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import "./Categories.scss";
 import FiltersState from "../../store/FiltersState";
+import { ICategory } from "../../interfaces/ICategory";
+import { ICategoryPageItem } from "../../interfaces/ICategoryPageItem";
 
-export interface ICategoryPageItem {
-	id: number;
-	count: number;
-	title: string;
-	releaseDate: number;
-	isAvailable: boolean;
-	category: string;
-	brand: string;
-	features: Ifeatures;
-	images: any;
-	priceInfo: any;
-	rating: number;
-	reviewsInfo: IreviewsInfo;
-}
 
-export interface ICategory {
-	categoryName: string;
-	image: string;
-}
-
-export interface Ifeatures {
-	map(arg0: (feature: Ifeatures) => JSX.Element): React.ReactNode;
-	platform: string;
-	diagonal: string;
-	memory: string;
-}
-
-export interface IreviewsInfo {
-	reviewsCount: number;
-	reviews: Ireview[]
-}
-
-export interface Ireview {
-	reviewDate: string;
-	userName: string;
-	userRating: string;
-	userMessage: string;
-
-}
 
 const Categories = observer(() => {
 	const categoryTitle = (category: ICategory) => {

@@ -4,8 +4,9 @@ import store from "../../../../store/store";
 import FiltersState from "../../../../store/FiltersState";
 import { Range } from "rc-slider";
 import Switch from "@mui/material/Switch";
-import { ICategory, ICategoryPageItem } from "../../../categories/Categories";
 import ResetFilters from "../../../../classes/ResetFilters";
+import { ICategoryPageItem } from "../../../../interfaces/ICategoryPageItem";
+import { ICategory } from "../../../../interfaces/ICategory";
 
 const Filters = observer(() => {
 	const resetFilters = new ResetFilters;

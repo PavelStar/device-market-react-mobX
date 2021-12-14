@@ -20,7 +20,7 @@ const HomePage = observer(() => {
 			const myFn = async () => {
 				const res = await apiService.getData();
 
-				store.getItems(res.items);
+				store.getResponseItems(res.items);
 				store.getCategoryItems(res.categories);
 				store.getBrands(res.brands);
 			};

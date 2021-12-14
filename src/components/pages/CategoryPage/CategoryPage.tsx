@@ -8,10 +8,10 @@ import ToCartBtn from "../../ToCartBtn/ToCartBtn";
 import "rc-slider/assets/index.css";
 import "nouislider/distribute/nouislider.css";
 import "./CategoryPage.scss";
-import { ICategoryPageItem, Ifeatures } from "../../categories/Categories";
 import DeleteFromCartBtn from "../../DeleteFromCartBtn/DeleteFromCartBtn";
 import CartState from "../../../store/CartState";
 import FilterPageLoader from "../../loaders/FilterPageLoader/FilterPageLoader";
+import { ICategoryPageItem } from "../../../interfaces/ICategoryPageItem";
 
 const CategoryPage = observer(() => {
 

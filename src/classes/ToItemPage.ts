@@ -1,4 +1,4 @@
-import { ICategoryPageItem } from "../components/categories/Categories";
+import { ICategoryPageItem } from "../interfaces/ICategoryPageItem";
 import FiltersState from "../store/FiltersState";
 import store from "../store/store";
 
