@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/hardware-store-react-mobX/static/css/main.a1e32cc3.chunk.css",
-    "main.js": "/hardware-store-react-mobX/static/js/main.95c7ab2c.chunk.js",
-    "main.js.map": "/hardware-store-react-mobX/static/js/main.95c7ab2c.chunk.js.map",
+    "main.js": "/hardware-store-react-mobX/static/js/main.776aec1c.chunk.js",
+    "main.js.map": "/hardware-store-react-mobX/static/js/main.776aec1c.chunk.js.map",
     "runtime-main.js": "/hardware-store-react-mobX/static/js/runtime-main.e5f735dd.js",
     "runtime-main.js.map": "/hardware-store-react-mobX/static/js/runtime-main.e5f735dd.js.map",
     "static/css/2.47e34613.chunk.css": "/hardware-store-react-mobX/static/css/2.47e34613.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.47e34613.chunk.css",
     "static/js/2.875e06a9.chunk.js",
     "static/css/main.a1e32cc3.chunk.css",
-    "static/js/main.95c7ab2c.chunk.js"
+    "static/js/main.776aec1c.chunk.js"
   ]
 }
