@@ -1,5 +1,7 @@
 import FiltersState from "../store/FiltersState";
-import store from "../store/store";
+import store from "../store/ItemState";
+import ResItemsState from "../store/ResItemsState";
+import CategoryPageState from "../store/CategoryPageState";
 
 class ResetFilters {
 	reset() {
@@ -8,7 +10,7 @@ class ResetFilters {
 		FiltersState.setIsAvailableOn(false);
 		FiltersState.setIsDiscountOn(false);
 		FiltersState.setSliderValues([10000, 190000]);
-		store.getCategoryPageItems(store.allItems);
+		CategoryPageState.getCategoryPageItems(ResItemsState.allItems);
 	}
 }
 

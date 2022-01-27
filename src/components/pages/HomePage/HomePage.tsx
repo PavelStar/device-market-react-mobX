@@ -1,38 +1,37 @@
 import React, { useEffect } from "react";
 import { observer } from "mobx-react-lite";
-import store from "../../../store/store";
+import store from "../../../store/ItemState";
+import ResItemsState from "../../../store/ResItemsState";
 import Categories from "../../categories/Categories";
 import NewItems from "../../NewItems/NewItems";
 import PopularItems from "../../PopularItems/PopularItems";
 import ApiService from "../../../API/ApiService";
 import HomePageLoader from "../../loaders/HomePageLoader/HomePageLoader";
+import LoadersState from "../../../store/LoadersState";
 
 const HomePage = observer(() => {
 	const apiService = new ApiService();
 
-
-
-
 	useEffect(() => {
-		store.setIsHomePageLoaded(true)
+		LoadersState.setIsHomePageLoaded(true)
 
 		setTimeout(() => {
 			const myFn = async () => {
 				const res = await apiService.getData();
 
-				store.getResponseItems(res.items);
-				store.getCategoryItems(res.categories);
-				store.getBrands(res.brands);
+				ResItemsState.getAllItems(res.items);
+				ResItemsState.getCategories(res.categories);
+				ResItemsState.getBrands(res.brands);
 			};
 			myFn();
-			store.setIsHomePageLoaded(false)
+			LoadersState.setIsHomePageLoaded(false)
 		}, 500);
 
 	}, []);
 
 	return (
 		<>
-			{store.isHomePageLoaded ? (
+			{LoadersState.isHomePageLoaded ? (
 				<HomePageLoader />
 			) : (
 				<div>

@@ -1,8 +1,10 @@
 import { toJS } from "mobx";
 import React from "react";
 import { Link } from "react-router-dom";
+import CategoryPageState from "../../store/CategoryPageState";
 import FiltersState from "../../store/FiltersState";
-import store from "../../store/store";
+import ResItemsState from "../../store/ResItemsState";
+import store from "../../store/ItemState";
 import "./LearnMoreLink.scss";
 
 const LearnMoreLink = ({ linkType }: any) => {
@@ -13,13 +15,13 @@ const LearnMoreLink = ({ linkType }: any) => {
         FiltersState.setSelectedBrands([])
 
         if (linkType === "Новинки") {
-            store.getCategoryPage("Новинки")
-            store.getCategoryPageItems(store.newItems)
+            CategoryPageState.getCategoryPage("Новинки")
+            CategoryPageState.getCategoryPageItems(ResItemsState.newItems)
 
         }
         if (linkType === "Популярное") {
-            store.getCategoryPage("Популярное")
-            store.getCategoryPageItems(store.popularItems)
+            CategoryPageState.getCategoryPage("Популярное")
+            CategoryPageState.getCategoryPageItems(ResItemsState.popularItems)
 
         }
 

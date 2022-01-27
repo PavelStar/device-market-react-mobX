@@ -44,6 +44,10 @@ select {
 	font: inherit;
 }
 
+label {
+	cursor: pointer;
+}
+
 body {
 	font-family: "Roboto", sans-serif;
 	font-size: 14px;
@@ -57,6 +61,7 @@ a {
 	text-decoration: none;
 	font: inherit;
 	display: block;
+	cursor: pointer;
 }
 
 h1,
@@ -64,6 +69,7 @@ h2,
 h3,
 p {
 	margin: 0;
+	line-height: 120%;
 }
 
 button {

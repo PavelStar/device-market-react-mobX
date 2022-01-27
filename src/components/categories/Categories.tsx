@@ -1,6 +1,7 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
-import store from "../../store/store";
+import store from "../../store/ItemState";
+import ResItemsState from "../../store/ResItemsState";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
@@ -8,6 +9,8 @@ import "./Categories.scss";
 import FiltersState from "../../store/FiltersState";
 import { ICategory } from "../../interfaces/ICategory";
 import { ICategoryPageItem } from "../../interfaces/ICategoryPageItem";
+import CategoryPageState from "../../store/CategoryPageState";
+import LoadersState from "../../store/LoadersState";
 
 
 
@@ -17,14 +20,15 @@ const Categories = observer(() => {
 		console.log(categoryName)
 
 		FiltersState.setSelectedCategorie(FiltersState.selectedCategories.concat(categoryName))
-		store.setIsFilterPageLoaded(true)
+		LoadersState.setIsFilterPageLoaded(true)
+
 		setTimeout(() => {
-			store.getCategoryPage(categoryName);
-			const filteredArr: ICategoryPageItem[] = store.allItems.filter((item: ICategoryPageItem) => {
+			CategoryPageState.getCategoryPage(categoryName);
+			const filteredArr: ICategoryPageItem[] = ResItemsState.allItems.filter((item: ICategoryPageItem) => {
 				return item.category === categoryName;
 			});
-			store.getCategoryPageItems(filteredArr);
-			store.categoryPageItems.sort((a: ICategoryPageItem, b: ICategoryPageItem) => {
+			CategoryPageState.getCategoryPageItems(filteredArr);
+			CategoryPageState.categoryPageItems.sort((a: ICategoryPageItem, b: ICategoryPageItem) => {
 				if (a.rating > b.rating) {
 					return -1;
 				}
@@ -33,7 +37,7 @@ const Categories = observer(() => {
 				}
 				return 0;
 			});
-			store.setIsFilterPageLoaded(false)
+			LoadersState.setIsFilterPageLoaded(false)
 		}, 500);
 
 
@@ -45,7 +49,7 @@ const Categories = observer(() => {
 			<div className="categories__inner">
 				<h2 className="categories__title section-title">Категории</h2>
 				<div className="categories__slider-wrap">
-					{store.allItems.length > 0 ? (
+					{ResItemsState.allItems.length > 0 ? (
 						<Swiper
 							spaceBetween={5}
 							slidesPerView={3}
@@ -66,8 +70,8 @@ const Categories = observer(() => {
 								},
 							}}
 						>
-							{store.categories.length
-								? store.categories.map((category: ICategory) => {
+							{ResItemsState.allCategories.length
+								? ResItemsState.allCategories.map((category: ICategory) => {
 									const { image, categoryName } = category;
 
 									return (

@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { observer } from "mobx-react-lite";
-import store from "../../../../store/store";
+import store from "../../../../store/ItemState";
 import FiltersState from "../../../../store/FiltersState";
 import { Range } from "rc-slider";
 import Switch from "@mui/material/Switch";
 import ResetFilters from "../../../../classes/ResetFilters";
 import { ICategoryPageItem } from "../../../../interfaces/ICategoryPageItem";
 import { ICategory } from "../../../../interfaces/ICategory";
+import ResItemsState from "../../../../store/ResItemsState";
+import CategoryPageState from "../../../../store/CategoryPageState";
+import { toJS } from "mobx";
 
 const Filters = observer(() => {
 	const resetFilters = new ResetFilters;
@@ -15,6 +18,7 @@ const Filters = observer(() => {
 	const [dynamicKey, setDynamicKey] = useState(Date.now());
 
 	const { selectedCategories } = FiltersState;
+
 
 
 	const showFilteredItems = (e: any) => {
@@ -50,8 +54,8 @@ const Filters = observer(() => {
 			FiltersState.setIsDiscountOn(!FiltersState.isDiscountOn);
 		}
 
-		store.getCategoryPageItems(
-			store.allItems
+		CategoryPageState.getCategoryPageItems(
+			ResItemsState.allItems
 				.filter((item: ICategoryPageItem) => {
 					if (FiltersState.selectedCategories.length === 0) {
 						return item;
@@ -82,7 +86,7 @@ const Filters = observer(() => {
 				})
 		);
 
-		store.categoryPageItems.sort((a: ICategoryPageItem, b: ICategoryPageItem) => {
+		CategoryPageState.categoryPageItems.sort((a: ICategoryPageItem, b: ICategoryPageItem) => {
 			if (a.rating > b.rating) {
 				return -1;
 			}
@@ -95,8 +99,8 @@ const Filters = observer(() => {
 
 	const onSliderChange = (value: number[]) => {
 		FiltersState.setSliderValues(value);
-		store.getCategoryPageItems(
-			store.allItems.filter((item: ICategoryPageItem) => {
+		CategoryPageState.getCategoryPageItems(
+			ResItemsState.allItems.filter((item: ICategoryPageItem) => {
 				if (FiltersState.selectedCategories.length > 0) {
 					return (
 						item.priceInfo.fullPrice >= FiltersState.sliderValues[0] &&
@@ -125,7 +129,7 @@ const Filters = observer(() => {
 	};
 
 	const showFilters = () => {
-		store.getCategoryPage("Найдено товаров: ");
+		CategoryPageState.getCategoryPage("Найдено товаров: ");
 		// FiltersState.setIsFiltersHidden(!FiltersState.isFiltersHidden);
 		// if (document.body.style.overflow !== "hidden") {
 		// 	document.body.style.overflow = "hidden";
@@ -155,7 +159,7 @@ const Filters = observer(() => {
 				</button>
 			</div>
 			<ul className="sorting__category-sorting-list">
-				{store.categories.map((item: ICategory) => {
+				{ResItemsState.allCategories.map((item: ICategory) => {
 					const { categoryName } = item
 					return (
 						<li className="sorting__category-sorting-item">
@@ -172,7 +176,7 @@ const Filters = observer(() => {
 				})}
 			</ul>
 			<ul className="sorting__brand-sorting-list">
-				{store.brands.map((brand: string) => {
+				{ResItemsState.allBrands.map((brand: string) => {
 					return (
 						<li className="sorting__brand-sorting-item">
 							<input
@@ -227,7 +231,7 @@ const Filters = observer(() => {
 			</ul>
 			<div className="sorting__results-btn-wrap">
 				<button className="sorting__results-btn" onClick={showFilters}>
-					Показать ({store.categoryPageItems.length}) товаров
+					Показать ({CategoryPageState.categoryPageItems.length}) товаров
 				</button>
 			</div>
 		</div>

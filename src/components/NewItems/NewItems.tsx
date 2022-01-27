@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { observer } from "mobx-react-lite";
-import store from "../../store/store";
+import store from "../../store/ItemState";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import LearnMoreLink from "../LearnMoreLink/LearnMoreLink";
@@ -12,6 +12,7 @@ import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import ToItemPage from "../../classes/ToItemPage";
 import { ICategoryPageItem } from "../../interfaces/ICategoryPageItem";
+import ResItemsState from "../../store/ResItemsState";
 
 const NewItems: React.FunctionComponent = observer(() => {
 	let newItems: string = "Новинки";
@@ -19,12 +20,12 @@ const NewItems: React.FunctionComponent = observer(() => {
 	const toItemPage = new ToItemPage
 
 	useEffect(() => {
-		store.getNewItems(
-			store.allItems.filter((item: ICategoryPageItem) => {
+		ResItemsState.getNewItems(
+			ResItemsState.allItems.filter((item: ICategoryPageItem) => {
 				return item.releaseDate > 2017 && item.isAvailable;
 			})
 		);
-	}, [store.allItems]);
+	}, [ResItemsState.allItems]);
 
 	// const toItemPage = (item: ICategoryPageItem) => {
 	// 	store.setIsItemPageLoaded(true)
@@ -62,7 +63,7 @@ const NewItems: React.FunctionComponent = observer(() => {
 							},
 						}}
 					>
-						{store.newItems.map((item: ICategoryPageItem) => {
+						{ResItemsState.newItems.map((item: ICategoryPageItem) => {
 							const { images, title, priceInfo } = item;
 
 							return (

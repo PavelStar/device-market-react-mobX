@@ -1,6 +1,7 @@
 import { makeAutoObservable, makeObservable } from "mobx";
 
 class FiltersState {
+    itemsToShow: any[] = [];
     isFiltersHidden: boolean = true;
     selectValue: string = "popular";
     sortedItems: any[] = [];
@@ -13,6 +14,10 @@ class FiltersState {
 
     constructor() {
         makeAutoObservable(this);
+    }
+
+    setItemsToShow(items: any[]) {
+        this.itemsToShow = items;
     }
 
     setIsFiltersHidden(value: boolean) {

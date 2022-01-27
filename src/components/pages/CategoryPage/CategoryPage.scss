@@ -180,6 +180,7 @@
 		padding: 10px 20px;
 
 		@media (min-width: $desktop) {
+			display: none;
 		}
 	}
 
@@ -219,6 +220,7 @@
 	}
 	&__link {
 		display: flex;
+		flex-direction: column;
 		margin-bottom: 10px;
 	}
 	&__img {

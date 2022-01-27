@@ -1,0 +1,120 @@
+@import "../../variables";
+
+.login-popup {
+	position: absolute;
+	&__overlay {
+		z-index: 1000;
+		position: fixed;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100vw;
+		height: 100vh;
+		left: 0;
+		top: 0;
+		background-color: rgba(24, 24, 24, 0.9);
+	}
+
+	&__title {
+		margin-bottom: 30px;
+		font-size: 30px;
+	}
+
+	&__fields-wrap {
+		display: flex;
+		flex-direction: column;
+		padding-right: 40px;
+	}
+
+	&__close-btn {
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		width: 30px;
+		height: 30px;
+
+		&:hover {
+			path {
+				opacity: 0.6;
+			}
+		}
+
+		svg {
+			pointer-events: none;
+
+			path {
+				stroke: white;
+			}
+		}
+	}
+
+	&__form {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 500px;
+		padding: 40px;
+		background-color: $dark-secondary;
+		border-radius: 10px;
+	}
+
+	&__input-wrap {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 30px;
+
+		&:last-of-type {
+			margin-bottom: 30px;
+		}
+
+		b {
+			margin-bottom: 5px;
+		}
+	}
+
+	&__input {
+		padding-left: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border: none;
+		border-radius: 10px;
+		background-color: $neutral;
+		color: $light;
+
+		&:focus {
+			outline: 1px solid $light;
+		}
+	}
+
+	&__show-pass-wrap {
+		display: flex;
+		margin-top: 10px;
+
+		input {
+			margin-right: 5px;
+		}
+	}
+
+	&__btns-wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		width: 250px;
+	}
+
+	&__submit-btn {
+		width: 100%;
+		margin-bottom: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 50px;
+		padding-right: 50px;
+		border-radius: 10px;
+		background-color: $accent;
+	}
+
+	&__registration-btn {
+		text-align: center;
+		text-decoration: underline;
+	}
+}

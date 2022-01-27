@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { observer } from "mobx-react-lite";
-import store from "../../store/store";
+import store from "../../store/ItemState";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/swiper.scss";
 import LearnMoreLink from "../LearnMoreLink/LearnMoreLink";
 import "./PopularItems.scss";
 import ToItemPage from "../../classes/ToItemPage";
 import { ICategoryPageItem } from "../../interfaces/ICategoryPageItem";
+import ResItemsState from "../../store/ResItemsState";
 
 
 const PopularItems = observer(() => {
@@ -15,10 +16,10 @@ const PopularItems = observer(() => {
 	const toItemPage = new ToItemPage
 
 	useEffect(() => {
-		store.getPopularItems(store.allItems.filter((item: ICategoryPageItem) => {
+		ResItemsState.getPopularItems(ResItemsState.allItems.filter((item: ICategoryPageItem) => {
 			return item.rating > 8.5 && item.isAvailable
 		}))
-	}, [store.allItems])
+	}, [ResItemsState.allItems])
 
 	let popular: string = "Популярное";
 	// const toItemPage = (item: any) => {
@@ -47,7 +48,7 @@ const PopularItems = observer(() => {
 							},
 						},
 					}}>
-						{store.popularItems.map((item: ICategoryPageItem) => {
+						{ResItemsState.popularItems.map((item: ICategoryPageItem) => {
 							const { images, title, priceInfo } = item;
 
 

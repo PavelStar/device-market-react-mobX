@@ -4,7 +4,9 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ICategory } from "../../../interfaces/ICategory";
 import { ICategoryPageItem } from "../../../interfaces/ICategoryPageItem";
-import store from "../../../store/store";
+import CategoryPageState from "../../../store/CategoryPageState";
+import ResItemsState from "../../../store/ResItemsState";
+import store from "../../../store/ItemState";
 import "./Search.scss";
 
 const Search = () => {
@@ -27,12 +29,12 @@ const Search = () => {
     const categoryTitle = (category: ICategory) => {
         const { categoryName } = category;
 
-        store.getCategoryPage(categoryName);
-        const filteredArr: ICategoryPageItem[] = store.allItems.filter((item: ICategoryPageItem) => {
+        CategoryPageState.getCategoryPage(categoryName);
+        const filteredArr: ICategoryPageItem[] = ResItemsState.allItems.filter((item: ICategoryPageItem) => {
             return item.category === categoryName;
         });
-        store.getCategoryPageItems(filteredArr);
-        store.categoryPageItems.sort((a: ICategoryPageItem, b: ICategoryPageItem) => {
+        CategoryPageState.getCategoryPageItems(filteredArr);
+        CategoryPageState.categoryPageItems.sort((a: ICategoryPageItem, b: ICategoryPageItem) => {
             if (a.rating > b.rating) {
                 return -1;
             }
@@ -93,7 +95,7 @@ const Search = () => {
                 <div className="search__modal-wrap">
                     <div className="search__modal-results">
                         <ul className="search__results-list results-list">
-                            {store.allItems ? store.allItems.map((item: ICategoryPageItem) => {
+                            {ResItemsState.allItems ? ResItemsState.allItems.map((item: ICategoryPageItem) => {
                                 return item.title.toLocaleLowerCase().includes(inputValue) && inputValue.length ? (
                                     <li className="results-list__item">
                                         <Link className="results-list__link" to="/item" onClick={() => toItemPage(item)}>
@@ -114,7 +116,7 @@ const Search = () => {
                         {inputValue.length === 0 ? (
                             <>
                                 <ul className="search__popular-list popular-list">
-                                    {store.allItems.map((item: ICategoryPageItem) => {
+                                    {ResItemsState.allItems.map((item: ICategoryPageItem) => {
                                         if (item.rating > 8.4 && item.isAvailable) {
                                             return (
                                                 <li className="popular-list__item">
@@ -131,8 +133,8 @@ const Search = () => {
                                     })}
                                 </ul>
                                 <ul className="search__category-list search-category-list">
-                                    {store.categories.length
-                                        ? store.categories.map((item: ICategory) => {
+                                    {ResItemsState.allCategories.length
+                                        ? ResItemsState.allCategories.map((item: ICategory) => {
                                             return (
                                                 <li className="search-category-list__item">
                                                     <Link

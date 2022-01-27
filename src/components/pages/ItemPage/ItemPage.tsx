@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { observer } from "mobx-react-lite";
 import { Swiper, SwiperSlide } from "swiper/react";
-import store from "../../../store/store";
+import store from "../../../store/ItemState";
 import "./ItemPage.scss";
 import ToCartBtn from "../../ToCartBtn/ToCartBtn";
 import CartState from "../../../store/CartState";
@@ -12,6 +12,9 @@ import ItemPageLoader from "../../loaders/ItemPageLoader/ItemPageLoader";
 import { sortAndDeduplicateDiagnostics } from "typescript";
 import { ICategoryPageItem } from "../../../interfaces/ICategoryPageItem";
 import { Ireview } from "../../../interfaces/IReview";
+import ResItemsState from "../../../store/ResItemsState";
+import CategoryPageState from "../../../store/CategoryPageState";
+import LoadersState from "../../../store/LoadersState";
 
 
 
@@ -22,17 +25,17 @@ const ItemPage: React.FunctionComponent = observer(() => {
 	useEffect(() => {
 		console.log('object')
 		setTimeout(() => {
-			store.setIsItemPageLoaded(false)
+			LoadersState.setIsItemPageLoaded(false)
 		}, 500);
 	}, [itemInfo])
 
 	const categoryTitle = (itemInfo: any) => {
-		store.getCategoryPage(itemInfo);
-		const filteredArr: ICategoryPageItem[] = store.allItems.filter((item: ICategoryPageItem) => {
+		CategoryPageState.getCategoryPage(itemInfo);
+		const filteredArr: ICategoryPageItem[] = ResItemsState.allItems.filter((item: ICategoryPageItem) => {
 			return item.category === itemInfo;
 		});
-		store.getCategoryPageItems(filteredArr);
-		store.categoryPageItems.sort((a: ICategoryPageItem, b: ICategoryPageItem) => {
+		CategoryPageState.getCategoryPageItems(filteredArr);
+		CategoryPageState.categoryPageItems.sort((a: ICategoryPageItem, b: ICategoryPageItem) => {
 			if (a.rating > b.rating) {
 				return -1;
 			}
@@ -45,7 +48,7 @@ const ItemPage: React.FunctionComponent = observer(() => {
 	};
 
 	return (
-		store.isItemPageLoaded ? <ItemPageLoader /> :
+		LoadersState.isItemPageLoaded ? <ItemPageLoader /> :
 			<div className="item-page">
 				{itemInfo && itemInfo.title && (
 					<div className="item-page__inner">
