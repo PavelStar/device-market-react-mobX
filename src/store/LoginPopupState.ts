@@ -5,6 +5,8 @@ class LoginPopupState {
 	passwordValue: string = "";
 	isPassShown: boolean = false;
 	isPopupShown: boolean = false;
+	isLoggined: boolean = false;
+	userName: string = "";
 
 	constructor() {
 		makeAutoObservable(this);
@@ -22,8 +24,16 @@ class LoginPopupState {
 		this.isPassShown = value;
 	}
 
-	showPopup(value: boolean) {
+	setShowPopup(value: boolean) {
 		this.isPopupShown = value;
+	}
+
+	setLoggined(value: boolean) {
+		this.isLoggined = value;
+	}
+
+	setUserName(name: string) {
+		this.userName = name;
 	}
 }
 

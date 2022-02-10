@@ -1,0 +1,32 @@
+@import "../../../../variables";
+
+.user-nav {
+	position: relative;
+
+	&__user-wrapper {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+
+	&__avatar {
+		width: 25px;
+		height: 25px;
+		background-color: red;
+		border-radius: 50%;
+	}
+}
+
+.settings-list {
+	position: absolute;
+	display: grid;
+	gap: 10px;
+	width: 200px;
+	padding: 20px;
+	left: 0;
+	top: 30px;
+	background-color: $dark-secondary;
+	border: 1px solid $neutral;
+	border-radius: 10px;
+	z-index: 10;
+}
