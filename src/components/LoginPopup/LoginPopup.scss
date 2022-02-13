@@ -43,7 +43,7 @@
 			pointer-events: none;
 
 			path {
-				stroke: white;
+				stroke: $dark;
 			}
 		}
 	}
@@ -54,7 +54,7 @@
 		flex-direction: column;
 		width: 500px;
 		padding: 40px;
-		background-color: $dark-secondary;
+		background-color: $light;
 		border-radius: 10px;
 	}
 
@@ -79,7 +79,8 @@
 		border: none;
 		border-radius: 10px;
 		background-color: $neutral;
-		color: $light;
+		background-color: $neutral-secondary;
+		color: $dark;
 
 		&:focus {
 			outline: 1px solid $light;

@@ -22,7 +22,8 @@
         {
             "id": 1,
             "count": 1,
-            "title": "iphone 13",
+            "title": "iphone 131",
+            "color": "black",
             "releaseDate": 2019,
             "isAvailable": true,
             "category": "смартфоны",
@@ -33,11 +34,105 @@
                 "memory": "128 гб."
             },
             "images": {
-                "snippetImage": "https://1734811051.rsc.cdn77.org/data/images/full/392451/apple-limits-mmwave-5g-connectivity-to-iphone-13-units-sold-in-the-us.png",
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5246132/img_id6553959736203028731.jpeg/orig",
                 "sliderImages": [
-                    "https://avatars.mds.yandex.net/get-mpic/5252617/img_id3680753824268263737.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5376414/img_id9062539055468758161.jpeg/orig",
                     "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5239537/img_id8314352009704628470.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 90000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 4.5,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1.1,
+            "count": 1,
+            "title": "iphone 131",
+            "color": "blue",
+            "releaseDate": 2019,
+            "isAvailable": true,
+            "category": "смартфоны",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "128 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5233785/img_id7302597009773703142.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5251502/img_id6904501887217302707.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4818396/img_id6418556097034642796.jpeg/orig",
                     "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 90000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 4.5,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1.2,
+            "count": 1,
+            "title": "iphone 131",
+            "color": "red",
+            "releaseDate": 2019,
+            "isAvailable": true,
+            "category": "смартфоны",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "128 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5319158/img_id3036402105505406502.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5228682/img_id5643238785392184096.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4818396/img_id6418556097034642796.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5297750/img_id157738208873930436.jpeg/orig",
                     "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
                 ]
             },

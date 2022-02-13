@@ -1,11 +1,11 @@
-import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import HomePage from "./components/pages/HomePage/HomePage";
-import CartPage from "./components/pages/CartPage/CartPage";
-import NotFound from "./components/pages/NotFound/NotFound";
-import CategoryPage from "./components/pages/CategoryPage/CategoryPage";
-import ItemPage from "./components/pages/ItemPage/ItemPage";
+import HomePage from "./pages/HomePage/HomePage";
+import CartPage from "./pages/CartPage/CartPage";
+import NotFound from "./pages/NotFound/NotFound";
+import CategoryPage from "./pages/CategoryPage/CategoryPage";
+import ItemPage from "./pages/ItemPage/ItemPage";
+import OrdersPage from "./pages/OrdersPage/OrdersPage";
 
 const AppRouter = () => {
 	return (
@@ -14,6 +14,7 @@ const AppRouter = () => {
 			<Route path="/cart" element={<CartPage />} />
 			<Route path="/category" element={<CategoryPage />} />
 			<Route path="/item" element={<ItemPage />} />
+			<Route path="/orders-page" element={<OrdersPage />} />
 			<Route path="/hardware-store-react-mobX" element={<HomePage />} />
 			<Route path="*" element={<NotFound />} />
 		</Routes>

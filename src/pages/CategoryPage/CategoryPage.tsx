@@ -1,20 +1,21 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { observer } from "mobx-react-lite";
-import store from "../../../store/ItemState";
-import FiltersState from "../../../store/FiltersState";
-import Filters from "./Filters/Filters";
-import ToCartBtn from "../../ToCartBtn/ToCartBtn";
+import store from "../../store/ItemState";
+import FiltersState from "../../store/FiltersState";
+import Filters from "../../components/Filters/Filters";
+import ToCartBtn from "../../components/ToCartBtn/ToCartBtn";
 import "rc-slider/assets/index.css";
 import "nouislider/distribute/nouislider.css";
 import "./CategoryPage.scss";
-import DeleteFromCartBtn from "../../DeleteFromCartBtn/DeleteFromCartBtn";
-import CartState from "../../../store/CartState";
-import FilterPageLoader from "../../loaders/FilterPageLoader/FilterPageLoader";
-import { ICategoryPageItem } from "../../../interfaces/ICategoryPageItem";
-import CategoryPageState from "../../../store/CategoryPageState";
-import LoadersState from "../../../store/LoadersState";
-import SortingArrows from "../../svg/SortingArrows";
+import { ICategoryPageItem } from "../../interfaces/ICategoryPageItem";
+import CategoryPageState from "../../store/CategoryPageState";
+import FilterPageLoader from "../../components/loaders/FilterPageLoader/FilterPageLoader";
+import LoadersState from "../../store/LoadersState";
+import SortingArrows from "../../components/svg/SortingArrows";
+import CartState from "../../store/CartState";
+import DeleteFromCartBtn from "../../components/DeleteFromCartBtn/DeleteFromCartBtn";
+import { IPriceInfo } from "../../interfaces/IPriceInfo";
 
 const CategoryPage = observer(() => {
     const toItemPage = (item: ICategoryPageItem) => {
@@ -38,9 +39,11 @@ const CategoryPage = observer(() => {
     const sortBy = (e: any) => {
         FiltersState.setSelectValue(e.target.value);
         CategoryPageState.getCategoryPageItems(
-            CategoryPageState.categoryPageItems.sort((a: ICategoryPageItem, b: ICategoryPageItem) => {
+            CategoryPageState.categoryPageItems.sort((a: any, b: any) => {
+
                 let typeOfSortA;
                 let typeOfSortB;
+
                 if (FiltersState.selectValue === "popular") {
                     typeOfSortA = a.rating;
                     typeOfSortB = b.rating;

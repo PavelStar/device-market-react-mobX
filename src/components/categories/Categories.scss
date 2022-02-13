@@ -2,6 +2,9 @@
 
 .categories {
 	margin-bottom: 40px;
+	background-color: $neutral-secondary;
+	padding-top: 60px;
+	padding-bottom: 60px;
 
 	&__inner {
 		@media (min-width: $desktop) {
@@ -18,9 +21,11 @@
 		justify-content: center;
 		border-radius: 10px;
 		min-height: 150px;
-		background-color: $dark-secondary;
-		padding-top: 10px;
-		padding-bottom: 10px;
+		// background-color: $dark-secondary;
+		// background-color: $light-secondary;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border: 1px solid $light-secondary;
 	}
 
 	&__item-img {

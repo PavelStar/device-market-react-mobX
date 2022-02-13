@@ -2,7 +2,7 @@ import { makeAutoObservable } from "mobx";
 import { ICategory } from "../interfaces/ICategory";
 import { ICategoryPageItem } from "../interfaces/ICategoryPageItem";
 
-class Store {
+class ItemState {
 
 	itemInfo: ICategoryPageItem | undefined;
 
@@ -18,4 +18,4 @@ class Store {
 
 }
 
-export default new Store();
+export default new ItemState();

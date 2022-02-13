@@ -1,29 +1,41 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { observer } from "mobx-react-lite";
 import { Swiper, SwiperSlide } from "swiper/react";
-import store from "../../../store/ItemState";
 import "./ItemPage.scss";
-import ToCartBtn from "../../ToCartBtn/ToCartBtn";
-import CartState from "../../../store/CartState";
-import DeleteFromCartBtn from "../../DeleteFromCartBtn/DeleteFromCartBtn";
+import LoadersState from "../../store/LoadersState";
+import CategoryPageState from "../../store/CategoryPageState";
+import ResItemsState from "../../store/ResItemsState";
+import { ICategoryPageItem } from "../../interfaces/ICategoryPageItem";
+import ItemPageLoader from "../../components/loaders/ItemPageLoader/ItemPageLoader";
+import CartState from "../../store/CartState";
+import DeleteFromCartBtn from "../../components/DeleteFromCartBtn/DeleteFromCartBtn";
+import ToCartBtn from "../../components/ToCartBtn/ToCartBtn";
+import { Ireview } from "../../interfaces/IReview";
+import ItemState from "../../store/ItemState";
 import { toJS } from "mobx";
-import ItemPageLoader from "../../loaders/ItemPageLoader/ItemPageLoader";
-import { sortAndDeduplicateDiagnostics } from "typescript";
-import { ICategoryPageItem } from "../../../interfaces/ICategoryPageItem";
-import { Ireview } from "../../../interfaces/IReview";
-import ResItemsState from "../../../store/ResItemsState";
-import CategoryPageState from "../../../store/CategoryPageState";
-import LoadersState from "../../../store/LoadersState";
 
 
 
 const ItemPage: React.FunctionComponent = observer(() => {
-	const { itemInfo } = store;
+	const { itemInfo } = ItemState;
+
+	const [sameItems, setSameItems] = useState([])
+
+
+	const changeColor = (color: string) => {
+		let i = sameItems.forEach((item: ICategoryPageItem) => {
+			if (item.color === color) {
+				ItemState.getItemInfo(item)
+			}
+		})
+	}
 
 
 	useEffect(() => {
-		console.log('object')
+		setSameItems(ResItemsState.allItems.filter((item: any) => {
+			return item.title === itemInfo?.title
+		}))
 		setTimeout(() => {
 			LoadersState.setIsItemPageLoaded(false)
 		}, 500);
@@ -64,7 +76,7 @@ const ItemPage: React.FunctionComponent = observer(() => {
 							<p className="item-page__current-link">{itemInfo.title}</p>
 						</div>
 						<div className="item-page__top-wrap">
-							<h1 className="item-page__title section-title">{itemInfo.title}</h1>
+							<h1 className="item-page__title section-title">{itemInfo.title}<span>{itemInfo.color && `, ${itemInfo.color}`}</span></h1>
 							<div className="item-page__price-wrap">
 								<div className="item-page__price-inner">
 									{itemInfo.isAvailable ? (
@@ -185,15 +197,28 @@ const ItemPage: React.FunctionComponent = observer(() => {
 									<div className="item-page__color-wrap">
 										<h3 className="item-page__colors-title">Цвет</h3>
 										<ul className="item-page__colors-list">
-											<li className="item-page__color">
-												<input className="item-page__color-btn item-page__color-btn--black" type="radio" name="color" value="black" checked />
-											</li>
-											<li className="item-page__color">
-												<input className="item-page__color-btn item-page__color-btn--white" type="radio" name="color" value="white" />
-											</li>
-											<li className="item-page__color">
-												<input className="item-page__color-btn item-page__color-btn--blue" type="radio" name="color" value="blue" />
-											</li>
+											{sameItems.map((item: any) => {
+
+												const btnColor = {
+													backgroundColor: `${item.color}`,
+												}
+
+												return (
+													<li className="item-page__color">
+														<button
+															className={
+																itemInfo.color === item.color
+																	? "item-page__color-btn item-page__color-btn--active"
+																	: "item-page__color-btn"
+															}
+															style={btnColor}
+															type="button"
+															onClick={() => changeColor(item.color)}
+														>
+														</button>
+													</li>
+												);
+											})}
 										</ul>
 									</div>
 									<h2>Характеристики</h2>

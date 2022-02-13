@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import { observer } from "mobx-react-lite";
-import store from "../../../../store/ItemState";
-import FiltersState from "../../../../store/FiltersState";
 import { Range } from "rc-slider";
 import Switch from "@mui/material/Switch";
-import ResetFilters from "../../../../classes/ResetFilters";
-import { ICategoryPageItem } from "../../../../interfaces/ICategoryPageItem";
-import { ICategory } from "../../../../interfaces/ICategory";
-import ResItemsState from "../../../../store/ResItemsState";
-import CategoryPageState from "../../../../store/CategoryPageState";
 import { toJS } from "mobx";
+import FiltersState from "../../store/FiltersState";
+import ResetFilters from "../../classes/ResetFilters";
+import CategoryPageState from "../../store/CategoryPageState";
+import ResItemsState from "../../store/ResItemsState";
+import { ICategoryPageItem } from "../../interfaces/ICategoryPageItem";
+import { ICategory } from "../../interfaces/ICategory";
 
 const Filters = observer(() => {
 	const resetFilters = new ResetFilters;

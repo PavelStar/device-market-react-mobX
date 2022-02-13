@@ -1,7 +1,10 @@
 @import "../../variables";
 
 .new-items {
-	margin-bottom: 40px;
+	// margin-bottom: 40px;
+
+	padding-top: 40px;
+	padding-bottom: 60px;
 
 	&__inner {
 		@media (min-width: $desktop) {
@@ -13,7 +16,8 @@
 
 	&__slider-wrap {
 		margin-bottom: 10px;
-		// box-shadow: $shadow;
+		box-shadow: $shadow;
+		padding-bottom: 30px;
 	}
 
 	&__learn-more {
@@ -31,7 +35,8 @@
 		flex-direction: column;
 		align-items: center;
 		padding: 20px;
-		background-color: $dark-secondary;
+		// background-color: $dark-secondary;
+		// background-color: $light-secondary;
 		border-radius: 10px;
 
 		@media (min-width: $desktop) {

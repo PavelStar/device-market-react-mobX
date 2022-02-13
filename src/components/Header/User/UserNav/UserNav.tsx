@@ -1,5 +1,6 @@
 import { observer } from 'mobx-react-lite';
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import LoginPopupState from '../../../../store/LoginPopupState';
 import "./UserNav.scss";
 
@@ -35,9 +36,9 @@ const UserNav = observer(() => {
                 :
                 <ul className='user-nav__settings-list settings-list'>
                     <li className='settings-list__item'>
-                        <a className='settings-list__link' href="">
+                        <Link className='settings-list__link' to="/orders-page">
                             История заказов
-                        </a>
+                        </Link>
                     </li>
                     <li className='settings-list__item'>
                         <a className='settings-list__link' href="">

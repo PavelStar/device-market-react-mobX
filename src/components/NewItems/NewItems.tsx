@@ -64,7 +64,7 @@ const NewItems: React.FunctionComponent = observer(() => {
 						}}
 					>
 						{ResItemsState.newItems.map((item: ICategoryPageItem) => {
-							const { images, title, priceInfo } = item;
+							const { images, title, color, priceInfo } = item;
 
 							return (
 								<>
@@ -77,7 +77,10 @@ const NewItems: React.FunctionComponent = observer(() => {
 												src={images.snippetImage}
 												alt="item-img"
 											/>
-											<h3 className="new-items__item-title">{title}</h3>
+											<h3 className="new-items__item-title">
+												{title}
+												<span>{color && `, ${color}`}</span>
+											</h3>
 											<b className="new-items__item-price">{priceInfo.fullPrice} р.</b>
 											<button className="new-items__learn-more">Перейти</button>
 										</Link>

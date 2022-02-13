@@ -2,6 +2,8 @@
 
 .user-nav {
 	position: relative;
+	color: $light;
+	cursor: pointer;
 
 	&__user-wrapper {
 		display: flex;
@@ -12,7 +14,7 @@
 	&__avatar {
 		width: 25px;
 		height: 25px;
-		background-color: red;
+		background-color: $light;
 		border-radius: 50%;
 	}
 }

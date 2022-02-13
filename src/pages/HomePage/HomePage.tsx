@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { observer } from "mobx-react-lite";
-import store from "../../../store/ItemState";
-import ResItemsState from "../../../store/ResItemsState";
-import Categories from "../../categories/Categories";
-import NewItems from "../../NewItems/NewItems";
-import PopularItems from "../../PopularItems/PopularItems";
-import ApiService from "../../../API/ApiService";
-import HomePageLoader from "../../loaders/HomePageLoader/HomePageLoader";
-import LoadersState from "../../../store/LoadersState";
+import ApiService from "../../API/ApiService";
+import LoadersState from "../../store/LoadersState";
+import ResItemsState from "../../store/ResItemsState";
+import HomePageLoader from "../../components/loaders/HomePageLoader/HomePageLoader";
+import Categories from "../../components/categories/Categories";
+import NewItems from "../../components/NewItems/NewItems";
+import PopularItems from "../../components/PopularItems/PopularItems";
+import Brands from "../../components/Brands/Brands";
 
 const HomePage = observer(() => {
 	const apiService = new ApiService();
@@ -35,6 +35,7 @@ const HomePage = observer(() => {
 				<HomePageLoader />
 			) : (
 				<div>
+					<Brands />
 					<Categories />
 					<NewItems />
 					<PopularItems />

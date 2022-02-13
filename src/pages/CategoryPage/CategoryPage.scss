@@ -1,8 +1,10 @@
-@import "../../../variables";
+@import "../../variables";
 
 .category {
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 
 	@media (min-width: $desktop) {
 		display: flex;
@@ -63,7 +65,8 @@
 	}
 
 	&__sorting-by-wrap {
-		background-color: $dark;
+		// background-color: $dark;
+
 		display: flex;
 		align-items: center;
 
@@ -71,12 +74,16 @@
 			width: 15px;
 			height: 15px;
 			margin-left: 5px;
+
+			path {
+				fill: $dark;
+			}
 		}
 	}
 
 	&__sorting-by {
 		background-color: transparent;
-		color: $light;
+		// color: $dark;
 		border: none;
 		border-radius: 20px;
 		outline: none;
@@ -85,7 +92,7 @@
 		appearance: none;
 
 		option {
-			background-color: $dark;
+			// background-color: $dark;
 		}
 	}
 
@@ -94,7 +101,7 @@
 		overflow-y: auto;
 		z-index: 110;
 		position: fixed;
-		background-color: $dark;
+		background-color: $light;
 		width: 100vw;
 		height: 100vh;
 		top: 0;
@@ -107,7 +114,7 @@
 		@media (min-width: $desktop) {
 			display: block;
 			position: static;
-			border: 1px solid $neutral;
+			border: 1px solid $neutral-secondary;
 			border-radius: 10px;
 			padding-left: 20px;
 			padding-right: 20px;
@@ -193,7 +200,6 @@
 	@media (min-width: $desktop) {
 		display: flex;
 		flex-wrap: wrap;
-		// background-color: green;
 	}
 
 	&__item {
@@ -210,7 +216,8 @@
 		}
 
 		@media (min-width: $desktop) {
-			background-color: $dark-secondary;
+			// background-color: $dark-secondary;
+			box-shadow: $shadow;
 			width: 300px;
 			margin-right: 20px;
 			margin-bottom: 20px;
