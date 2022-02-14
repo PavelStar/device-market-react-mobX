@@ -6,15 +6,15 @@
         },
         {
             "categoryName": "ноутбуки",
-            "image": "https://image.pngaaa.com/682/2875682-middle.png"
+            "image": "https://clipart-db.ru/file_content/rastr/laptope_004.png"
         },
         {
             "categoryName": "аксессуары",
-            "image": "https://w7.pngwing.com/pngs/470/784/png-transparent-battery-charger-mobile-phone-google-s-search-engine-apple-data-cable-angle-computer-cable.png"
+            "image": "https://pngimg.com/uploads/headphones/headphones_PNG7659.png"
         },
         {
             "categoryName": "планшеты",
-            "image": "https://key0.cc/images/preview/76046_f974f5f4b5355d7f7bff9179dcb5cc60.png"
+            "image": "https://www.pngall.com/wp-content/uploads/5/Apple-IPad-PNG-File-Download-Free.png"
         }
     ],
     "brands": ["apple", "asus", "xiaomi", "sony", "samsung"],
@@ -22,7 +22,7 @@
         {
             "id": 1,
             "count": 1,
-            "title": "iphone 131",
+            "title": "iphone 13",
             "color": "black",
             "releaseDate": 2019,
             "isAvailable": true,
@@ -69,7 +69,7 @@
         {
             "id": 1.1,
             "count": 1,
-            "title": "iphone 131",
+            "title": "iphone 13",
             "color": "blue",
             "releaseDate": 2019,
             "isAvailable": true,
@@ -116,7 +116,7 @@
         {
             "id": 1.2,
             "count": 1,
-            "title": "iphone 131",
+            "title": "iphone 13",
             "color": "red",
             "releaseDate": 2019,
             "isAvailable": true,
@@ -164,6 +164,7 @@
             "id": 2,
             "count": 1,
             "title": "iphone 11",
+            "color": "white",
             "releaseDate": 2020,
             "isAvailable": true,
             "category": "смартфоны",
@@ -174,10 +175,10 @@
                 "memory": "128 гб."
             },
             "images": {
-                "snippetImage": "https://pngimg.com/uploads/iphone_11/iphone_11_PNG38.png",
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/4944925/img_id3111134763595652330.jpeg/orig",
                 "sliderImages": [
-                    "https://avatars.mds.yandex.net/get-mpic/5252617/img_id3680753824268263737.jpeg/orig",
-                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/3631580/img_id8319351836921641906.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5254153/img_id7877944652579364600.jpeg/orig",
                     "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
                     "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
                 ]
@@ -210,6 +211,7 @@
             "id": 3,
             "count": 1,
             "title": "iphone 12",
+            "color": "black",
             "releaseDate": 2018,
             "isAvailable": true,
             "category": "смартфоны",
@@ -220,10 +222,10 @@
                 "memory": "128 гб."
             },
             "images": {
-                "snippetImage": "https://app-room76.ru/wp-content/uploads/2020/10/iphone-12-blue-select-2020.png",
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/4577446/img_id885624576373755146.jpeg/orig",
                 "sliderImages": [
-                    "https://avatars.mds.yandex.net/get-mpic/5252617/img_id3680753824268263737.jpeg/orig",
-                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4754204/img_id4085559111223247146.png/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5269959/img_id4764663063422852727.png/orig",
                     "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
                     "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
                 ]
@@ -266,10 +268,10 @@
                 "memory": "512 гб."
             },
             "images": {
-                "snippetImage": "https://pngimg.com/uploads/macbook/macbook_PNG101753.png",
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/4415357/img_id6335504749595596787.jpeg/orig",
                 "sliderImages": [
-                    "https://avatars.mds.yandex.net/get-mpic/5252617/img_id3680753824268263737.jpeg/orig",
-                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4493022/img_id5724159250276413205.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4397006/img_id109394425307347921.jpeg/orig",
                     "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
                     "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
                 ]
@@ -312,10 +314,10 @@
                 "memory": "512 гб."
             },
             "images": {
-                "snippetImage": "https://www.kindpng.com/picc/m/733-7334648_asus-vivobook-s14-s412-hd-png-download.png",
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/4413406/img_id711404559560858983.jpeg/orig",
                 "sliderImages": [
-                    "https://avatars.mds.yandex.net/get-mpic/5252617/img_id3680753824268263737.jpeg/orig",
-                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5242010/img_id8330293783265124437.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5242361/img_id1726272354542170408.jpeg/orig",
                     "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
                     "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
                 ]
@@ -358,10 +360,10 @@
                 "memory": "128 гб."
             },
             "images": {
-                "snippetImage": "https://w7.pngwing.com/pngs/167/383/png-transparent-apple-airpods-headphones-apple-earbuds-apple-bluetooth-sound-fruit-nut.png",
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/4412310/img_id8386850073624085644.png/orig",
                 "sliderImages": [
-                    "https://avatars.mds.yandex.net/get-mpic/5252617/img_id3680753824268263737.jpeg/orig",
-                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4291905/img_id2763508823482628135.png/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/3694390/img_id7913448280716791524.png/orig",
                     "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
                     "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
                 ]
@@ -404,10 +406,10 @@
                 "memory": "128 гб."
             },
             "images": {
-                "snippetImage": "https://w7.pngwing.com/pngs/167/383/png-transparent-apple-airpods-headphones-apple-earbuds-apple-bluetooth-sound-fruit-nut.png",
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5235334/img_id5591104231948131045.jpeg/orig",
                 "sliderImages": [
-                    "https://avatars.mds.yandex.net/get-mpic/5252617/img_id3680753824268263737.jpeg/orig",
-                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5332938/img_id953729945750901982.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5221004/img_id5481515349155153765.jpeg/orig",
                     "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
                     "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
                 ]
@@ -450,10 +452,10 @@
                 "memory": "128 гб."
             },
             "images": {
-                "snippetImage": "https://1734811051.rsc.cdn77.org/data/images/full/392451/apple-limits-mmwave-5g-connectivity-to-iphone-13-units-sold-in-the-us.png",
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5284139/img_id7484586931246876968.png/orig",
                 "sliderImages": [
-                    "https://avatars.mds.yandex.net/get-mpic/5252617/img_id3680753824268263737.jpeg/orig",
-                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/331398/img_id1336600343153179756.png/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1749547/img_id1142293628245775950.png/orig",
                     "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
                     "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
                 ]
@@ -496,9 +498,9 @@
                 "memory": "1 тб."
             },
             "images": {
-                "snippetImage": "https://www.kindpng.com/picc/m/733-7334648_asus-vivobook-s14-s412-hd-png-download.png",
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5151028/img_id4580937662138382548.png/orig",
                 "sliderImages": [
-                    "https://avatars.mds.yandex.net/get-mpic/5252617/img_id3680753824268263737.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4956986/img_id5947676632323590380.jpeg/orig",
                     "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
                     "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
                     "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
