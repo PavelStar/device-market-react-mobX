@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/hardware-store-react-mobX/static/css/main.369c54c8.chunk.css",
-    "main.js": "/hardware-store-react-mobX/static/js/main.46ba7510.chunk.js",
-    "main.js.map": "/hardware-store-react-mobX/static/js/main.46ba7510.chunk.js.map",
+    "main.css": "/hardware-store-react-mobX/static/css/main.39d27f04.chunk.css",
+    "main.js": "/hardware-store-react-mobX/static/js/main.fdf63353.chunk.js",
+    "main.js.map": "/hardware-store-react-mobX/static/js/main.fdf63353.chunk.js.map",
     "runtime-main.js": "/hardware-store-react-mobX/static/js/runtime-main.e5f735dd.js",
     "runtime-main.js.map": "/hardware-store-react-mobX/static/js/runtime-main.e5f735dd.js.map",
     "static/css/2.47e34613.chunk.css": "/hardware-store-react-mobX/static/css/2.47e34613.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.2b44af46.chunk.js.map": "/hardware-store-react-mobX/static/js/2.2b44af46.chunk.js.map",
     "index.html": "/hardware-store-react-mobX/index.html",
     "static/css/2.47e34613.chunk.css.map": "/hardware-store-react-mobX/static/css/2.47e34613.chunk.css.map",
-    "static/css/main.369c54c8.chunk.css.map": "/hardware-store-react-mobX/static/css/main.369c54c8.chunk.css.map",
+    "static/css/main.39d27f04.chunk.css.map": "/hardware-store-react-mobX/static/css/main.39d27f04.chunk.css.map",
     "static/js/2.2b44af46.chunk.js.LICENSE.txt": "/hardware-store-react-mobX/static/js/2.2b44af46.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e5f735dd.js",
     "static/css/2.47e34613.chunk.css",
     "static/js/2.2b44af46.chunk.js",
-    "static/css/main.369c54c8.chunk.css",
-    "static/js/main.46ba7510.chunk.js"
+    "static/css/main.39d27f04.chunk.css",
+    "static/js/main.fdf63353.chunk.js"
   ]
 }
