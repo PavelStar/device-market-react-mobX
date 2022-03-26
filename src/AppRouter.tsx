@@ -22,7 +22,7 @@ const AppRouter = () => {
 			<Route path="/category" element={<FiltersPage />} />
 			<Route path="/item" element={<ProductPage />} />
 			<Route path="/orders-page" element={<OrdersPage />} />
-			{/* <Route path="/hardware-store-react-mobX" element={<HomePage />} /> */}
+			<Route path="/device-market-react-mobX" element={<HomePage />} />
 			<Route path="*" element={<NotFound />} />
 
 		</Routes>

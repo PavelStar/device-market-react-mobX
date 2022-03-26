@@ -1,8 +1,8 @@
 {
-  "name": "mobx-ts-hardware-store",
+  "name": "device-market-react-mobX",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pavelstar.github.io/hardware-store-react-mobX/",
+  "homepage": "https://pavelstar.github.io/device-market-react-mobX/",
   "dependencies": {
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
@@ -16,6 +16,7 @@
     "@types/react-dom": "^17.0.11",
     "axios": "^0.24.0",
     "body-scroll-lock": "^4.0.0-beta.0",
+    "gh-pages": "^3.2.3",
     "mobx": "^6.3.6",
     "mobx-react-lite": "^3.2.2",
     "node-sass": "^6.0.1",
