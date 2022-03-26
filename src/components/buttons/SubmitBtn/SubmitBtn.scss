@@ -1,0 +1,6 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+.submit-btn {
+	@include btn-filled-accent;
+}

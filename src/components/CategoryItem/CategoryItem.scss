@@ -1,0 +1,55 @@
+@import "./../../variables";
+
+.category-item {
+	&--categories {
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 10px;
+		// padding: 30px;
+		border-radius: 5px;
+		color: $light-primary;
+		height: 200px;
+		font-weight: 700;
+		background-size: cover;
+		background-repeat: no-repeat;
+		box-shadow: $shadow;
+		@media (max-width: $tablet) {
+			height: 150px;
+		}
+
+		.category-item__title {
+			font-size: 20px;
+			background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.664));
+			width: 100%;
+			text-align: center;
+			padding: 20px;
+			padding-top: 50px;
+			@media (max-width: $tablet) {
+				font-size: 16px;
+			}
+		}
+	}
+
+	&--footer {
+		padding: 0;
+		font-size: 18px;
+		font-weight: 400;
+		@media (max-width: $tablet) {
+		}
+	}
+
+	&__img {
+		height: 70px;
+
+		@media (max-width: $tablet) {
+			height: 50px;
+		}
+	}
+
+	&__title {
+		// font-size: 25px;
+	}
+}

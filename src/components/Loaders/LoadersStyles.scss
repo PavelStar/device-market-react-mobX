@@ -1,0 +1,37 @@
+@import "./../../variables";
+
+.loader-section {
+	padding-top: 50px;
+	padding-bottom: 100px;
+	max-width: 1400px;
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	@media (max-width: $tablet) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+.item {
+	border-radius: 5px;
+
+	background-image: linear-gradient(90deg, #ddd 0px, #e8e8e8 40px, #ddd 80px);
+	background-position: 0px;
+	animation: gradient-animation 4.6s infinite linear;
+
+	@keyframes gradient-animation {
+		0% {
+			background-position: -100px;
+		}
+
+		100% {
+			background-position: 1600px;
+		}
+	}
+}
+
+.title {
+}

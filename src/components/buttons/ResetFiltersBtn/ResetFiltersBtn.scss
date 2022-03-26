@@ -1,0 +1,6 @@
+@import "./../../../variables";
+@import "./../../../mixins";
+
+.reset-filters-btn {
+	@include btn-stroked-neutral();
+}

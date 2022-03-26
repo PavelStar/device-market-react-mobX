@@ -1,237 +1,97 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react-lite";
-import { Range } from "rc-slider";
-import Switch from "@mui/material/Switch";
-import { toJS } from "mobx";
-import FiltersState from "../../store/FiltersState";
-import ResetFilters from "../../classes/ResetFilters";
-import CategoryPageState from "../../store/CategoryPageState";
-import ResItemsState from "../../store/ResItemsState";
-import { ICategoryPageItem } from "../../interfaces/ICategoryPageItem";
 import { ICategory } from "../../interfaces/ICategory";
+import CheckboxCategory from "./CheckboxCategory/CheckboxCategory";
+import CheckboxBrand from "./CheckboxBrand/CheckboxBrand";
+import FiltersSettingsState from "../../store/FiltersSettingsState";
+import ResponseDataState from "../../store/ResponseDataState";
+import PriceRange from "../PriceRange/PriceRange";
+import Switcher from "../Switcher/Switcher";
+import ClearFiltersBtn from "../buttons/ResetFiltersBtn/ResetFiltersBtn";
+import './Filters.scss'
+import PageWidthState from "../../store/PageWidthState";
+import { ScrollLockOnFixed } from "../../Utils/ScrollLockOnFixed";
+import CloseBtn from "../svg/CloseBtn";
 
-const Filters = observer(() => {
-	const resetFilters = new ResetFilters;
-	const label = { inputProps: { "aria-label": "Switch" } };
-	// const [sliderValues, setSliderValues] = useState([10000, 190000]);
-	const [dynamicKey, setDynamicKey] = useState(Date.now());
+const Filters = observer(({ showFilters, itemsToShowCount }: { showFilters: any, itemsToShowCount: number }) => {
+	// const resetFilters = new ResetFilters;
 
-	const { selectedCategories } = FiltersState;
+	const filtersRef = useRef(null)
+	const showBtnRef = useRef(null)
 
+	useEffect(() => {
+		if (filtersRef.current) {
 
+			ScrollLockOnFixed("disabled", filtersRef)
+		}
 
-	const showFilteredItems = (e: any) => {
-		if (e.currentTarget.name === "category-item") {
-			if (e.currentTarget.checked) {
-				FiltersState.setSelectedCategorie(selectedCategories.concat(e.currentTarget.id));
-			} else {
-				FiltersState.setSelectedCategorie(
-					FiltersState.selectedCategories.filter((item: any) => {
-						return item !== e.currentTarget.id;
-					})
-				);
+		return () => {
+			if (filtersRef.current) {
+
+				ScrollLockOnFixed("enabled", filtersRef)
 			}
 		}
+	}, [])
 
-		if (e.currentTarget.name === "brand-item") {
-			if (e.currentTarget.checked) {
-				FiltersState.setSelectedBrands(FiltersState.selectedBrands.concat(e.currentTarget.id));
-			} else {
-				FiltersState.setSelectedBrands(
-					FiltersState.selectedBrands.filter((item: any) => {
-						return item !== e.currentTarget.id;
-					})
-				);
-			}
-		}
 
-		if (e.currentTarget.name === "isAvailableSwitch") {
-			FiltersState.setIsAvailableOn(!FiltersState.isAvailableOn);
-		}
 
-		if (e.currentTarget.name === "isDiscountSwitch") {
-			FiltersState.setIsDiscountOn(!FiltersState.isDiscountOn);
-		}
 
-		CategoryPageState.getCategoryPageItems(
-			ResItemsState.allItems
-				.filter((item: ICategoryPageItem) => {
-					if (FiltersState.selectedCategories.length === 0) {
-						return item;
-					} else {
-						return FiltersState.selectedCategories.includes(item.category);
-					}
-				})
-				.filter((item: ICategoryPageItem) => {
-					if (FiltersState.selectedBrands.length === 0) {
-						return item;
-					} else {
-						return FiltersState.selectedBrands.includes(item.brand);
-					}
-				})
-				.filter((item: ICategoryPageItem) => {
-					if (FiltersState.isAvailableOn) {
-						return item.isAvailable === true;
-					} else {
-						return item;
-					}
-				})
-				.filter((item: ICategoryPageItem) => {
-					if (FiltersState.isDiscountOn) {
-						return item.priceInfo.discount === true;
-					} else {
-						return item;
-					}
-				})
-		);
+	const { isAvailable, isDiscount } = FiltersSettingsState
+	const { responseData } = ResponseDataState
 
-		CategoryPageState.categoryPageItems.sort((a: ICategoryPageItem, b: ICategoryPageItem) => {
-			if (a.rating > b.rating) {
-				return -1;
-			}
-			if (a.rating < b.rating) {
-				return 1;
-			}
-			return 0;
-		});
-	};
+	const { isMobile } = PageWidthState;
 
-	const onSliderChange = (value: number[]) => {
-		FiltersState.setSliderValues(value);
-		CategoryPageState.getCategoryPageItems(
-			ResItemsState.allItems.filter((item: ICategoryPageItem) => {
-				if (FiltersState.selectedCategories.length > 0) {
-					return (
-						item.priceInfo.fullPrice >= FiltersState.sliderValues[0] &&
-						item.priceInfo.fullPrice <= FiltersState.sliderValues[1] &&
-						FiltersState.selectedCategories.includes(item.category)
-					);
-				}
-
-				if (FiltersState.selectedCategories.length === 0) {
-					return item.priceInfo.fullPrice >= FiltersState.sliderValues[0] && item.priceInfo.fullPrice <= FiltersState.sliderValues[1];
-				} else {
-					return null
-				}
-			})
-		);
-	};
-
-	const handleChange = (e: { target: HTMLInputElement; }) => {
-		setDynamicKey(Date.now());
-		if (e.target.id === "1") {
-			FiltersState.setSliderValues([+e.target.value, FiltersState.sliderValues[1]]);
-		}
-		if (e.target.id === "2") {
-			FiltersState.setSliderValues([FiltersState.sliderValues[0], +e.target.value]);
-		}
-	};
-
-	const showFilters = () => {
-		CategoryPageState.getCategoryPage("Найдено товаров: ");
-		// FiltersState.setIsFiltersHidden(!FiltersState.isFiltersHidden);
-		// if (document.body.style.overflow !== "hidden") {
-		// 	document.body.style.overflow = "hidden";
-		// } else {
-		// 	document.body.style.overflow = "scroll";
-		// }
-		let filterWrap = document.querySelector('.sorting__filter-wrap')
-		if (filterWrap) {
-			filterWrap.classList.toggle('show')
-			console.log(filterWrap)
-		}
-	};
-
-	const reset = () => {
-		resetFilters.reset()
-		setDynamicKey(Date.now());
-		// FiltersState.setSelectedCategorie(store.categories)
-	}
 
 	return (
-		<div className="sorting__filter-wrap">
-			<h2 className="sorting__title section-title">Фильтры</h2>
-			<div className="sorting__reset-wrap">
-				<button className="sorting__reset-btn" onClick={reset}>Сбросить фильтры</button>
-				<button onClick={showFilters} className="sorting__close-btn">
-					закрыть
-				</button>
-			</div>
-			<ul className="sorting__category-sorting-list">
-				{ResItemsState.allCategories.map((item: ICategory) => {
-					const { categoryName } = item
-					return (
-						<li className="sorting__category-sorting-item">
-							<input
-								id={categoryName}
-								type="checkbox"
-								name="category-item"
-								checked={FiltersState.selectedCategories.includes(categoryName) ? true : false}
-								onChange={(e) => showFilteredItems(e)}
-							/>
-							<label htmlFor={categoryName}>{categoryName}</label>
-						</li>
-					);
-				})}
-			</ul>
-			<ul className="sorting__brand-sorting-list">
-				{ResItemsState.allBrands.map((brand: string) => {
-					return (
-						<li className="sorting__brand-sorting-item">
-							<input
-								id={brand}
-								type="checkbox"
-								name="brand-item"
-								checked={FiltersState.selectedBrands.includes(brand) ? true : false}
-								onChange={(e) => showFilteredItems(e)}
-							/>
-							<label htmlFor={brand}>{brand}</label>
-						</li>
-					);
-				})}
-			</ul>
-			<div className="sorting__price-range price-range">
-				<h3 className="price-range__title">Цена</h3>
-				<div className="price-range__inputs-wrap">
-					<input type="tel" onChange={(e: { target: HTMLInputElement; }) => handleChange(e)} value={FiltersState.sliderValues[0]} id="1" />
-					<input type="tel" onChange={(e: { target: HTMLInputElement; }) => handleChange(e)} value={FiltersState.sliderValues[1]} id="2" />
+		<div className="filters" >
+			<div className="filters__filter-wrap" ref={filtersRef}>
+				<h2 className="filters__title">Фильтры</h2>
+				<div className="filters__reset-wrap">
+
+					<ClearFiltersBtn />
+					<button
+						onClick={showFilters}
+						className="filters__close-btn">
+						<CloseBtn />
+					</button>
 				</div>
-				<>
-					<Range
-						className="sorting__range-slider"
-						key={dynamicKey}
-						min={0}
-						max={250000}
-						step={1000}
-						defaultValue={FiltersState.sliderValues}
-						onChange={onSliderChange}
-					/>
-				</>
-			</div>
-			<ul className="sorting__switch-list">
-				<li className="sorting__switch-item">
-					<p className="sorting__switch-text">В наличии</p>
-					<Switch
-						{...label}
-						onChange={(e) => showFilteredItems(e)}
-						checked={FiltersState.isAvailableOn}
-						name="isAvailableSwitch"
-					/>
-				</li>
-				<li className="sorting__switch-item">
-					<p className="sorting__switch-text">Скидка</p>
-					<Switch
-						{...label}
-						onChange={(e) => showFilteredItems(e)}
-						checked={FiltersState.isDiscountOn}
-						name="isDiscountSwitch"
-					/>
-				</li>
-			</ul>
-			<div className="sorting__results-btn-wrap">
-				<button className="sorting__results-btn" onClick={showFilters}>
-					Показать ({CategoryPageState.categoryPageItems.length}) товаров
-				</button>
+				<ul className="filters__category-sorting-list">
+					{responseData?.categories.map((category: ICategory) => {
+						return (
+							<li className="filters__category-sorting-item">
+								<CheckboxCategory category={category} />
+							</li>
+						);
+					})}
+				</ul>
+				<ul className="filters__brand-sorting-list">
+					{responseData?.brands.map((brand: string) => {
+						return (
+							<li className="filters__brand-sorting-item">
+								<CheckboxBrand brand={brand} />
+							</li>
+						);
+					})}
+				</ul>
+				<PriceRange />
+				<ul className="filters__switch-list">
+					<li className="filters__switch-item">
+						<p className="filters__switch-text">В наличии</p>
+						<Switcher name="isAvailableSwitch" state={isAvailable} />
+					</li>
+					<li className="filters__switch-item">
+						<p className="filters__switch-text">Скидка</p>
+						<Switcher name="isDiscountSwitch" state={isDiscount} />
+					</li>
+				</ul>
+				{isMobile &&
+					<div className="filters__results-btn-wrap" ref={showBtnRef}>
+						<button className="filters__results-btn" onClick={showFilters}>
+							Показать ({itemsToShowCount}) товаров
+						</button>
+
+					</div>
+				}
 			</div>
 		</div>
 	);

@@ -1,46 +1,66 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { observer } from "mobx-react-lite";
 import ApiService from "../../API/ApiService";
-import LoadersState from "../../store/LoadersState";
-import ResItemsState from "../../store/ResItemsState";
-import HomePageLoader from "../../components/loaders/HomePageLoader/HomePageLoader";
 import Categories from "../../components/categories/Categories";
-import NewItems from "../../components/NewItems/NewItems";
-import PopularItems from "../../components/PopularItems/PopularItems";
-import Brands from "../../components/Brands/Brands";
+import Slider from "./../../components/Slider/Slider";
+import ResponseDataState from "../../store/ResponseDataState";
+import "./HomePage.scss"
+import CategoriesLoader from "../../components/Loaders/HomePageLoaders/CategoriesLoader/CategoriesLoader";
+import SliderLoader from "../../components/Loaders/HomePageLoaders/SliderLoader/SliderLoader";
 
 const HomePage = observer(() => {
 	const apiService = new ApiService();
 
+	const { responseData } = ResponseDataState
+
+
+
+
 	useEffect(() => {
-		LoadersState.setIsHomePageLoaded(true)
 
-		setTimeout(() => {
-			const myFn = async () => {
-				const res = await apiService.getData();
+		if (!responseData) {
+			setTimeout(() => {
+				apiService.getData()
+					.then((data) => ResponseDataState.setResponseData(data))
 
-				ResItemsState.getAllItems(res.items);
-				ResItemsState.getCategories(res.categories);
-				ResItemsState.getBrands(res.brands);
-			};
-			myFn();
-			LoadersState.setIsHomePageLoaded(false)
-		}, 500);
+			}, 500);
+		}
+
+
 
 	}, []);
 
 	return (
 		<>
-			{LoadersState.isHomePageLoaded ? (
-				<HomePageLoader />
-			) : (
-				<div>
-					<Brands />
-					<Categories />
-					<NewItems />
-					<PopularItems />
-				</div>
-			)}
+			{/* <Brands /> */}
+
+			{!responseData
+				?
+				<>
+					<CategoriesLoader />
+					<SliderLoader />
+					<SliderLoader />
+				</>
+				:
+				<>
+					<Categories sectionName="categories" />
+					<section className="popular section-wrapper">
+						<div className="inner">
+							<h2 className="section-title">Популярные товары</h2>
+							<Slider sectionName="popular-items" slideCount={4.5} />
+						</div>
+					</section>
+					<section className="new-items section-wrapper">
+						<div className="inner">
+							<h2 className="section-title">Новинки</h2>
+							<Slider sectionName="new-items" slideCount={4.5} />
+						</div>
+					</section>
+				</>
+			}
+
+
+
 		</>
 	);
 });

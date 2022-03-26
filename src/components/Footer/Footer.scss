@@ -1,17 +1,95 @@
 @import "../../variables";
 
 .footer {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background-color: $neutral-secondary;
+	background-color: $dark-primary;
+	color: $light-primary;
+	margin-top: auto;
 
 	&__inner {
 		display: grid;
-		grid-template-rows: 1fr 1fr;
-		@media (min-width: $desktop) {
-			position: relative;
-			width: 1100px;
-			margin: 0 auto;
+		grid-template-areas: "logo categories brands";
+		gap: 20px;
+		// grid-template-columns: repeat(3, 1fr);
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 50px;
+
+		@media (max-width: $tablet) {
+			padding-left: 10px;
+			padding-right: 10px;
+			grid-template-areas:
+				"logo  "
+				"categories  "
+				"brands ";
 		}
+	}
+
+	.logo {
+		grid-area: logo;
+
+		@media (max-width: $tablet) {
+			justify-content: start;
+		}
+	}
+
+	&__categories {
+		font-weight: 400;
+		grid-area: categories;
+	}
+
+	&__title {
+		font-size: 20px;
+		margin-bottom: 10px;
+
+		@media (max-width: $tablet) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
+	&__show-list-arrow {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		svg {
+			transform: rotate(90deg);
+			width: 20px;
+			height: 20px;
+			path {
+				fill: $light-primary;
+			}
+		}
+
+		&--active {
+			svg {
+				transform: rotate(-90deg);
+				transition: 0.4s;
+			}
+		}
+	}
+
+	&__categories-list {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		align-items: start;
+		margin: 0 auto;
+	}
+
+	.categories__item {
+		padding: 0;
+		min-height: auto;
+		border: none;
+		text-align: left;
+	}
+
+	.categories__title {
+		text-align: left;
+	}
+
+	&__brands {
+		grid-area: brands;
 	}
 }

@@ -1,0 +1,8 @@
+@import "./../../../variables";
+@import "./../../../mixins";
+
+.catalog-link {
+	&__btn {
+		@include btn-filled-accent;
+	}
+}

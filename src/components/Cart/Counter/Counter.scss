@@ -1,0 +1,33 @@
+@import "./../../../variables";
+
+.counter {
+	font-size: 25px;
+	font-weight: 700;
+	display: grid;
+	grid-template-columns: 40px 40px 40px;
+	height: 40px;
+	// padding: 10px;
+	border: none;
+	// border: 1px solid $neutral;
+	border-radius: 3px;
+	background-color: $light-primary;
+	margin-left: auto;
+
+	button {
+		// color: $light;
+		// background-color: $neutral;
+		// padding: 5px;
+		border-radius: 3px;
+		font-size: 20px;
+		// border: 1px solid $neutral;
+	}
+
+	&__num {
+		// text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		// padding: 0 auto;
+	}
+}

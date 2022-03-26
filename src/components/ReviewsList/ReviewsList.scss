@@ -1,0 +1,39 @@
+@import "./../../variables";
+
+.reviews-list {
+	display: grid;
+	gap: 50px;
+	max-width: 700px;
+	font-size: 18px;
+}
+
+.review {
+	padding: 50px 40px;
+	// border-bottom: 1px solid $neutral;
+	background-color: $neutral-light;
+	border-radius: 5px;
+
+	&__header {
+		display: flex;
+		align-items: baseline;
+		gap: 5px;
+		margin-bottom: 5px;
+	}
+
+	&__date {
+		font-size: 14px;
+		color: $neutral-primary;
+		opacity: 0.8;
+	}
+
+	&__username {
+		font-size: 22px;
+	}
+
+	&__rating {
+		margin-bottom: 20px;
+		b {
+			font-weight: 700;
+		}
+	}
+}

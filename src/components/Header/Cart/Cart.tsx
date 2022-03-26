@@ -2,19 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { observer } from "mobx-react-lite";
 import CartState from "../../../store/CartState";
-import "./Cart.scss";
 import CartIcon from "../../svg/CartIcon";
+import NavBarItem from "../NavBarItem/NavBarItem";
+import "./Cart.scss";
+
 
 const Cart = observer(() => {
+    const { cartItems } = CartState
+
+
     return (
-        <div className="cart">
-            <Link to="/cart" className="cart__link">
-                {(CartState.itemsInCart.length > 0) && <div className="cart__counter">{CartState.itemsInCart.length}</div>}
-
-                <CartIcon />
-
-            </Link>
-        </div>
+        <Link to="/cart" className="cart__link">
+            {(cartItems.length > 0) && <div className="cart__counter">{cartItems.length}</div>}
+            <NavBarItem itemIcon={<CartIcon />} itemName={"Корзина"} />
+        </Link>
     );
 })
 

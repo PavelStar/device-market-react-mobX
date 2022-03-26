@@ -1,0 +1,13 @@
+@import "./../../variables";
+
+.MuiSwitch-thumb {
+	background-color: $accent-primary !important;
+}
+
+.MuiSwitch-track {
+	background-color: $neutral-primary !important;
+}
+
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
+	background-color: $accent-primary !important;
+}

@@ -1,0 +1,39 @@
+@import "./../../variables";
+
+.features {
+	// background-color: green;
+	display: grid;
+	gap: 50px;
+
+	&__block {
+	}
+
+	&__list {
+		display: grid;
+		gap: 10px;
+	}
+
+	&__title {
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+
+	&__feature-text {
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		justify-content: space-between;
+		align-items: baseline;
+		max-width: 600px;
+		font-size: 18px;
+		line-height: 160%;
+		span {
+			display: block;
+		}
+	}
+
+	&__dots-line {
+		min-width: 50px;
+		height: 3px;
+		border-bottom: 2px dotted $neutral-light;
+	}
+}

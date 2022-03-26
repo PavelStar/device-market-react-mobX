@@ -1,0 +1,6 @@
+@import "./../../../variables";
+@import "./../../../mixins";
+
+.clear-cart-btn {
+	@include btn-filled-neutral;
+}

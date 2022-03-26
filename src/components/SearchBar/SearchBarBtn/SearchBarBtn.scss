@@ -1,0 +1,22 @@
+@import "./../../../variables";
+
+.search-bar-btn {
+	&--show-results {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $accent-primary;
+		padding: 5px 10px;
+		height: 100%;
+
+		svg {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	&--close {
+		font-size: 18px;
+		padding: 5px;
+	}
+}

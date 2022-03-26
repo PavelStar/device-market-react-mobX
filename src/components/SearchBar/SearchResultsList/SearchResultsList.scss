@@ -1,0 +1,74 @@
+@import "./../../../variables";
+
+.search-results {
+	position: absolute;
+	overflow-y: scroll;
+	width: 100%;
+	max-height: 500px;
+	background-color: $light-primary;
+	color: $dark-primary;
+	border-radius: 5px;
+	box-shadow: $shadow;
+
+	@media (max-width: $tablet) {
+		max-height: 70vh;
+		margin-top: 10px;
+		font-size: 18px;
+	}
+
+	&__item {
+		display: flex;
+		padding: 10px 20px;
+		border-radius: 10px;
+
+		@media (max-width: $tablet) {
+			padding: 20px;
+		}
+
+		&:hover {
+			background-color: $neutral-light;
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		width: 100%;
+		align-items: start;
+
+		@media (max-width: $tablet) {
+			align-items: start;
+		}
+	}
+
+	&__img {
+		width: 30px;
+		height: auto;
+	}
+
+	&__text-wrap {
+		display: grid;
+		grid-template-columns: auto auto;
+		justify-content: space-between;
+		align-items: start;
+		gap: 10px;
+		width: 100%;
+
+		@media (max-width: $tablet) {
+			gap: 20px;
+		}
+	}
+
+	&__title {
+		text-transform: inherit;
+	}
+
+	&__price {
+		font-weight: 700;
+	}
+
+	&__results-not-found {
+		font-weight: 700;
+	}
+}

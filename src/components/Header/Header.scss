@@ -1,34 +1,48 @@
 @import "../../variables";
 
 .header {
-	background-color: $dark-secondary;
-	background-color: $dark;
-	// margin-bottom: 40px;
+	position: fixed;
+	width: 100%;
+	background-color: $dark-primary;
 
-	&__inner {
-		position: relative;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding-left: 10px;
-		padding-right: 10px;
-		padding-top: 40px;
-		padding-bottom: 40px;
+	z-index: 4100;
+	top: 0;
+	left: 0;
+	box-shadow: $shadow;
+	padding: 10px 20px;
+	color: $light-primary;
 
-		@media (min-width: $desktop) {
-			width: 1100px;
-			margin: 0 auto;
+	@media (max-width: $tablet) {
+		// position: fixed;
+		padding: 10px;
+		top: auto;
+		bottom: 0;
+		box-shadow: rgba(255, 255, 255, 0.055) 0px 15px 30px 20px;
+	}
+
+	&--to-top {
+		@media (max-width: $tablet) {
+			bottom: auto;
+			top: 0;
 		}
 	}
 
-	&__nav {
+	&__search-wrap {
 		display: flex;
+		align-items: center;
+	}
+
+	&__nav {
+		display: grid;
+		grid-template-columns: repeat(5, auto);
 		justify-content: space-between;
 		align-items: center;
-		width: 100px;
+		gap: 10px;
+		max-width: 1400px;
+		margin: 0 auto;
 
-		@media (min-width: $desktop) {
-			width: 100%;
+		@media (max-width: $tablet) {
+			align-items: baseline;
 		}
 	}
 }

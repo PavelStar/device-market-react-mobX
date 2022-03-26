@@ -1,0 +1,46 @@
+@import "./../../variables";
+
+.price-range {
+	margin-bottom: 40px;
+
+	&__title {
+		margin-bottom: 20px;
+	}
+	&__inputs-wrap {
+		display: flex;
+		justify-content: space-around;
+
+		margin-bottom: 20px;
+
+		input {
+			font-size: 16px;
+			max-width: 120px;
+
+			@media (min-width: $desktop) {
+				padding: 10px 20px;
+				border: 1px solid $neutral-light;
+				border-radius: 5px;
+			}
+		}
+	}
+
+	.rc-slider-handle {
+		width: 20px;
+		height: 20px;
+		margin-top: -9px;
+	}
+	.rc-slider-rail {
+		height: 2px;
+		background-color: $neutral-light;
+	}
+
+	.rc-slider-track {
+		height: 2px;
+		background-color: $accent-primary;
+	}
+
+	.rc-slider-handle {
+		background-color: $light-primary;
+		border-color: $accent-primary;
+	}
+}

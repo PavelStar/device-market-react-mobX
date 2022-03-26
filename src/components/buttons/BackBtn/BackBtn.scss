@@ -1,0 +1,9 @@
+@import "./../../../variables";
+@import "./../../../mixins";
+
+.back-btn {
+	span {
+		@include flex-centering;
+		@include btn-stroked-neutral;
+	}
+}

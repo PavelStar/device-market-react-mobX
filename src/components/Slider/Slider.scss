@@ -1,0 +1,17 @@
+@import "./../../variables";
+
+.slider-wrapper {
+	position: relative;
+	margin: 0 auto;
+	padding-left: 50px;
+	padding-right: 50px;
+
+	@media (max-width: $tablet) {
+		padding: 0;
+	}
+}
+
+.swiper-wrapper {
+	width: 100px; // min-width, not width
+	height: 100%;
+}

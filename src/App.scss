@@ -23,12 +23,6 @@ li {
 	margin: 0;
 }
 
-body {
-	min-height: 100vh;
-	scroll-behavior: smooth;
-	text-rendering: optimizeSpeed;
-}
-
 ul {
 	list-style: none;
 }
@@ -42,20 +36,37 @@ button,
 textarea,
 select {
 	font: inherit;
+	color: inherit;
 }
 
 label {
 	cursor: pointer;
 }
 
+html,
 body {
-	font-family: "Roboto", sans-serif;
+	height: 100vh;
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
+	font-weight: 400;
 	line-height: 140%;
-	color: $light;
-	background-color: $dark;
-	color: $dark;
-	background-color: $light;
+	color: $light-primary;
+	background-color: $dark-primary;
+	color: $dark-primary;
+	background-color: $light-primary;
+
+	#root {
+		height: 100vh;
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+		grid-template-rows: repeat(auto-fill);
+	}
 }
 
 a {
@@ -76,17 +87,40 @@ p {
 
 button {
 	cursor: pointer;
-	// color: $light;
+	font-size: 16px;
 	border: none;
 	background-color: transparent;
 }
 
 .section-title {
-	font-size: 24px;
-	font-weight: 700;
-	margin-bottom: 20px;
-	padding-left: 10px;
-	padding-right: 10px;
+	font-size: 30px;
+	font-weight: 800;
+	margin-bottom: 40px;
+
+	@media (max-width: $tablet) {
+		margin-bottom: 20px;
+		font-size: 25px;
+	}
+
+	@media (max-width: $tablet) {
+		text-align: center;
+	}
+}
+
+.section-wrapper {
+	padding: 50px 0px;
+	padding-bottom: 100px;
+
+	@media (max-width: $tablet) {
+		padding: 30px 0;
+		padding-bottom: 50px;
+	}
+}
+
+.inner {
+	position: relative;
+	max-width: 1400px;
+	margin: 0 auto;
 }
 
 .show {
@@ -99,4 +133,27 @@ button {
 
 .unclock-scroll {
 	overflow: scroll;
+}
+
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+
+.body-scroll-disabled {
+	// position: relative;
+	position: fixed;
+	height: 100%;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+	touch-action: none;
+	-ms-touch-action: none;
 }

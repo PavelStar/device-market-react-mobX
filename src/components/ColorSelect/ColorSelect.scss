@@ -1,0 +1,30 @@
+.color-select {
+	display: grid;
+	gap: 10px;
+
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+
+	&__colors-list {
+		display: flex;
+		gap: 10px;
+		padding: 20px;
+	}
+
+	&__color-wrap {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 3px;
+		border-radius: 50%;
+		&--active {
+			// outline: 7px solid grey;
+		}
+	}
+
+	&__color-btn {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+}

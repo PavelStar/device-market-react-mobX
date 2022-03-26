@@ -1,15 +1,25 @@
 import { makeAutoObservable } from "mobx";
-import { ICategoryPageItem } from "../interfaces/ICategoryPageItem";
+import { IItemData } from "../interfaces/IItemData";
 
 class OrdersPageState {
-	itemsFromCart: any = [];
+	itemsFromCart: IItemData[][] = [];
+	orderSum: number | undefined;
+	orderDate: string | undefined = "";
 
 	constructor() {
 		makeAutoObservable(this);
 	}
 
-	setItemsFromCart(items: any) {
+	setItemsFromCart(items: IItemData[][]) {
 		this.itemsFromCart = items;
+	}
+
+	setOrderSum(sum: number) {
+		this.orderSum = sum;
+	}
+
+	setOrderDate(date: string) {
+		this.orderDate = date;
 	}
 }
 

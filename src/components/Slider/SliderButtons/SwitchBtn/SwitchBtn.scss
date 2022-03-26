@@ -1,0 +1,47 @@
+@import "./../../../../variables";
+
+.switch-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: $neutral-primary;
+	font-size: 20px;
+	z-index: 100;
+	transform: translateY(-50%);
+
+	@media (max-width: $tablet) {
+		display: none;
+	}
+
+	svg {
+		path {
+			fill: $dark-secondary;
+		}
+	}
+
+	&--prev {
+		position: absolute;
+		left: 0px;
+		top: 50%;
+		svg {
+			transform: rotate(-180deg);
+			margin-left: -2px;
+		}
+	}
+
+	&--next {
+		position: absolute;
+		right: 0px;
+		top: 50%;
+		svg {
+			margin-right: -2px;
+		}
+	}
+
+	&:hover {
+		opacity: 0.8;
+	}
+}

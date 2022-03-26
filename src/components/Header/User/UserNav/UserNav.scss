@@ -2,11 +2,15 @@
 
 .user-nav {
 	position: relative;
-	color: $light;
+	color: $light-primary;
 	cursor: pointer;
+	@media (max-width: $tablet) {
+		grid-column: auto;
+	}
 
 	&__user-wrapper {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		gap: 5px;
 	}
@@ -14,21 +18,35 @@
 	&__avatar {
 		width: 25px;
 		height: 25px;
-		background-color: $light;
+		background-color: $light-primary;
 		border-radius: 50%;
+	}
+
+	&__user-name {
+		width: 50px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 }
 
 .settings-list {
 	position: absolute;
 	display: grid;
-	gap: 10px;
-	width: 200px;
-	padding: 20px;
+	gap: 20px;
+	width: max-content;
+	padding: 30px 20px;
 	left: 0;
 	top: 30px;
-	background-color: $dark-secondary;
-	border: 1px solid $neutral;
+	background-color: $light-primary;
+	box-shadow: $shadow;
 	border-radius: 10px;
-	z-index: 10;
+	color: $dark-primary;
+	font-size: 18px;
+	z-index: 4100;
+
+	@media (max-width: $tablet) {
+		left: -200px;
+		top: -170px;
+	}
 }

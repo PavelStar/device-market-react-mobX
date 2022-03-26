@@ -1,15 +1,19 @@
-$dark: rgba(24, 24, 24, 1);
-$dark-secondary: rgba(33, 33, 33, 1);
-$light: rgba(255, 255, 255, 1);
-$light-secondary: #e1bee7;
-$accent: #9c27b0;
-$neutral: rgba(54, 54, 54, 1);
-$neutral-secondary: rgb(238, 238, 238);
+$dark-primary: rgb(46, 52, 64);
+$dark-secondary: rgb(59, 66, 82);
+$light-primary: rgb(255, 255, 255);
+$light-secondary: rgb(236, 239, 244);
+$neutral-primary: rgb(216, 222, 233);
+$neutral-light: rgb(231, 236, 246);
+// $accent-primary: rgb(96, 243, 108);
+$accent-primary: rgb(142, 148, 242);
+$accent-secondary: rgb(255, 175, 204);
+$accent-light: rgb(216, 243, 220);
+
+$success: #00f867;
+$error: #ff0000;
 
 $mobile: 320px;
 $tablet: 768px;
 $desktop: 1140px;
 
-// $shadow: 0px 0px 10px 1px rgba(33, 33, 33, 0.3);
-$shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(82, 82, 95, 0.1) 0px 50px 100px -20px,
-	rgba(0, 0, 0, 0.1) 0px 30px 60px -30px;
+$shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;

@@ -1,0 +1,26 @@
+@import "../../variables";
+
+.logo {
+	width: 70px;
+	// height: 30px;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	grid-template-rows: repeat(2, auto);
+
+	@media (max-width: $tablet) {
+		width: auto;
+	}
+
+	span:first-child {
+		line-height: 110%;
+		font-size: 20px;
+		color: $accent-primary;
+	}
+	span:last-child {
+		line-height: 100%;
+		font-size: 12px;
+		padding-left: 1px;
+		font-weight: 400;
+	}
+}

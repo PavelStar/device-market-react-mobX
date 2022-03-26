@@ -1,20 +1,21 @@
 {
+    
     "categories": [
         {
             "categoryName": "смартфоны",
-            "image": "https://nsk.shop.megafon.ru/images/goods/1359/135934_p_20.png"
+            "image": "https://images.unsplash.com/photo-1616348436168-de43ad0db179?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2581&q=80"
         },
         {
             "categoryName": "ноутбуки",
-            "image": "https://clipart-db.ru/file_content/rastr/laptope_004.png"
+            "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2526&q=80"
         },
         {
             "categoryName": "аксессуары",
-            "image": "https://pngimg.com/uploads/headphones/headphones_PNG7659.png"
+            "image": "https://images.unsplash.com/photo-1574920162043-b872873f19c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2536&q=80"
         },
         {
             "categoryName": "планшеты",
-            "image": "https://www.pngall.com/wp-content/uploads/5/Apple-IPad-PNG-File-Download-Free.png"
+            "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2615&q=80"
         }
     ],
     "brands": ["apple", "asus", "xiaomi", "sony", "samsung"],
@@ -27,6 +28,7 @@
             "releaseDate": 2019,
             "isAvailable": true,
             "category": "смартфоны",
+            "categoryType": "смартфон",
             "brand": "apple",
             "features": {
                 "platform": "ios",
@@ -47,7 +49,7 @@
                 "discount": false,
                 "discountAmount": 0
             },
-            "rating": 4.5,
+            "rating": 1.5,
             "reviewsInfo": {
                 "reviewsCount": 5,
                 "reviews": [
@@ -74,6 +76,7 @@
             "releaseDate": 2019,
             "isAvailable": true,
             "category": "смартфоны",
+            "categoryType": "смартфон",
             "brand": "apple",
             "features": {
                 "platform": "ios",
@@ -94,7 +97,7 @@
                 "discount": false,
                 "discountAmount": 0
             },
-            "rating": 4.5,
+            "rating": 2.5,
             "reviewsInfo": {
                 "reviewsCount": 5,
                 "reviews": [
@@ -121,6 +124,7 @@
             "releaseDate": 2019,
             "isAvailable": true,
             "category": "смартфоны",
+            "categoryType": "смартфон",
             "brand": "apple",
             "features": {
                 "platform": "ios",
@@ -141,7 +145,7 @@
                 "discount": false,
                 "discountAmount": 0
             },
-            "rating": 4.5,
+            "rating": 2,
             "reviewsInfo": {
                 "reviewsCount": 5,
                 "reviews": [
@@ -168,6 +172,7 @@
             "releaseDate": 2020,
             "isAvailable": true,
             "category": "смартфоны",
+            "categoryType": "смартфон",
             "brand": "apple",
             "features": {
                 "platform": "ios",
@@ -188,7 +193,7 @@
                 "discount": false,
                 "discountAmount": 0
             },
-            "rating": 7.5,
+            "rating": 4.5,
             "reviewsInfo": {
                 "reviewsCount": 5,
                 "reviews": [
@@ -215,6 +220,7 @@
             "releaseDate": 2018,
             "isAvailable": true,
             "category": "смартфоны",
+            "categoryType": "смартфон",
             "brand": "apple",
             "features": {
                 "platform": "ios",
@@ -235,7 +241,7 @@
                 "discount": false,
                 "discountAmount": 0
             },
-            "rating": 9.5,
+            "rating": 4.8,
             "reviewsInfo": {
                 "reviewsCount": 5,
                 "reviews": [
@@ -261,6 +267,7 @@
             "releaseDate": 2017,
             "isAvailable": true,
             "category": "ноутбуки",
+            "categoryType": "ноутбук",
             "brand": "apple",
             "features": {
                 "platform": "ios mac",
@@ -281,7 +288,7 @@
                 "discount": false,
                 "discountAmount": 0
             },
-            "rating": 6.1,
+            "rating": 3.7,
             "reviewsInfo": {
                 "reviewsCount": 5,
                 "reviews": [
@@ -307,6 +314,7 @@
             "releaseDate": 2016,
             "isAvailable": true,
             "category": "ноутбуки",
+            "categoryType": "ноутбук",
             "brand": "asus",
             "features": {
                 "platform": "windows",
@@ -327,7 +335,7 @@
                 "discount": true,
                 "discountAmount": 2000
             },
-            "rating": 8.8,
+            "rating": 4.6,
             "reviewsInfo": {
                 "reviewsCount": 5,
                 "reviews": [
@@ -353,6 +361,7 @@
             "releaseDate": 2017,
             "isAvailable": true,
             "category": "аксессуары",
+            "categoryType": "Наушники",
             "brand": "apple",
             "features": {
                 "platform": "ios",
@@ -373,7 +382,7 @@
                 "discount": true,
                 "discountAmount": 1000
             },
-            "rating": 9,
+            "rating": 4.7,
             "reviewsInfo": {
                 "reviewsCount": 5,
                 "reviews": [
@@ -399,6 +408,7 @@
             "releaseDate": 2017,
             "isAvailable": false,
             "category": "аксессуары",
+            "categoryType": "наушники",
             "brand": "apple",
             "features": {
                 "platform": "ios",
@@ -419,7 +429,7 @@
                 "discount": false,
                 "discountAmount": 20
             },
-            "rating": 9,
+            "rating": 5,
             "reviewsInfo": {
                 "reviewsCount": 5,
                 "reviews": [
@@ -445,6 +455,7 @@
             "releaseDate": 2019,
             "isAvailable": false,
             "category": "смартфоны",
+            "categoryType": "смартфон",
             "brand": "apple",
             "features": {
                 "platform": "ios",
@@ -465,7 +476,7 @@
                 "discount": false,
                 "discountAmount": 20
             },
-            "rating": 4.5,
+            "rating": 2.3,
             "reviewsInfo": {
                 "reviewsCount": 5,
                 "reviews": [
@@ -485,12 +496,13 @@
             }
         },
         {
-            "id": 5,
+            "id": 5.1,
             "count": 1,
             "title": "asus pro 2",
             "releaseDate": 2016,
             "isAvailable": false,
             "category": "ноутбуки",
+            "categoryType": "ноутбук",
             "brand": "asus",
             "features": {
                 "platform": "windows",
@@ -511,7 +523,7 @@
                 "discount": false,
                 "discountAmount": 20
             },
-            "rating": 8.8,
+            "rating": 3.9,
             "reviewsInfo": {
                 "reviewsCount": 5,
                 "reviews": [

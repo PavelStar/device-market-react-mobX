@@ -1,0 +1,80 @@
+@import "./../../variables";
+
+.item-card {
+	display: grid;
+	gap: 10px;
+	grid-template-rows: auto auto 1fr 1fr;
+	max-width: 300px;
+	padding: 40px 20px;
+
+	&--not-available {
+		.item-card__img,
+		.item-card__title,
+		.item-card__rating-wrap {
+			opacity: 0.3;
+		}
+	}
+
+	&__img-link {
+		display: grid;
+		gap: 20px;
+	}
+
+	&__title-link {
+	}
+
+	&__title {
+		font-weight: 400;
+	}
+
+	&__img {
+		// margin: 0 auto;
+		height: 150px;
+	}
+
+	&__price-block {
+		display: flex;
+	}
+
+	&__price {
+		font-size: 24px;
+		font-weight: 700;
+		margin-bottom: auto;
+
+		&--discount {
+			font-weight: 400;
+			font-size: 16px;
+			color: $dark-secondary;
+			opacity: 0.6;
+			text-decoration: line-through;
+		}
+	}
+
+	&__rating-wrap {
+		display: flex;
+		flex-direction: column;
+		margin-right: auto;
+		align-items: start;
+		gap: 5px;
+	}
+
+	&__rating-count {
+		display: block;
+		text-align: center;
+		margin-bottom: 5px;
+		width: 30px;
+		font-size: 10px;
+		border-radius: 3px;
+		margin-right: 10px;
+		color: $light-primary;
+	}
+
+	&__reviews {
+		text-decoration: underline;
+	}
+
+	&__buttons {
+		display: flex;
+		gap: 5px;
+	}
+}
