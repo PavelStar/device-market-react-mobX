@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/hardware-store-react-mobX/static/css/main.39d27f04.chunk.css",
-    "main.js": "/hardware-store-react-mobX/static/js/main.fdf63353.chunk.js",
-    "main.js.map": "/hardware-store-react-mobX/static/js/main.fdf63353.chunk.js.map",
-    "runtime-main.js": "/hardware-store-react-mobX/static/js/runtime-main.e5f735dd.js",
-    "runtime-main.js.map": "/hardware-store-react-mobX/static/js/runtime-main.e5f735dd.js.map",
-    "static/css/2.47e34613.chunk.css": "/hardware-store-react-mobX/static/css/2.47e34613.chunk.css",
-    "static/js/2.2b44af46.chunk.js": "/hardware-store-react-mobX/static/js/2.2b44af46.chunk.js",
-    "static/js/2.2b44af46.chunk.js.map": "/hardware-store-react-mobX/static/js/2.2b44af46.chunk.js.map",
-    "index.html": "/hardware-store-react-mobX/index.html",
-    "static/css/2.47e34613.chunk.css.map": "/hardware-store-react-mobX/static/css/2.47e34613.chunk.css.map",
-    "static/css/main.39d27f04.chunk.css.map": "/hardware-store-react-mobX/static/css/main.39d27f04.chunk.css.map",
-    "static/js/2.2b44af46.chunk.js.LICENSE.txt": "/hardware-store-react-mobX/static/js/2.2b44af46.chunk.js.LICENSE.txt"
+    "main.css": "/device-market-react-mobX/static/css/main.347516cb.chunk.css",
+    "main.js": "/device-market-react-mobX/static/js/main.1a6c961c.chunk.js",
+    "main.js.map": "/device-market-react-mobX/static/js/main.1a6c961c.chunk.js.map",
+    "runtime-main.js": "/device-market-react-mobX/static/js/runtime-main.e5756d4c.js",
+    "runtime-main.js.map": "/device-market-react-mobX/static/js/runtime-main.e5756d4c.js.map",
+    "static/css/2.0c7300ec.chunk.css": "/device-market-react-mobX/static/css/2.0c7300ec.chunk.css",
+    "static/js/2.e74a2b17.chunk.js": "/device-market-react-mobX/static/js/2.e74a2b17.chunk.js",
+    "static/js/2.e74a2b17.chunk.js.map": "/device-market-react-mobX/static/js/2.e74a2b17.chunk.js.map",
+    "index.html": "/device-market-react-mobX/index.html",
+    "static/css/2.0c7300ec.chunk.css.map": "/device-market-react-mobX/static/css/2.0c7300ec.chunk.css.map",
+    "static/css/main.347516cb.chunk.css.map": "/device-market-react-mobX/static/css/main.347516cb.chunk.css.map",
+    "static/js/2.e74a2b17.chunk.js.LICENSE.txt": "/device-market-react-mobX/static/js/2.e74a2b17.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e5f735dd.js",
-    "static/css/2.47e34613.chunk.css",
-    "static/js/2.2b44af46.chunk.js",
-    "static/css/main.39d27f04.chunk.css",
-    "static/js/main.fdf63353.chunk.js"
+    "static/js/runtime-main.e5756d4c.js",
+    "static/css/2.0c7300ec.chunk.css",
+    "static/js/2.e74a2b17.chunk.js",
+    "static/css/main.347516cb.chunk.css",
+    "static/js/main.1a6c961c.chunk.js"
   ]
 }
