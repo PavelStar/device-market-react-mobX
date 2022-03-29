@@ -1,0 +1,28 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+.to-cart-btn {
+	@include btn-filled-accent;
+
+	&--remove {
+		background-color: transparent;
+		border: 1px solid $accent-primary;
+		color: $accent-primary;
+		border-radius: 5px;
+		padding: 13px;
+
+		svg {
+			width: 20px;
+			path {
+				width: 50px;
+				height: 50px;
+				height: auto;
+				fill: $accent-primary;
+			}
+		}
+	}
+
+	&:hover {
+		opacity: 0.7;
+	}
+}

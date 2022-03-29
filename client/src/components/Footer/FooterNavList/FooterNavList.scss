@@ -1,0 +1,96 @@
+@import "./../../../variables";
+
+.footer-nav-list {
+	display: grid;
+	padding-bottom: 10px;
+	gap: 20px;
+
+	@media (max-width: $tablet) {
+		gap: 20px;
+		font-size: 20px;
+		border-bottom: 1px solid $dark-secondary;
+	}
+
+	&__title-button {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	&__arrow {
+		&--opened {
+			animation: opened 0.2s linear forwards;
+		}
+
+		&--closed {
+			animation: closed 0.2s linear forwards;
+		}
+
+		path {
+			fill: $light-primary;
+		}
+	}
+
+	&__title {
+		font-size: 22px;
+		font-weight: 700;
+		color: $light-primary;
+	}
+
+	&__links-list-wrap {
+		@media (max-width: $tablet) {
+			&-enter {
+				overflow-y: hidden;
+				transition: height 0.3s ease-in-out;
+			}
+			&-enter-active {
+				transition: height 0.3s ease-in-out;
+			}
+			&-exit {
+				overflow-y: hidden;
+				transition: height 0.3s ease-in-out;
+			}
+			&-exit-active {
+				height: 0px;
+				transition: height 0.3s ease-in-out;
+			}
+		}
+	}
+
+	&__links-list {
+		display: grid;
+		gap: 10px;
+		@media (max-width: $tablet) {
+		}
+	}
+
+	&__item-link {
+		padding: 0;
+		@media (max-width: $tablet) {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
+
+	.opened {
+		animation: opened 0.3s linear forwards;
+	}
+
+	.closed {
+		animation: closed 0.3s linear forwards;
+	}
+
+	@keyframes opened {
+		to {
+			transform: rotate(-90deg);
+		}
+	}
+
+	@keyframes closed {
+		to {
+			transform: rotate(90deg);
+		}
+	}
+}

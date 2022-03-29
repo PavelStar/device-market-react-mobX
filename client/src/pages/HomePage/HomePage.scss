@@ -1,0 +1,16 @@
+@import "./../../variables";
+
+.popular {
+	.section-title {
+		text-align: center;
+	}
+}
+
+.new-items {
+	background-color: $light-secondary;
+
+	.item-card {
+		background-color: $light-primary;
+		border-radius: 5px;
+	}
+}

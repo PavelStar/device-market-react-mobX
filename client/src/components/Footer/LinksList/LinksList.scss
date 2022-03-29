@@ -1,0 +1,39 @@
+@import "./../../../variables";
+
+.links-list {
+	@media (max-width: $tablet) {
+	}
+
+	// background-color: green;
+	&-enter {
+		background-color: green;
+	}
+	&-enter-active {
+		// animation: do-some 0.2s infinite;
+		background-color: green;
+		// animation: show-list 0.2s forwards;
+		// animation-fill-mode: backwards;
+
+		// 		@keyframes show-list {
+		// 			from {
+		// 				height: 10px;
+		// 			}
+		//
+		// 			to {
+		// 				height: 150px;
+		// 			}
+		// 		}
+	}
+	&-exit {
+		// animation: show-list 0.2s reverse;
+		background-color: blue;
+	}
+	&-exit-active {
+		background-color: yellow;
+	}
+
+	&__item {
+		line-height: 150%;
+		font-size: 18px;
+	}
+}

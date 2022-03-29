@@ -1,0 +1,22 @@
+@import "./../../../variables";
+
+.memory-select {
+	background-color: antiquewhite;
+
+	&__memory-list {
+		display: flex;
+		gap: 20px;
+	}
+
+	&__memory-wrap {
+		border: 1px solid $neutral-light;
+
+		&--active {
+			border: 2px solid $neutral-primary;
+		}
+	}
+
+	&__memory-btn {
+		padding: 20px;
+	}
+}

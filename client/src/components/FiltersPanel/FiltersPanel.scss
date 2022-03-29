@@ -1,0 +1,131 @@
+@import "./../../variables";
+@import "./../../mixins";
+
+.filters-panel {
+	font-size: 16px;
+	margin-bottom: 40px;
+
+	&__wrap {
+		width: 100%;
+		display: flex;
+		align-items: start;
+		justify-content: space-between;
+
+		@media (min-width: $desktop) {
+			position: fixed;
+		}
+	}
+
+	&__sorting-by-wrap {
+		position: relative;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		max-width: min-content;
+	}
+
+	&__filter-wrap {
+		// display: none;
+		overflow-y: auto;
+		z-index: 11120;
+		position: fixed;
+		background-color: $light-primary;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+		// padding-top: 40px;
+		padding-bottom: 140px;
+		// opacity: 0.2;
+
+		@media (min-width: $tablet) {
+			display: block;
+			position: static;
+			// border: 1px solid $neutral-secondary;
+			border-radius: 10px;
+			padding-left: 20px;
+			padding-right: 20px;
+			height: auto;
+			width: auto;
+			order: -11;
+		}
+	}
+
+	&__reset-wrap {
+		margin-bottom: 30px;
+
+		@media (max-width: $tablet) {
+			display: grid;
+			align-items: start;
+			gap: 10px;
+			grid-template-columns: 1fr auto;
+		}
+	}
+
+	&__close-btn {
+		display: none;
+
+		@media (max-width: $tablet) {
+			display: grid;
+			align-items: center;
+			justify-content: center;
+			background-color: $dark-secondary;
+			border-radius: 5px;
+			padding: 5px;
+
+			svg {
+				width: 20px;
+				height: 20px;
+
+				path {
+					stroke: $light-primary;
+				}
+			}
+		}
+	}
+
+	&__category-sorting-list {
+		margin-bottom: 40px;
+	}
+	&__category-sorting-item {
+		margin-bottom: 10px;
+	}
+	&__brand-sorting-list {
+		margin-bottom: 40px;
+	}
+	&__brand-sorting-item {
+		margin-bottom: 10px;
+	}
+	&__switch-list {
+		margin-bottom: 20px;
+	}
+	&__switch-item {
+		display: flex;
+		align-items: center;
+	}
+
+	&__results-btn-wrap {
+		@media (min-width: $desktop) {
+			// position: static;
+			padding: 0;
+		}
+	}
+
+	&__results-btn {
+		margin: 0 auto;
+		width: 100%;
+
+		@include btn-filled-accent;
+
+		@media (min-width: $desktop) {
+			display: none;
+		}
+	}
+
+	&__title {
+		padding: 0;
+		margin-bottom: 20px;
+	}
+}

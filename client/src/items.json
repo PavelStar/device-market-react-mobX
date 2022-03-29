@@ -1,0 +1,1299 @@
+{
+    
+    "categories": [
+        {
+            "categoryName": "смартфоны",
+            "image": "https://images.unsplash.com/photo-1616348436168-de43ad0db179?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2581&q=80"
+        },
+        {
+            "categoryName": "ноутбуки",
+            "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2526&q=80"
+        },
+        {
+            "categoryName": "аксессуары",
+            "image": "https://images.unsplash.com/photo-1574920162043-b872873f19c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2536&q=80"
+        },
+        {
+            "categoryName": "планшеты",
+            "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2615&q=80"
+        }
+    ],
+    "brands": ["apple", "asus", "xiaomi", "sony", "samsung"],
+    "items": [
+        {
+            "id": 1,
+            "count": 1,
+            "title": "iphone 13",
+            "color": "black",
+            "releaseDate": 2019,
+            "isAvailable": true,
+            "category": "смартфоны",
+            "categoryType": "смартфон",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "128 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5246132/img_id6553959736203028731.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5376414/img_id9062539055468758161.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5239537/img_id8314352009704628470.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 90000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 1.5,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1.3,
+            "count": 1,
+            "title": "iphone 13",
+            "color": "black",
+            "releaseDate": 2019,
+            "isAvailable": true,
+            "category": "смартфоны",
+            "categoryType": "смартфон",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "256 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5246132/img_id6553959736203028731.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5376414/img_id9062539055468758161.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5239537/img_id8314352009704628470.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 95000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 1.8,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1.4,
+            "count": 1,
+            "title": "iphone 13",
+            "color": "black",
+            "releaseDate": 2019,
+            "isAvailable": true,
+            "category": "смартфоны",
+            "categoryType": "смартфон",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "512 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5246132/img_id6553959736203028731.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5376414/img_id9062539055468758161.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5239537/img_id8314352009704628470.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 98000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 1.8,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1.1,
+            "count": 1,
+            "title": "iphone 13",
+            "color": "blue",
+            "releaseDate": 2019,
+            "isAvailable": true,
+            "category": "смартфоны",
+            "categoryType": "смартфон",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "128 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5233785/img_id7302597009773703142.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5251502/img_id6904501887217302707.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4818396/img_id6418556097034642796.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 91000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 2.5,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1.5,
+            "count": 1,
+            "title": "iphone 13",
+            "color": "blue",
+            "releaseDate": 2019,
+            "isAvailable": true,
+            "category": "смартфоны",
+            "categoryType": "смартфон",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "256 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5233785/img_id7302597009773703142.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5251502/img_id6904501887217302707.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4818396/img_id6418556097034642796.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 98000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 3.6,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1.6,
+            "count": 1,
+            "title": "iphone 13",
+            "color": "blue",
+            "releaseDate": 2019,
+            "isAvailable": true,
+            "category": "смартфоны",
+            "categoryType": "смартфон",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "512 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5233785/img_id7302597009773703142.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5251502/img_id6904501887217302707.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4818396/img_id6418556097034642796.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 103000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 3.7,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1.2,
+            "count": 1,
+            "title": "iphone 13",
+            "color": "red",
+            "releaseDate": 2019,
+            "isAvailable": true,
+            "category": "смартфоны",
+            "categoryType": "смартфон",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "128 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5319158/img_id3036402105505406502.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5228682/img_id5643238785392184096.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4818396/img_id6418556097034642796.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5297750/img_id157738208873930436.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 95000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 2,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1.7,
+            "count": 1,
+            "title": "iphone 13",
+            "color": "red",
+            "releaseDate": 2019,
+            "isAvailable": true,
+            "category": "смартфоны",
+            "categoryType": "смартфон",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "256 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5319158/img_id3036402105505406502.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5228682/img_id5643238785392184096.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4818396/img_id6418556097034642796.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5297750/img_id157738208873930436.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 102000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 2.2,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1.8,
+            "count": 1,
+            "title": "iphone 13",
+            "color": "red",
+            "releaseDate": 2019,
+            "isAvailable": true,
+            "category": "смартфоны",
+            "categoryType": "смартфон",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "512 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5319158/img_id3036402105505406502.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5228682/img_id5643238785392184096.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4818396/img_id6418556097034642796.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5297750/img_id157738208873930436.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 107000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 2.3,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "count": 1,
+            "title": "iphone 11",
+            "color": "white",
+            "releaseDate": 2020,
+            "isAvailable": true,
+            "category": "смартфоны",
+            "categoryType": "смартфон",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "128 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/4944925/img_id3111134763595652330.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/3631580/img_id8319351836921641906.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5254153/img_id7877944652579364600.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 40000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 4.5,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "count": 1,
+            "title": "iphone 12",
+            "color": "black",
+            "releaseDate": 2018,
+            "isAvailable": true,
+            "category": "смартфоны",
+            "categoryType": "смартфон",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "128 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/4577446/img_id885624576373755146.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/4754204/img_id4085559111223247146.png/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5269959/img_id4764663063422852727.png/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 60000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 4.8,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "count": 1,
+            "title": "macbook pro 1",
+            "releaseDate": 2017,
+            "isAvailable": true,
+            "category": "ноутбуки",
+            "categoryType": "ноутбук",
+            "brand": "apple",
+            "features": {
+                "platform": "ios mac",
+                "diagonal": "6.0",
+                "memory": "512 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/4415357/img_id6335504749595596787.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/4493022/img_id5724159250276413205.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4397006/img_id109394425307347921.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 160000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 3.7,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "count": 1,
+            "title": "asus pro 1",
+            "releaseDate": 2016,
+            "isAvailable": true,
+            "category": "ноутбуки",
+            "categoryType": "ноутбук",
+            "brand": "asus",
+            "features": {
+                "platform": "windows",
+                "diagonal": "6.0",
+                "memory": "512 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/4413406/img_id711404559560858983.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5242010/img_id8330293783265124437.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5242361/img_id1726272354542170408.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 80000,
+                "discount": true,
+                "discountAmount": 2000
+            },
+            "rating": 4.6,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 6,
+            "count": 1,
+            "title": "air pods",
+            "releaseDate": 2017,
+            "isAvailable": true,
+            "category": "аксессуары",
+            "categoryType": "Наушники",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "128 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/4412310/img_id8386850073624085644.png/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/4291905/img_id2763508823482628135.png/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/3694390/img_id7913448280716791524.png/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 10000,
+                "discount": true,
+                "discountAmount": 1000
+            },
+            "rating": 4.7,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "count": 1,
+            "title": "air pods 1",
+            "releaseDate": 2017,
+            "isAvailable": false,
+            "category": "аксессуары",
+            "categoryType": "наушники",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "128 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5235334/img_id5591104231948131045.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5332938/img_id953729945750901982.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5221004/img_id5481515349155153765.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 10000,
+                "discount": false,
+                "discountAmount": 20
+            },
+            "rating": 5,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "count": 1,
+            "title": "iphone 10",
+            "releaseDate": 2019,
+            "isAvailable": false,
+            "category": "смартфоны",
+            "categoryType": "смартфон",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "6.0",
+                "memory": "128 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5284139/img_id7484586931246876968.png/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/331398/img_id1336600343153179756.png/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1749547/img_id1142293628245775950.png/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 90000,
+                "discount": false,
+                "discountAmount": 20
+            },
+            "rating": 2.3,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 5.1,
+            "count": 1,
+            "title": "asus pro 2",
+            "releaseDate": 2016,
+            "isAvailable": false,
+            "category": "ноутбуки",
+            "categoryType": "ноутбук",
+            "brand": "asus",
+            "features": {
+                "platform": "windows",
+                "diagonal": "6.0",
+                "memory": "1 тб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5151028/img_id4580937662138382548.png/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/4956986/img_id5947676632323590380.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id3519660028343633744.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/1859063/img_id4109987386688090174.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/466729/img_id4787789391872446593.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 80000,
+                "discount": false,
+                "discountAmount": 20
+            },
+            "rating": 3.9,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 10,
+            "count": 1,
+            "title": "iPad Pro",
+            "color": "grey",
+            "releaseDate": 2020,
+            "isAvailable": true,
+            "category": "планшеты",
+            "categoryType": "планшет",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "12.9",
+                "memory": "256 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5229883/img_id7187825273367203885.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/4342845/img_id9208947825547303322.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4590616/img_id5323775489630730358.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4762868/img_id7923442620940000968.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4937511/img_id961992544688143647.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 103000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 3.9,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 11,
+            "count": 1,
+            "title": "iPad Pro",
+            "color": "black",
+            "releaseDate": 2020,
+            "isAvailable": true,
+            "category": "планшеты",
+            "categoryType": "планшет",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "12.9",
+                "memory": "256 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5243609/img_id327630070586493249.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/4762868/img_id4936128938881818885.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4493022/img_id8544304879581020454.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4762868/img_id1157182265372943890.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5219030/img_id7288655784298263266.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 85000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 4.2,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 12,
+            "count": 1,
+            "title": "iPad Pro",
+            "color": "black",
+            "releaseDate": 2020,
+            "isAvailable": true,
+            "category": "планшеты",
+            "categoryType": "планшет",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "12.9",
+                "memory": "512 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5243609/img_id327630070586493249.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/4762868/img_id4936128938881818885.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4493022/img_id8544304879581020454.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4762868/img_id1157182265372943890.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5219030/img_id7288655784298263266.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 96000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 3.8,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 12,
+            "count": 1,
+            "title": "iPad Pro",
+            "color": "black",
+            "releaseDate": 2020,
+            "isAvailable": true,
+            "category": "планшеты",
+            "categoryType": "планшет",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "12.9",
+                "memory": "1024 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5243609/img_id327630070586493249.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/4762868/img_id4936128938881818885.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4493022/img_id8544304879581020454.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4762868/img_id1157182265372943890.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5219030/img_id7288655784298263266.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 102000,
+                "discount": false,
+                "discountAmount": 20
+            },
+            "rating": 3.8,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 13,
+            "count": 1,
+            "title": "iPad Pro",
+            "color": "grey",
+            "releaseDate": 2020,
+            "isAvailable": true,
+            "category": "планшеты",
+            "categoryType": "планшет",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "12.9",
+                "memory": "512 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5229883/img_id7187825273367203885.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/4342845/img_id9208947825547303322.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4590616/img_id5323775489630730358.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4762868/img_id7923442620940000968.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4937511/img_id961992544688143647.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 108000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 3.6,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 14,
+            "count": 1,
+            "title": "iPad Pro",
+            "color": "grey",
+            "releaseDate": 2020,
+            "isAvailable": true,
+            "category": "планшеты",
+            "categoryType": "планшет",
+            "brand": "apple",
+            "features": {
+                "platform": "ios",
+                "diagonal": "12.9",
+                "memory": "1024 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5229883/img_id7187825273367203885.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/4342845/img_id9208947825547303322.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4590616/img_id5323775489630730358.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4762868/img_id7923442620940000968.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/4937511/img_id961992544688143647.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 112000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 3.9,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 15,
+            "count": 1,
+            "title": "samsung",
+            "color": "black",
+            "releaseDate": 2022,
+            "isAvailable": true,
+            "category": "смартфоны",
+            "categoryType": "смартфон",
+            "brand": "samsung",
+            "features": {
+                "platform": "android",
+                "diagonal": "6.1",
+                "memory": "128 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5210335/img_id134212542102791764.png/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5252116/img_id8197117460732012288.png/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5221145/img_id8408970873557037574.png/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5254153/img_id272956592151044448.png/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5221929/img_id6438947217598206791.png/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 89000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 4.6,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 16,
+            "count": 1,
+            "title": "samsung",
+            "color": "rose",
+            "releaseDate": 2022,
+            "isAvailable": true,
+            "category": "смартфоны",
+            "categoryType": "смартфон",
+            "brand": "samsung",
+            "features": {
+                "platform": "android",
+                "diagonal": "6.1",
+                "memory": "128 гб."
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5257660/img_id3032414415548630980.png/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5346238/img_id6015113171324270784.png/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5296089/img_id5048073350112164977.png/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5207288/img_id6187674963234683657.png/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5243609/img_id5897414086539381226.png/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 90000,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 4.4,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 17,
+            "count": 1,
+            "title": "xiaomi redmi buds 3 pro",
+            "color": "black",
+            "releaseDate": 2020,
+            "isAvailable": true,
+            "category": "аксессуары",
+            "categoryType": "наушники",
+            "brand": "xiaomi",
+            "features": {
+            },
+            "images": {
+                "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5216721/img_id2636759555920548768.jpeg/orig",
+                "sliderImages": [
+                    "https://avatars.mds.yandex.net/get-mpic/5228105/img_id8186732806812200702.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5233098/img_id1666906825412152779.png/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5280162/img_id6282557703652686267.jpeg/orig",
+                    "https://avatars.mds.yandex.net/get-mpic/5245452/img_id345121357931270592.jpeg/orig"
+                ]
+            },
+            "priceInfo": {
+                "fullPrice": 6200,
+                "discount": false,
+                "discountAmount": 0
+            },
+            "rating": 3.8,
+            "reviewsInfo": {
+                "reviewsCount": 5,
+                "reviews": [
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user1",
+                        "userRating": "8",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    },
+                    {
+                        "reviewDate": "7 июля 2020",
+                        "userName": "user2",
+                        "userRating": "5",
+                        "userMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    }
+                ]
+            }
+        }
+    ]
+}

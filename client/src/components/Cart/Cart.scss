@@ -1,0 +1,116 @@
+@import "./../../variables";
+@import "./../../mixins";
+
+.cart {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+	color: $dark-primary;
+	margin: 0 auto;
+	max-width: 1400px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 100%;
+
+	&__inner {
+		display: grid;
+		// justify-content: center;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	&__btns-wrap {
+		display: grid;
+		gap: 10px;
+		grid-template-columns: 1fr 1fr;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		padding: 0;
+	}
+
+	&__list {
+		display: grid;
+		gap: 30px;
+		margin-bottom: 40px;
+	}
+
+	&__checkout-btn {
+		background-color: $accent-primary;
+		padding: 14px 100px;
+		border-radius: 3px;
+		font-size: 16px;
+		font-weight: 700;
+		color: $light-primary;
+
+		@media (max-width: $tablet) {
+			padding: 14px 50px;
+			width: 100%;
+			max-width: 500px;
+		}
+	}
+}
+
+.total-price-block {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 22px;
+
+	&__items-count {
+	}
+	&__price {
+	}
+}
+
+.order-success {
+	display: grid;
+	gap: 50px;
+	align-items: center;
+	justify-content: center;
+	max-width: 900px;
+	margin: 0 auto;
+	background-color: $light-secondary;
+	padding: 50px;
+	border-radius: 5px;
+
+	@media (max-width: $tablet) {
+		padding: 20px;
+	}
+
+	&__btns-wrap {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 5px;
+
+		@media (max-width: $tablet) {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr;
+		}
+	}
+
+	&__to-order-btn {
+		@include btn-filled-neutral;
+	}
+
+	&__title {
+		font-size: 30px;
+		font-weight: 700;
+	}
+
+	&__description {
+		font-size: 20px;
+	}
+
+	&__link {
+		display: block;
+		font-size: 20px;
+		text-decoration: underline;
+		color: $accent-primary;
+	}
+}

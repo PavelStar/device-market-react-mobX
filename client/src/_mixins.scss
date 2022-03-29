@@ -1,0 +1,61 @@
+@mixin flex-centering {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin btn-filled-base-styles {
+	gap: 10px;
+	width: 100%;
+	padding: 14px;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 5px;
+
+	@media (max-width: 768px) {
+		font-size: 14px;
+		padding: 10px;
+	}
+}
+
+@mixin btn-stroked-base-styles {
+	gap: 10px;
+	width: 100%;
+	padding: 12px;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 5px;
+
+	@media (max-width: 768px) {
+		font-size: 14px;
+		padding: 8px;
+	}
+}
+
+@mixin btn-filled-accent {
+	@include flex-centering();
+	@include btn-filled-base-styles();
+	background-color: $accent-primary;
+	color: $light-primary;
+}
+
+@mixin btn-filled-neutral {
+	@include flex-centering();
+	@include btn-filled-base-styles();
+	background-color: $neutral-primary;
+	color: $dark-primary;
+}
+
+@mixin btn-stroked-accent {
+	@include flex-centering();
+	@include btn-stroked-base-styles();
+	border: 1px solid $accent-primary;
+	color: $accent-primary;
+}
+
+@mixin btn-stroked-neutral {
+	@include flex-centering();
+	@include btn-stroked-base-styles();
+	border: 1px solid $neutral-primary;
+	color: $dark-secondary;
+}
