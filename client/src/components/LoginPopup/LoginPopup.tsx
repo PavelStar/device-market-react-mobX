@@ -5,7 +5,6 @@ import CloseBtn from "../svg/CloseBtn";
 import SubmitBtn from "../buttons/SubmitBtn/SubmitBtn";
 import { ScrollLockOnFixed } from "../../Utils/ScrollLockOnFixed";
 import "./LoginPopup.scss";
-import { addUserToDB } from "../../Utils/addUserToDB";
 
 
 const LoginPopup = observer(({ headerRef }: { headerRef: RefObject<HTMLDivElement> }) => {
@@ -64,10 +63,9 @@ const LoginPopup = observer(({ headerRef }: { headerRef: RefObject<HTMLDivElemen
 
     const userLogIned = () => {
         if (loginValue && passwordValue) {
-            // LoginState.setUserName(loginValue)
-            // LoginState.setUserPassword(passwordValue)
+            LoginState.setUserName(loginValue)
+            LoginState.setUserPassword(passwordValue)
         }
-        addUserToDB(loginValue, passwordValue)
     };
 
     const onOverlayClick = (e: any) => {
@@ -137,9 +135,6 @@ const LoginPopup = observer(({ headerRef }: { headerRef: RefObject<HTMLDivElemen
                             </div>
                             <div className="login-popup__btns-wrap">
                                 <SubmitBtn userLogIned={userLogIned} />
-                                {/* <a className="login-popup__registration-btn" type="button">
-                                    Зарегистрироваться
-                                </a> */}
                             </div>
                         </div>
                     )}

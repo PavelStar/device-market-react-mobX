@@ -1,4 +1,5 @@
 import FiltersSettingsState from "../store/FiltersSettingsState";
+import { SetFilterSettings } from "./SetFilterSettings";
 
 export const ResetFilters = () => {
 	FiltersSettingsState.setSelectedCategories([]);
@@ -7,4 +8,5 @@ export const ResetFilters = () => {
 	FiltersSettingsState.setIsDiscount(false);
 	FiltersSettingsState.setIsAvailable(false);
 	FiltersSettingsState.setIsPriceRangeReseted(true);
+	FiltersSettingsState.setAllFilteredItems(SetFilterSettings());
 };

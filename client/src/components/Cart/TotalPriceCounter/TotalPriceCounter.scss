@@ -1,0 +1,14 @@
+@import "./../../../variables";
+
+.total-price-counter {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 22px;
+
+	&__items-count {
+	}
+	&__price {
+	}
+}

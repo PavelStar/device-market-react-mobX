@@ -2,6 +2,7 @@ import { observer } from 'mobx-react-lite'
 import FiltersSettingsState from '../../store/FiltersSettingsState'
 import Switch from "@mui/material/Switch";
 import './Switcher.scss'
+import { SetFilterSettings } from '../../Utils/SetFilterSettings';
 
 const Switcher = observer(({ name, state }: { name: string, state: boolean }) => {
 
@@ -10,7 +11,6 @@ const Switcher = observer(({ name, state }: { name: string, state: boolean }) =>
         if (name === "isAvailableSwitch") FiltersSettingsState.setIsAvailable(!state)
     }
 
-    // const [color] 
 
     return (
         <Switch

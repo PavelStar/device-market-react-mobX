@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { observer } from "mobx-react-lite";
 import ApiService from "../../API/ApiService";
 import Categories from "../../components/categories/Categories";
@@ -9,12 +9,11 @@ import CategoriesLoader from "../../components/Loaders/HomePageLoaders/Categorie
 import SliderLoader from "../../components/Loaders/HomePageLoaders/SliderLoader/SliderLoader";
 
 const HomePage = observer(() => {
+
+	console.log('home page')
+
 	const apiService = new ApiService();
-
 	const { responseData } = ResponseDataState
-
-
-
 
 	useEffect(() => {
 
@@ -22,18 +21,12 @@ const HomePage = observer(() => {
 			setTimeout(() => {
 				apiService.getData()
 					.then((data) => ResponseDataState.setResponseData(data))
-
 			}, 500);
 		}
-
-
-
 	}, []);
 
 	return (
 		<>
-			{/* <Brands /> */}
-
 			{!responseData
 				?
 				<>
@@ -58,9 +51,6 @@ const HomePage = observer(() => {
 					</section>
 				</>
 			}
-
-
-
 		</>
 	);
 });

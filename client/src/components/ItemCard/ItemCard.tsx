@@ -18,7 +18,7 @@ interface ICardTypeOfView {
     inPageView?: string;
     inSliderView?: string;
     item: IItemData;
-    isBtnLite?: boolean
+    isBtnLite?: boolean;
 }
 
 const ItemCard: React.FC<ICardTypeOfView> = observer(({ inPageView, inSliderView, item, isBtnLite }) => {
@@ -26,7 +26,7 @@ const ItemCard: React.FC<ICardTypeOfView> = observer(({ inPageView, inSliderView
     const { responseData } = ResponseDataState;
     const { itemCardWidth } = PageWidthState;
 
-    const itemCardRef = useRef<HTMLDivElement>(null)
+    const itemCardRef = useRef<HTMLDivElement>(null);
 
     const {
         images: { snippetImage },
@@ -41,10 +41,6 @@ const ItemCard: React.FC<ICardTypeOfView> = observer(({ inPageView, inSliderView
         features: { memory },
     } = item;
 
-
-
-
-
     return (
         <div className={isAvailable ? "item-card" : "item-card item-card--not-available"} ref={itemCardRef}>
             <Link className="item-card__img-link" to="/item" onClick={() => ItemDataState.setItemData(item)}>
@@ -54,8 +50,6 @@ const ItemCard: React.FC<ICardTypeOfView> = observer(({ inPageView, inSliderView
                 <h3 className="item-card__title">{`${categoryType} ${title} ${color ? color : ""}, ${memory}`}</h3>
             </Link>
 
-
-
             <Link className="item-card__rating-link" to="/item" onClick={() => ItemDataState.setItemData(item)}>
                 <div className="item-card__rating-wrap">
                     <ProductRating rating={rating} />
@@ -64,12 +58,13 @@ const ItemCard: React.FC<ICardTypeOfView> = observer(({ inPageView, inSliderView
             </Link>
             <ProductPrice priceInfo={priceInfo} isAvailable={isAvailable} />
             <div className="item-card__buttons">
-                {/* {isAvailable && <ToCartBtn item={item} isBtnLite={isBtnLite} />} */}
-                {isAvailable && <ToCartBtn item={item} isBtnLite={isBtnLite} />}
-                {isBtnLite && <Link to="/item" onClick={() => ItemDataState.setItemData(item)}><ToItemLink /></Link>}
+                {isAvailable && <ToCartBtn toCartItem={item} isBtnLite={isBtnLite} />}
+                {isBtnLite && (
+                    <Link to="/item" onClick={() => ItemDataState.setItemData(item)}>
+                        <ToItemLink />
+                    </Link>
+                )}
             </div>
-
-
         </div>
     );
 });

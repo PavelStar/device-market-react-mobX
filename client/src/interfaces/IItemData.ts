@@ -5,7 +5,7 @@ import { IreviewsInfo } from "./IReviewsInfo";
 
 export interface IItemData {
 	id: number;
-	count: number;
+	amount: number;
 	title: string;
 	color: string;
 	releaseDate: number;

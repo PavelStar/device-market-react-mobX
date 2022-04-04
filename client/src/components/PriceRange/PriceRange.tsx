@@ -5,6 +5,7 @@ import "rc-slider/assets/index.css";
 import "nouislider/distribute/nouislider.css";
 import './PriceRange.scss'
 import { observer } from 'mobx-react-lite';
+import { SetFilterSettings } from '../../Utils/SetFilterSettings';
 
 const PriceRange = observer(() => {
 
@@ -45,7 +46,8 @@ const PriceRange = observer(() => {
                     max={250000}
                     step={1000}
                     defaultValue={priceRange}
-                    onChange={(value) => onSliderChange(value)}
+                    onAfterChange={(value) => onSliderChange(value)}
+
                 />
             </>
         </div>

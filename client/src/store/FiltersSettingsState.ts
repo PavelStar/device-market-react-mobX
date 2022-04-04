@@ -1,8 +1,12 @@
 import { makeAutoObservable } from "mobx";
 import { ICategory } from "../interfaces/ICategory";
+import { IItemData } from "../interfaces/IItemData";
 import { IResponseData } from "../interfaces/IResponseData";
 
 class FiltersSettingsState {
+	itemsFound: number | undefined;
+	allFilteredItems: IItemData[] | undefined;
+	resultsByPagination: IItemData[] | undefined;
 	isFiltersShown: boolean = false;
 	selectedCategories: string[] = [];
 	selectedBrands: string[] = [];
@@ -13,6 +17,18 @@ class FiltersSettingsState {
 
 	constructor() {
 		makeAutoObservable(this);
+	}
+
+	setItemsFound(count: number) {
+		this.itemsFound = count;
+	}
+
+	setAllFilteredItems(items: IItemData[]) {
+		this.allFilteredItems = items;
+	}
+
+	setResultsByPagination(items: IItemData[]) {
+		this.resultsByPagination = items;
 	}
 
 	setIsFiltersShown(value: boolean) {

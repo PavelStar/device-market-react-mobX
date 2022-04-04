@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { observer } from "mobx-react-lite";
 import { Link, useNavigate } from "react-router-dom";
 import { IItemData } from "../../interfaces/IItemData";
@@ -7,10 +7,13 @@ import OrdersPageState from "../../store/OrdersPageState";
 import EmptyCart from "../../components/svg/EmptyCart";
 import CatalogLink from "../../components/buttons/CatalogLink/CatalogLink";
 import CartItem from "../../components/Cart/CartItem/CartItem";
-import "./Cart.scss";
 import StatusEmptyBlock from "../StatusEmptyBlock/StatusEmptyBlock";
 import BackBtn from "../buttons/BackBtn/BackBtn";
 import ClearCartBtn from "../buttons/ClearCartBtn/ClearCartBtn";
+import "./Cart.scss";
+import TotalPriceCounter from "./TotalPriceCounter/TotalPriceCounter";
+import { ICartItem } from "../../interfaces/ICartItem";
+import CartItems from "./CartItems/CartItems";
 
 const Cart = observer(() => {
     const { cartItems, priceSum } = CartState;
@@ -18,8 +21,13 @@ const Cart = observer(() => {
     const navigate = useNavigate();
     const goBack = () => navigate(-1);
 
+
     const [isOrderSuccess, setIsOrderSuccess] = useState(false);
 
+
+    // useEffect(() => {
+    //     cartItems.length === 0 && CartState.setPriceSum(0)
+    // }, [cartItems])
 
 
     const makeOrder = () => {
@@ -61,25 +69,12 @@ const Cart = observer(() => {
                             <ClearCartBtn />
                         ) : <CatalogLink btnName="Перейти в каталог" />}
                     </div>
-                    <ul className="cart__list">
-                        {cartItems.length === 0 ? (
-                            <StatusEmptyBlock title={"В корзину ничего не добавлено"} image={<EmptyCart />} />
-                        ) : (
-                            cartItems.map((item: IItemData) => {
-                                return (
-                                    <li>
-                                        <CartItem item={item} />
-                                    </li>
-                                );
-                            })
-                        )}
-                    </ul>
+
+                    <CartItems />
+
                     {cartItems.length > 0 ? (
                         <>
-                            <div className="cart__price-block total-price-block">
-                                <p className="total-price-block__items-count">Итого: </p>
-                                <b className="total-price-block__price">{CartState.priceSum} руб.</b>
-                            </div>
+                            <TotalPriceCounter />
                             <button onClick={makeOrder} className="cart__checkout-btn">
                                 Оформить
                             </button>

@@ -6,6 +6,7 @@ import FiltersSettingsState from "../../../store/FiltersSettingsState";
 import "./CheckboxCategory.scss";
 import "../checbox.scss";
 import MarkerIcon from "../../svg/MarkerIcon";
+import { SetFilterSettings } from "../../../Utils/SetFilterSettings";
 
 interface IInputCategory {
     category: ICategory
@@ -24,11 +25,9 @@ const CheckboxCategory: React.FC<IInputCategory> = observer(({ category }) => {
         }
 
         if (selectedCategories.includes(category.categoryName)) {
-            FiltersSettingsState.setSelectedCategories([...selectedCategories.concat(category.categoryName)])
             FiltersSettingsState.setSelectedCategories(selectedCategories.filter((item) => {
                 return item != categoryName
             }))
-
         }
     }
 

@@ -1,8 +1,9 @@
 import { makeAutoObservable } from "mobx";
+import { ICartItem } from "../interfaces/ICartItem";
 import { IItemData } from "../interfaces/IItemData";
 
 class OrdersPageState {
-	itemsFromCart: IItemData[][] = [];
+	itemsFromCart: ICartItem[][] = [];
 	orderSum: number | undefined;
 	orderDate: string | undefined = "";
 
@@ -10,7 +11,7 @@ class OrdersPageState {
 		makeAutoObservable(this);
 	}
 
-	setItemsFromCart(items: IItemData[][]) {
+	setItemsFromCart(items: ICartItem[][]) {
 		this.itemsFromCart = items;
 	}
 

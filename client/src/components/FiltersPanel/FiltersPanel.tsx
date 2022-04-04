@@ -11,18 +11,21 @@ import ClearFiltersBtn from "../buttons/ResetFiltersBtn/ResetFiltersBtn";
 import PageWidthState from "../../store/PageWidthState";
 import { ScrollLockOnFixed } from "../../Utils/ScrollLockOnFixed";
 import CloseBtn from "../svg/CloseBtn";
+import { SetFilterSettings } from "../../Utils/SetFilterSettings";
 import './FiltersPanel.scss'
 
 
 interface IFiltersPanel {
 	itemsToShowCount?: number;
-	showFilters: any
 }
 
 
-const FiltersPanel: React.FC<IFiltersPanel> = observer(({ itemsToShowCount, showFilters }) => {
+const FiltersPanel: React.FC<IFiltersPanel> = observer(({ itemsToShowCount }) => {
+
 
 	const { isMobile } = PageWidthState;
+	const { isAvailable, isDiscount } = FiltersSettingsState
+	const { responseData } = ResponseDataState
 
 	const filtersRef = useRef(null)
 	const showBtnRef = useRef(null)
@@ -44,16 +47,18 @@ const FiltersPanel: React.FC<IFiltersPanel> = observer(({ itemsToShowCount, show
 
 
 
-	const { isAvailable, isDiscount } = FiltersSettingsState
-	const { responseData } = ResponseDataState
+	const showFilters = () => {
+		FiltersSettingsState.setIsFiltersShown(false)
+	};
 
 
 
 
 	return (
 		<div className="filters-panel" ref={filtersRef}>
+
 			<div className="filters-panel__filter-wrap" >
-				<h2 className="filters-panel__title">Фильтры</h2>
+				{/* <h2 className="filters-panel__title">Фильтры</h2> */}
 				<div className="filters-panel__reset-wrap">
 
 					<ClearFiltersBtn />
@@ -63,24 +68,30 @@ const FiltersPanel: React.FC<IFiltersPanel> = observer(({ itemsToShowCount, show
 						<CloseBtn />
 					</button>
 				</div>
-				<ul className="filters-panel__category-sorting-list">
-					{responseData?.categories.map((category: ICategory) => {
-						return (
-							<li className="filters-panel__category-sorting-item">
-								<CheckboxCategory category={category} />
-							</li>
-						);
-					})}
-				</ul>
-				<ul className="filters-panel__brand-sorting-list">
-					{responseData?.brands.map((brand: string) => {
-						return (
-							<li className="filters-panel__brand-sorting-item">
-								<CheckboxBrand brand={brand} />
-							</li>
-						);
-					})}
-				</ul>
+				<div className="filters-panel__section-wrap">
+					<h3>Категория:</h3>
+					<ul className="filters-panel__category-sorting-list">
+						{responseData?.categories.map((category: ICategory) => {
+							return (
+								<li className="filters-panel__category-sorting-item">
+									<CheckboxCategory category={category} />
+								</li>
+							);
+						})}
+					</ul>
+				</div>
+				<div className="filters-panel__section-wrap">
+					<h3>Бренд:</h3>
+					<ul className="filters-panel__brand-sorting-list">
+						{responseData?.brands.map((brand: string) => {
+							return (
+								<li className="filters-panel__brand-sorting-item">
+									<CheckboxBrand brand={brand} />
+								</li>
+							);
+						})}
+					</ul>
+				</div>
 				<PriceRange />
 				<ul className="filters-panel__switch-list">
 					<li className="filters-panel__switch-item">

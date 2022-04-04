@@ -1,49 +1,59 @@
+import { RecordWithTtl } from 'dns';
+import { toJS } from 'mobx';
+import React, { useState } from 'react';
+import { ICartItem } from '../../../interfaces/ICartItem';
 import { IItemData } from '../../../interfaces/IItemData';
 import CartState from '../../../store/CartState'
+import { RemoveFromCart } from '../../../Utils/RemoveFromCart';
 import './Counter.scss'
 
-const Counter = ({ item }: { item: IItemData }) => {
+interface ICounter {
+    itemPrice?: number;
+    cartItem?: ICartItem | undefined;
+}
+
+const Counter: React.FC<ICounter> = ({ itemPrice, cartItem }) => {
 
     const { cartItems, priceSum } = CartState;
 
-    const incItem = (item: IItemData) => {
 
-        cartItems.forEach(i => {
 
-            const { priceInfo: { fullPrice, discountAmount }, count } = i
+    const incItem = () => {
 
-            if (i.id === item.id) {
-                i.count++
-                CartState.setPriceSum(priceSum + (fullPrice - discountAmount))
+
+        CartState.setCartItems([...cartItems.map((item) => {
+            if (item.itemData.id === cartItem?.itemData.id) {
+                ++item.count
             }
-        })
+            return item
+        })])
     }
 
 
-    const decItem = (item: IItemData) => {
-        cartItems.forEach(i => {
-            const { priceInfo: { fullPrice, discountAmount }, count } = i
-            if (i.id === item.id) {
-                i.count--
-                CartState.setPriceSum(priceSum - (fullPrice - discountAmount))
+    const decItem = () => {
+
+        CartState.setCartItems([...cartItems.filter((item) => {
+
+            if (item.itemData.id === cartItem?.itemData.id) {
+                --item.count
+
             }
-            if (i.count === 0) {
-                CartState.setCartItems([...cartItems.filter(cartItem => {
-                    return cartItem.id !== item.id
-                })])
-            }
-        })
+            return item.count !== 0
+        })])
 
     }
+
+
 
     return (
         <div className="counter">
             <button className="counter__btn counter__btn--dec"
-                onClick={() => decItem(item)}
+                onClick={decItem}
             >-</button>
-            <div className="counter__num">{item.count}</div>
+            <div className="counter__num">{cartItem?.count}</div>
             <button className="counter__btn counter__btn--inc"
-                onClick={() => incItem(item)}
+                onClick={incItem}
+                disabled={cartItem?.count === cartItem?.itemData.amount ? true : false}
             >+</button>
         </div>
     )

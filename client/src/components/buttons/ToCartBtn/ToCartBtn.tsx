@@ -1,18 +1,21 @@
 import { toJS } from "mobx";
 import { observer } from "mobx-react-lite";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IItemData } from "../../../interfaces/IItemData";
 import CartState from "../../../store/CartState";
 import CartIcon from "../../svg/CartIcon";
-import CloseBtn from "../../svg/CloseBtn";
 import RemoveFromCartIcon from "../../svg/RemoveFromCartIcon";
 import "./ToCartBtn.scss";
 
 
+interface IToCartBtn {
+	toCartItem: IItemData;
+	isBtnLite?: boolean;
+}
 
-const ToCartBtn = observer(({ item, isBtnLite }: { item: IItemData, isBtnLite?: boolean }) => {
+const ToCartBtn: React.FC<IToCartBtn> = observer(({ toCartItem, isBtnLite }) => {
 	const { cartItems, priceSum } = CartState;
-	const { priceInfo: { fullPrice, discountAmount } } = item;
+	const { priceInfo: { fullPrice, discountAmount } } = toCartItem;
 
 
 	const [isItemInCart, setIsItemInCart] = useState(false)
@@ -21,28 +24,32 @@ const ToCartBtn = observer(({ item, isBtnLite }: { item: IItemData, isBtnLite?: 
 
 		setIsItemInCart(false)
 		cartItems.forEach(i => {
-			if (i.id === item.id) {
-				console.log(true)
+			if (i.itemData.id === toCartItem.id) {
 				setIsItemInCart(true)
 			}
 		})
-
 	})
 
 
+
+
 	const addToCart = () => {
-		CartState.setCartItems([...cartItems.concat(item)]);
-		CartState.setPriceSum(priceSum + fullPrice - discountAmount)
+		CartState.setCartItems([...cartItems.concat({ count: 1, itemData: toCartItem })]);
 	};
 
 	const removeFromCart = () => {
+
+		let deleteCount: number | undefined;
+
 		CartState.setCartItems([
 			...cartItems.filter((i) => {
-				return i.id !== item.id;
+				if (i.itemData.id === toCartItem.id) deleteCount = i.count
+				return i.itemData.id !== toCartItem.id;
 			}),
 		]);
-		CartState.setPriceSum(priceSum - (fullPrice - discountAmount))
 	};
+
+
 
 
 	return (
@@ -50,15 +57,11 @@ const ToCartBtn = observer(({ item, isBtnLite }: { item: IItemData, isBtnLite?: 
 			{isItemInCart ?
 				<button className="to-cart-btn to-cart-btn--remove" onClick={removeFromCart}>
 					{isBtnLite ? <RemoveFromCartIcon /> : 'Удалить из корзины'}
-
 				</button>
-
 				:
 				<button className="to-cart-btn" onClick={addToCart}>
 					{!isBtnLite && "В корзину"} <CartIcon />
 				</button>}
-
-
 		</>
 	);
 

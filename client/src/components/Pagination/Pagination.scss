@@ -1,0 +1,24 @@
+@import "./../../variables";
+
+.pagination {
+	&__list {
+		display: flex;
+		gap: 5px;
+	}
+
+	&__btn-number {
+		display: flex;
+
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		border: 1px solid $light-secondary;
+		border-radius: 5px;
+	}
+
+	&__btn-number.active {
+		background-color: $accent-primary;
+		color: $light-secondary;
+	}
+}

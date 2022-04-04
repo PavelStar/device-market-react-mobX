@@ -1,16 +1,17 @@
 import { makeAutoObservable } from "mobx";
+import { ICartItem } from "../interfaces/ICartItem";
 import { IItemData } from "../interfaces/IItemData";
 
 class CartState {
-	cartItems: IItemData[] = [];
+	cartItems: ICartItem[] = [];
 	priceSum: number = 0;
 
 	constructor() {
 		makeAutoObservable(this);
 	}
 
-	setCartItems(data: IItemData[]) {
-		this.cartItems = data;
+	setCartItems(item: ICartItem[]) {
+		this.cartItems = item;
 	}
 
 	setPriceSum(sum: number) {

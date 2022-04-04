@@ -13,10 +13,11 @@ import './ProductSelects.scss'
 const ProductSelects = observer(({ product }: { product: IItemData }) => {
 
     const { responseData } = ResponseDataState
-    const { selectedColor, selectedMemory } = ProductSelectsState
+    const { selectedColor, selectedMemory, selectedTitle } = ProductSelectsState
 
     useEffect(() => {
         if (selectedColor && selectedMemory) {
+
 
             responseData && responseData.items.forEach((item: IItemData) => {
                 if (item.title === product.title && item.color === selectedColor && item.features.memory === selectedMemory) {

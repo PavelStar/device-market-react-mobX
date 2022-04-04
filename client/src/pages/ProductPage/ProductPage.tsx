@@ -21,6 +21,7 @@ import ProductSelectsState from "../../store/ProductSelectsState";
 
 const ProductPage: React.FunctionComponent = observer(() => {
 
+
 	const [tabName, setTabName] = useState('features');
 
 	const navigate = useNavigate()
@@ -131,7 +132,7 @@ const ProductPage: React.FunctionComponent = observer(() => {
 											priceInfo={itemData.priceInfo}
 											isAvailable={itemData.isAvailable}
 										/>
-										<ToCartBtn item={itemData} />
+										<ToCartBtn toCartItem={itemData} />
 									</div>
 
 								</div>

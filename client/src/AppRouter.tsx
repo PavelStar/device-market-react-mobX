@@ -12,8 +12,6 @@ const AppRouter = () => {
 
 
 
-
-
 	return (
 
 		<Routes>

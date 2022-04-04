@@ -4,7 +4,8 @@ import { setSortByItems } from "./setSortByItems";
 
 export const SetFilterSettings = () => {
 	const { responseData } = ResponseDataState;
-	const { selectedCategories, selectedBrands, priceRange, isAvailable, isDiscount } = FiltersSettingsState;
+	const { allFilteredItems, selectedCategories, selectedBrands, priceRange, isAvailable, isDiscount } =
+		FiltersSettingsState;
 
 	return setSortByItems(
 		responseData?.items
