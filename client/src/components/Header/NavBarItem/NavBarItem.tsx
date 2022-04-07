@@ -6,7 +6,7 @@ const NavBarItem = ({ itemIcon, itemName }: { itemIcon?: JSX.Element, itemName?:
     return (
         <div className='nav-bar-item'>
             <div className='nav-bar-item__icon'>{itemIcon}</div>
-            {/* <p className='nav-bar-item__name'>{itemName}</p> */}
+            <p className='nav-bar-item__name'>{itemName}</p>
         </div>
     )
 }

@@ -61,7 +61,7 @@ const LoginPopup = observer(({ headerRef }: { headerRef: RefObject<HTMLDivElemen
         setIsPassShown(!isPassShown);
     };
 
-    const userLogIned = () => {
+    const userLogined = () => {
         if (loginValue && passwordValue) {
             LoginState.setUserName(loginValue)
             LoginState.setUserPassword(passwordValue)
@@ -93,7 +93,7 @@ const LoginPopup = observer(({ headerRef }: { headerRef: RefObject<HTMLDivElemen
                     </button>
                     {userName && userPassword ? (
                         <div className="login-popup__success">
-                            <p>Вы вошли под именем {userName}</p>
+                            <p>Вы вошли под именем <span>{userName}</span></p>
                         </div>
                     ) : (
                         <div className="login-popup__login-wrap">
@@ -134,7 +134,7 @@ const LoginPopup = observer(({ headerRef }: { headerRef: RefObject<HTMLDivElemen
                                 </label>
                             </div>
                             <div className="login-popup__btns-wrap">
-                                <SubmitBtn userLogIned={userLogIned} />
+                                <SubmitBtn userLogined={userLogined} />
                             </div>
                         </div>
                     )}

@@ -122,4 +122,12 @@
 		text-align: center;
 		text-decoration: underline;
 	}
+
+	&__success {
+		span {
+			font-size: 18px;
+			text-decoration: underline;
+			font-weight: 700;
+		}
+	}
 }
