@@ -1,7 +1,6 @@
 export const setColorName = (expression: string) => {
 	switch (expression) {
 		case "black":
-			console.log("black");
 			return "#404040";
 
 		case "blue":

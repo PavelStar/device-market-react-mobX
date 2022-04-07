@@ -10,7 +10,7 @@
 .review {
 	padding: 50px 40px;
 	// border-bottom: 1px solid $neutral;
-	background-color: $neutral-light;
+	background-color: $light-secondary;
 	border-radius: 5px;
 
 	&__header {
@@ -22,7 +22,7 @@
 
 	&__date {
 		font-size: 14px;
-		color: $neutral-primary;
+		color: $dark-secondary;
 		opacity: 0.8;
 	}
 

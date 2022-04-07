@@ -149,7 +149,11 @@
 		}
 
 		.image-gallery-slide img {
-			height: 200px;
+			height: 400px;
+			@media (max-width: $tablet) {
+				height: 200px;
+				// padding: 10px;
+			}
 		}
 
 		.fullscreen {

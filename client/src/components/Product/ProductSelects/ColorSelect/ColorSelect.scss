@@ -1,0 +1,42 @@
+@import "./../../../../variables";
+
+.color-select {
+	display: grid;
+	align-items: center;
+	gap: 10px;
+
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+
+	&__colors-list {
+		display: flex;
+		gap: 10px;
+		padding: 20px 0px;
+
+		@media (max-width: $tablet) {
+			gap: 10px;
+			padding: 10px;
+		}
+	}
+
+	&__color-wrap {
+		height: max-content;
+		width: max-content;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 4px;
+		border-radius: 50%;
+		border: 2px solid transparent !important;
+		&--active {
+			border: 2px solid $accent-primary !important;
+		}
+	}
+
+	&__color-btn {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		
+	}
+}

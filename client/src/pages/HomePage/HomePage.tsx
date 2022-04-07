@@ -7,10 +7,10 @@ import ResponseDataState from "../../store/ResponseDataState";
 import "./HomePage.scss"
 import CategoriesLoader from "../../components/Loaders/HomePageLoaders/CategoriesLoader/CategoriesLoader";
 import SliderLoader from "../../components/Loaders/HomePageLoaders/SliderLoader/SliderLoader";
+import ItemDataState from "../../store/ItemDataState";
 
 const HomePage = observer(() => {
 
-	console.log('home page')
 
 	const apiService = new ApiService();
 	const { responseData } = ResponseDataState

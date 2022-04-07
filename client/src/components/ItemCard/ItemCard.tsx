@@ -31,6 +31,7 @@ const ItemCard: React.FC<ICardTypeOfView> = observer(({ inPageView, inSliderView
     const {
         images: { snippetImage },
         title,
+        id,
         priceInfo,
         priceInfo: { discount, discountAmount, fullPrice },
         isAvailable,
@@ -43,14 +44,14 @@ const ItemCard: React.FC<ICardTypeOfView> = observer(({ inPageView, inSliderView
 
     return (
         <div className={isAvailable ? "item-card" : "item-card item-card--not-available"} ref={itemCardRef}>
-            <Link className="item-card__img-link" to="/item" onClick={() => ItemDataState.setItemData(item)}>
+            <Link className="item-card__img-link" to={`/item/${id}`} >
                 <img className="item-card__img" src={snippetImage} alt="img" height="100" />
             </Link>
-            <Link className="item-card__title-link" to="/item" onClick={() => ItemDataState.setItemData(item)}>
+            <Link className="item-card__title-link" to={`/item/${id}`} >
                 <h3 className="item-card__title">{`${categoryType} ${title} ${color ? color : ""}, ${memory}`}</h3>
             </Link>
 
-            <Link className="item-card__rating-link" to="/item" onClick={() => ItemDataState.setItemData(item)}>
+            <Link className="item-card__rating-link" to={`/item/${id}`} >
                 <div className="item-card__rating-wrap">
                     <ProductRating rating={rating} />
                     <p className="item-card__reviews">Отзывы ({reviews.length})</p>
@@ -60,9 +61,9 @@ const ItemCard: React.FC<ICardTypeOfView> = observer(({ inPageView, inSliderView
             <div className="item-card__buttons">
                 {isAvailable && <ToCartBtn toCartItem={item} isBtnLite={isBtnLite} />}
                 {isBtnLite && (
-                    <Link to="/item" onClick={() => ItemDataState.setItemData(item)}>
-                        <ToItemLink />
-                    </Link>
+                    // <Link to={`/item/${id}`}>
+                    // </Link>
+                    <ToItemLink id={id} />
                 )}
             </div>
         </div>

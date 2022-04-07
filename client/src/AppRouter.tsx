@@ -18,7 +18,7 @@ const AppRouter = () => {
 			<Route path="/" element={<HomePage />} />
 			<Route path="/cart" element={<CartPage />} />
 			<Route path="/category" element={<FiltersPage />} />
-			<Route path="/item" element={<ProductPage />} />
+			<Route path="/item/:id" element={<ProductPage />} />
 			<Route path="/orders-page" element={<OrdersPage />} />
 			<Route path="/device-market-react-mobX" element={<HomePage />} />
 			<Route path="*" element={<NotFound />} />

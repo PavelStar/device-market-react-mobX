@@ -37,7 +37,7 @@ const Slider: React.FC<ISliderItems> = observer(({ sectionName, slideCount }) =>
         if (sectionName === "popular-items") {
             if (responseData) {
                 setSliderItems(responseData?.items.filter((item: IItemData) => {
-                    return item.rating > 3.5 && item.isAvailable;
+                    return item.rating > 4.0 && item.isAvailable;
                 }))
             }
         }
@@ -45,7 +45,7 @@ const Slider: React.FC<ISliderItems> = observer(({ sectionName, slideCount }) =>
         if (sectionName === "new-items") {
             if (responseData) {
                 setSliderItems(responseData?.items.filter((item: IItemData) => {
-                    return item.releaseDate > 2017 && item.isAvailable;
+                    return item.releaseDate > 2020 && item.isAvailable;
                 }))
             }
 
@@ -117,11 +117,11 @@ const Slider: React.FC<ISliderItems> = observer(({ sectionName, slideCount }) =>
                         slidesPerView: 3.2,
                         spaceBetween: 10,
                         centeredSlides: false,
-                        pagination: {
-                            el: `.${sectionName}__dots-pagination`,
-                            type: "bullets",
-                            clickable: true,
-                        },
+                        // pagination: {
+                        //     el: `.${sectionName}__dots-pagination`,
+                        //     type: "bullets",
+                        //     clickable: true,
+                        // },
 
                         navigation: {
                             nextEl: `.${sectionName}__switch-btn--next`,
