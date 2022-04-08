@@ -1,5 +1,5 @@
 import Header from "./components/Header/Header";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import AppRouter from "./AppRouter";
 import Footer from "./components/Footer/Footer";
 import "./App.scss";
@@ -29,7 +29,7 @@ const App = observer(() => {
     }
 
     return (
-        <BrowserRouter>
+        <HashRouter>
 
             <Header />
             <ScrollToTop >
@@ -38,7 +38,7 @@ const App = observer(() => {
             <Footer />
 
 
-        </BrowserRouter>
+        </HashRouter>
     );
 })
 
