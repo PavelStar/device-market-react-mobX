@@ -48,7 +48,7 @@ const SearchResultsList = observer(
         };
 
         const onResultClick = (item: IItemData) => {
-            ItemDataState.setItemData(item);
+            // ItemDataState.setItemData(item);
             SearchState.setIsResultsShown(false);
             SearchState.setIsSearchShown(false)
             SearchState.setSearchInputValue('')
@@ -60,6 +60,7 @@ const SearchResultsList = observer(
                 {searchInputValue &&
                     searchResults.map((item: IItemData) => {
                         const {
+                            id,
                             color,
                             title,
                             priceInfo: { fullPrice, discountAmount },
@@ -69,7 +70,7 @@ const SearchResultsList = observer(
 
                         return (
                             <li key={item.id} className="search-results__item">
-                                <Link to="/item" className="search-results__link" onClick={() => onResultClick(item)}>
+                                <Link to={`/item/${id}`} className="search-results__link" onClick={() => onResultClick(item)}>
                                     <div className="search-results__img-wrap">
                                         <img
                                             className="search-results__img"

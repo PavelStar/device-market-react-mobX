@@ -12,8 +12,8 @@ import SearchState from "../../store/SearchState";
 import PageWidthState from "../../store/PageWidthState";
 import NavBarItem from "./NavBarItem/NavBarItem";
 import SearchIcon from "../svg/SearchIcon";
-import "./Header.scss";
 import LoginPopup from "../LoginPopup/LoginPopup";
+import "./Header.scss";
 
 const Header = observer(() => {
     const headerRef = useRef<HTMLDivElement>(null);

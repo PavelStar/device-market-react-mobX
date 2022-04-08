@@ -24,7 +24,7 @@ const FiltersPanel: React.FC<IFiltersPanel> = observer(({ itemsToShowCount }) =>
 
 
 	const { isMobile } = PageWidthState;
-	const { isAvailable, isDiscount } = FiltersSettingsState
+	const { isAvailable, isDiscount, itemsFound } = FiltersSettingsState
 	const { responseData } = ResponseDataState
 
 	const filtersRef = useRef(null)
@@ -34,13 +34,15 @@ const FiltersPanel: React.FC<IFiltersPanel> = observer(({ itemsToShowCount }) =>
 
 	useEffect(() => {
 		if (filtersRef.current && isMobile) {
+			console.log('filters panel mount')
 			ScrollLockOnFixed("disabled", filtersRef)
+			console.log(filtersRef.current)
 		}
 
 		return () => {
-			if (filtersRef.current && isMobile) {
-				ScrollLockOnFixed("enabled", filtersRef)
-			}
+
+			ScrollLockOnFixed("enabled", filtersRef)
+
 		}
 	}, [])
 
@@ -48,6 +50,7 @@ const FiltersPanel: React.FC<IFiltersPanel> = observer(({ itemsToShowCount }) =>
 
 
 	const showFilters = () => {
+		console.log(filtersRef.current)
 		FiltersSettingsState.setIsFiltersShown(false)
 	};
 
@@ -108,7 +111,7 @@ const FiltersPanel: React.FC<IFiltersPanel> = observer(({ itemsToShowCount }) =>
 						<button className="filters-panel__results-btn"
 							onClick={showFilters}
 						>
-							Показать ({itemsToShowCount}) товаров
+							Показать ({itemsFound}) товаров
 						</button>
 
 					</div>

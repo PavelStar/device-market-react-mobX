@@ -33,6 +33,7 @@ const SearchBar = observer(({ setIsNavShown, headerRef }: { setIsNavShown?: Reac
 
         return () => {
             ScrollLockOnFixed("enabled", headerRef)
+            clearAllBodyScrollLocks()
         }
     }, [])
 

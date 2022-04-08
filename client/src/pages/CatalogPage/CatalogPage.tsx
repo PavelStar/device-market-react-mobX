@@ -19,9 +19,6 @@ const CatalogPage = observer(() => {
 
     const filtersWrapRef = useRef(null);
 
-
-
-
     useEffect(() => {
         console.log('catalog-page')
         if (!responseData?.items) {
@@ -32,10 +29,6 @@ const CatalogPage = observer(() => {
 
 
     }, []);
-
-
-
-
 
     return (
         <>

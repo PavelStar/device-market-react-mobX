@@ -34,6 +34,7 @@ const ResultsBlock: React.FC<IResultsBlock> = observer(({ responseItems }) => {
 
     const showFilters = () => {
         FiltersSettingsState.setIsFiltersShown(true)
+        console.log('show')
     };
 
     return (
