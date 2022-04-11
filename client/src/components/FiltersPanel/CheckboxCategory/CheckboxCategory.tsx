@@ -3,10 +3,9 @@ import { observer } from "mobx-react-lite";
 import React, { useEffect, useRef, useState } from "react";
 import { ICategory } from "../../../interfaces/ICategory";
 import FiltersSettingsState from "../../../store/FiltersSettingsState";
+import MarkerIcon from "../../svg/MarkerIcon";
 import "./CheckboxCategory.scss";
 import "../checbox.scss";
-import MarkerIcon from "../../svg/MarkerIcon";
-import { SetFilterSettings } from "../../../Utils/SetFilterSettings";
 
 interface IInputCategory {
     category: ICategory

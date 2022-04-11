@@ -1,10 +1,6 @@
-import { RecordWithTtl } from 'dns';
-import { toJS } from 'mobx';
-import React, { useState } from 'react';
+import React from 'react';
 import { ICartItem } from '../../../interfaces/ICartItem';
-import { IItemData } from '../../../interfaces/IItemData';
 import CartState from '../../../store/CartState'
-import { RemoveFromCart } from '../../../Utils/RemoveFromCart';
 import './Counter.scss'
 
 interface ICounter {
@@ -14,12 +10,10 @@ interface ICounter {
 
 const Counter: React.FC<ICounter> = ({ itemPrice, cartItem }) => {
 
-    const { cartItems, priceSum } = CartState;
-
+    const { cartItems } = CartState;
 
 
     const incItem = () => {
-
 
         CartState.setCartItems([...cartItems.map((item) => {
             if (item.itemData.id === cartItem?.itemData.id) {

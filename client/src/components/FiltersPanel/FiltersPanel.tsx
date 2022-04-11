@@ -1,4 +1,4 @@
-import React, { ReactFragment, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { observer } from "mobx-react-lite";
 import { ICategory } from "../../interfaces/ICategory";
 import CheckboxCategory from "./CheckboxCategory/CheckboxCategory";
@@ -9,9 +9,8 @@ import PriceRange from "../PriceRange/PriceRange";
 import Switcher from "../Switcher/Switcher";
 import ClearFiltersBtn from "../buttons/ResetFiltersBtn/ResetFiltersBtn";
 import PageWidthState from "../../store/PageWidthState";
-import { ScrollLockOnFixed } from "../../Utils/ScrollLockOnFixed";
+import { scrollLockOnFixed } from "../../Utils/scrollLockOnFixed";
 import CloseBtn from "../svg/CloseBtn";
-import { SetFilterSettings } from "../../Utils/SetFilterSettings";
 import './FiltersPanel.scss'
 
 
@@ -34,34 +33,24 @@ const FiltersPanel: React.FC<IFiltersPanel> = observer(({ itemsToShowCount }) =>
 
 	useEffect(() => {
 		if (filtersRef.current && isMobile) {
-			console.log('filters panel mount')
-			ScrollLockOnFixed("disabled", filtersRef)
-			console.log(filtersRef.current)
+			scrollLockOnFixed("disabled", filtersRef)
 		}
 
 		return () => {
-
-			ScrollLockOnFixed("enabled", filtersRef)
-
+			scrollLockOnFixed("enabled", filtersRef)
 		}
 	}, [])
 
 
-
-
 	const showFilters = () => {
-		console.log(filtersRef.current)
 		FiltersSettingsState.setIsFiltersShown(false)
 	};
-
-
 
 
 	return (
 		<div className="filters-panel" ref={filtersRef}>
 
 			<div className="filters-panel__filter-wrap" >
-				{/* <h2 className="filters-panel__title">Фильтры</h2> */}
 				<div className="filters-panel__reset-wrap">
 
 					<ClearFiltersBtn />

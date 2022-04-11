@@ -5,7 +5,6 @@ import "rc-slider/assets/index.css";
 import "nouislider/distribute/nouislider.css";
 import './PriceRange.scss'
 import { observer } from 'mobx-react-lite';
-import { SetFilterSettings } from '../../Utils/SetFilterSettings';
 
 const PriceRange = observer(() => {
 

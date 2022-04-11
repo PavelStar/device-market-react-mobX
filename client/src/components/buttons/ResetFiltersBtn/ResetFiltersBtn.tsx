@@ -1,9 +1,9 @@
-import { ResetFilters } from "../../../Utils/ResetFilters";
+import { resetFilters } from "../../../Utils/resetFilters";
 import "./ResetFiltersBtn.scss";
 
 const ClearFiltersBtn = () => {
     return (
-        <button className="reset-filters-btn" onClick={ResetFilters}>
+        <button className="reset-filters-btn" onClick={resetFilters}>
             Очистить фильтры
         </button>
     );

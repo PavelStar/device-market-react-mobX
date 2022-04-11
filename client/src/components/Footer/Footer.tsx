@@ -2,11 +2,9 @@ import { observer } from "mobx-react-lite";
 import ResponseDataState from "../../store/ResponseDataState";
 import { sortByCategory } from "./../../Utils/sortByCategory";
 import Logo from "../Logo/Logo";
-import LinksList from "./LinksList/LinksList";
 import { sortByBrand } from "../../Utils/sortByBrand";
 import { useEffect, useState } from "react";
 import PageWidthState from "../../store/PageWidthState";
-import ArrowIcon from "../svg/ArrowIcon";
 import FooterNavList from "./FooterNavList/FooterNavList";
 import "./Footer.scss";
 

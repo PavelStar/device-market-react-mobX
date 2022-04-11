@@ -2,7 +2,6 @@ import { observer } from "mobx-react-lite";
 import React, { useEffect, useState } from "react";
 import { IItemData } from "../../interfaces/IItemData";
 import FiltersSettingsState from "../../store/FiltersSettingsState";
-import { SetFilterSettings } from "../../Utils/SetFilterSettings";
 import "./Pagination.scss";
 
 interface IPagination {

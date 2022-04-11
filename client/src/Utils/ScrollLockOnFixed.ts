@@ -1,7 +1,7 @@
 import { RefObject } from "react";
 import PageWidthState from "../store/PageWidthState";
 
-export const ScrollLockOnFixed = (scrollType: string, headerRef: RefObject<HTMLDivElement>) => {
+export const scrollLockOnFixed = (scrollType: string, headerRef: RefObject<HTMLDivElement>) => {
 	const { scrollYPosition } = PageWidthState;
 
 	if (scrollType === "disabled") {

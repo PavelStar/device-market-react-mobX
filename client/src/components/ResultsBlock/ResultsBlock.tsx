@@ -4,7 +4,7 @@ import { IItemData } from '../../interfaces/IItemData';
 import FiltersSettingsState from '../../store/FiltersSettingsState';
 import ResponseDataState from '../../store/ResponseDataState';
 import SortingByState from '../../store/SortingByState';
-import { SetFilterSettings } from '../../Utils/SetFilterSettings';
+import { setFilterSettings } from '../../Utils/setFilterSettings';
 import ClearFiltersBtn from '../buttons/ResetFiltersBtn/ResetFiltersBtn';
 import ItemCard from '../ItemCard/ItemCard';
 import Pagination from '../Pagination/Pagination';
@@ -29,7 +29,7 @@ const ResultsBlock: React.FC<IResultsBlock> = observer(({ responseItems }) => {
     }, [responseItems])
 
     useEffect(() => {
-        FiltersSettingsState.setAllFilteredItems(SetFilterSettings());
+        FiltersSettingsState.setAllFilteredItems(setFilterSettings());
     }, [isAvailable, isDiscount, priceRange, selectedBrands, selectedCategories, sortingByType])
 
     const showFilters = () => {

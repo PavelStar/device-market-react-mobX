@@ -3,21 +3,16 @@ import { RefObject, useEffect, useRef, useState, } from "react";
 import SearchState from "../../store/SearchState";
 import SearchResultsList from "./SearchResultsList/SearchResultsList";
 import SearchField from "./SearchField/SearchField";
-import SearchBarBtn from "./SearchBarBtn/SearchBarBtn";
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
-import PageWidthState from "../../store/PageWidthState";
+import { clearAllBodyScrollLocks } from 'body-scroll-lock';
 import CloseBtn from "../svg/CloseBtn";
+import { scrollLockOnFixed } from "../../Utils/scrollLockOnFixed";
 import "./SearchBar.scss";
-import { ScrollLockOnFixed } from "../../Utils/ScrollLockOnFixed";
 
 const SearchBar = observer(({ setIsNavShown, headerRef }: { setIsNavShown?: React.Dispatch<React.SetStateAction<boolean>>, headerRef: RefObject<HTMLDivElement> }) => {
 
     const searchBarRef = useRef<HTMLDivElement>(null);
     const searchInnerRef = useRef<HTMLDivElement>(null);
-
-    const { headerHeight, isResultsShown } = SearchState;
-    const { isMobile, scrollYPosition } = PageWidthState;
-
+    const { isResultsShown } = SearchState;
     const overlayRef = useRef(null)
 
     const onOverlayClick = (e: any) => {
@@ -27,16 +22,14 @@ const SearchBar = observer(({ setIsNavShown, headerRef }: { setIsNavShown?: Reac
     }
 
 
-
     useEffect(() => {
-        ScrollLockOnFixed("disabled", headerRef)
+        scrollLockOnFixed("disabled", headerRef)
 
         return () => {
-            ScrollLockOnFixed("enabled", headerRef)
+            scrollLockOnFixed("enabled", headerRef)
             clearAllBodyScrollLocks()
         }
     }, [])
-
 
 
     return (

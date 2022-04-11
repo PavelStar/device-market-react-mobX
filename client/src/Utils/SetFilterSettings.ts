@@ -2,7 +2,7 @@ import ResponseDataState from "../store/ResponseDataState";
 import FiltersSettingsState from "../store/FiltersSettingsState";
 import { setSortByItems } from "./setSortByItems";
 
-export const SetFilterSettings = () => {
+export const setFilterSettings = () => {
 	const { responseData } = ResponseDataState;
 	const { allFilteredItems, selectedCategories, selectedBrands, priceRange, isAvailable, isDiscount } =
 		FiltersSettingsState;

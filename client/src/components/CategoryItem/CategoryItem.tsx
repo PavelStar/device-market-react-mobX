@@ -14,7 +14,6 @@ const CategoryItem: React.FC<ICategoryItem> = observer(({ category, itemSection 
 
 	return (
 		<div className={`category-item category-item--${itemSection}`} style={{ backgroundImage: `url(${itemSection === 'categories' && image})` }}>
-			{/* {!footerItem && <img className="category-item__img" src={image} alt="item-img" />} */}
 			<p className="category-item__title">{categoryName}</p>
 		</div>
 	);

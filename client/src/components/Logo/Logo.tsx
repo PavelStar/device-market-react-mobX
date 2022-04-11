@@ -2,7 +2,7 @@ import { observer } from "mobx-react-lite";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import PageWidthState from "../../store/PageWidthState";
-import { ResetFilters } from "../../Utils/ResetFilters";
+import { resetFilters } from "../../Utils/resetFilters";
 import NavBarItem from "../Header/NavBarItem/NavBarItem";
 import HomeIcon from "../svg/HomeIcon";
 import LogoImage from "../svg/LogoImage";
@@ -15,7 +15,7 @@ const Logo = observer(({ logoType }: { logoType: string }) => {
 
 
     return (
-        <Link to="/" onClick={ResetFilters}>
+        <Link to="/" onClick={resetFilters}>
             <div className="logo">
                 {logoType === "navigation" ? (
                     <>

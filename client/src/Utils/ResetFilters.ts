@@ -1,12 +1,12 @@
 import FiltersSettingsState from "../store/FiltersSettingsState";
-import { SetFilterSettings } from "./SetFilterSettings";
+import { setFilterSettings } from "./setFilterSettings";
 
-export const ResetFilters = () => {
+export const resetFilters = () => {
 	FiltersSettingsState.setSelectedCategories([]);
 	FiltersSettingsState.setSelectedBrands([]);
 	FiltersSettingsState.setPriceRange([3000, 200000]);
 	FiltersSettingsState.setIsDiscount(false);
 	FiltersSettingsState.setIsAvailable(false);
 	FiltersSettingsState.setIsPriceRangeReseted(true);
-	FiltersSettingsState.setAllFilteredItems(SetFilterSettings());
+	FiltersSettingsState.setAllFilteredItems(setFilterSettings());
 };

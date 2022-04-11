@@ -1,7 +1,6 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import FiltersSettingsState from "../../../store/FiltersSettingsState";
-import { SetFilterSettings } from "../../../Utils/SetFilterSettings";
 import MarkerIcon from "../../svg/MarkerIcon";
 import "./CheckboxBrand.scss";
 
@@ -17,16 +16,12 @@ const CheckboxCategory: React.FC<IInputBrand> = observer(({ brand }) => {
     const addBrand = () => {
         if (!selectedBrands.includes(brand)) {
             FiltersSettingsState.setSelectedBrands([...selectedBrands.concat(brand)])
-            // FiltersSettingsState.setAllFilteredItems(SetFilterSettings());
         }
 
         if (selectedBrands.includes(brand)) {
-            // FiltersSettingsState.setSelectedBrands([...selectedBrands.concat(brand)])
             FiltersSettingsState.setSelectedBrands(selectedBrands.filter((item) => {
                 return item != brand
             }))
-            // FiltersSettingsState.setAllFilteredItems(SetFilterSettings());
-
         }
     }
 

@@ -3,7 +3,7 @@ import React, { RefObject, useEffect, useRef, useState } from "react";
 import LoginState from "../../store/LoginState";
 import CloseBtn from "../svg/CloseBtn";
 import SubmitBtn from "../buttons/SubmitBtn/SubmitBtn";
-import { ScrollLockOnFixed } from "../../Utils/ScrollLockOnFixed";
+import { scrollLockOnFixed } from "../../Utils/scrollLockOnFixed";
 import "./LoginPopup.scss";
 
 
@@ -26,11 +26,11 @@ const LoginPopup = observer(({ headerRef }: { headerRef: RefObject<HTMLDivElemen
 
         if (headerRef) {
 
-            ScrollLockOnFixed("disabled", headerRef)
+            scrollLockOnFixed("disabled", headerRef)
         }
 
         return () => {
-            ScrollLockOnFixed("enabled", headerRef)
+            scrollLockOnFixed("enabled", headerRef)
         }
     }, [])
 
