@@ -2,6 +2,7 @@ import { toJS } from 'mobx';
 import { useEffect, useState } from 'react';
 import { ICartItem } from '../../../interfaces/ICartItem';
 import CartState from '../../../store/CartState';
+import ProductTitle from '../../ProductTitle/ProductTitle';
 import CloseBtn from '../../svg/CloseBtn';
 import Counter from '../Counter/Counter';
 import './CartItem.scss'
@@ -36,7 +37,7 @@ const CartItem = ({ cartItem }: { cartItem: ICartItem }) => {
 
             <div className="cart-item__text-wrap">
                 <h3 className="cart-item__title">
-                    {`${categoryType} ${title}, ${memory}`}
+                    <ProductTitle itemData={cartItem.itemData} />
                 </h3>
                 {cartItem.count > 1 ? (
                     <b className="cart-item__price">

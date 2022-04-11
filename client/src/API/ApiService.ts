@@ -4,7 +4,7 @@ import ResponseDataState from "../store/ResponseDataState";
 
 class ApiService {
 	async getData() {
-		const url: string = "https://mocki.io/v1/f184f3e6-22cb-4ce6-87bf-c51b056621fc";
+		const url: string = "https://mocki.io/v1/6d8793a2-0dcd-4f83-ac26-c325736edda1";
 		const res = await axios.get(url);
 		const resData: IResponseData = res.data;
 		return resData;

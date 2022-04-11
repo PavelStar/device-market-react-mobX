@@ -1,6 +1,7 @@
 import { observer } from "mobx-react-lite";
 import BackBtn from "../../components/buttons/BackBtn/BackBtn";
 import CatalogLink from "../../components/buttons/CatalogLink/CatalogLink";
+import ProductTitle from "../../components/ProductTitle/ProductTitle";
 import StatusEmptyBlock from "../../components/StatusEmptyBlock/StatusEmptyBlock";
 import HistoryIcon from "../../components/svg/HistoryIcon";
 import { ICartItem } from "../../interfaces/ICartItem";
@@ -64,8 +65,7 @@ const OrdersPage = observer(() => {
                                                     </div>
                                                     <div className="order-items-list__text-wrap">
                                                         <p className="order-items-list__title">
-                                                            {`${categoryType} ${title}, ${memory}`}
-                                                            <span>{color && `, ${color}`}</span>
+                                                            <ProductTitle itemData={i.itemData} />
                                                         </p>
                                                         <p className="order-items-list__price">
                                                             <span>{count} X {fullPrice - discountAmount} руб.</span>

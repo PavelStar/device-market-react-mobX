@@ -688,9 +688,7 @@
             "categoryType": "Наушники",
             "brand": "apple",
             "features": {
-                "platform": "ios",
-                "diagonal": "6.0",
-                "memory": "128 гб."
+                "platform": "ios"
             },
             "images": {
                 "snippetImage": "https://avatars.mds.yandex.net/get-mpic/4412310/img_id8386850073624085644.png/orig",
@@ -735,9 +733,7 @@
             "categoryType": "наушники",
             "brand": "apple",
             "features": {
-                "platform": "ios",
-                "diagonal": "6.0",
-                "memory": "128 гб."
+                "platform": "ios"
             },
             "images": {
                 "snippetImage": "https://avatars.mds.yandex.net/get-mpic/5235334/img_id5591104231948131045.jpeg/orig",

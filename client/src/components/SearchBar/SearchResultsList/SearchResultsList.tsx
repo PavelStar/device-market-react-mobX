@@ -9,6 +9,7 @@ import { observer } from "mobx-react-lite";
 import PageWidthState from "../../../store/PageWidthState";
 import "./SearchResultsList.scss";
 import { clearAllBodyScrollLocks } from "body-scroll-lock";
+import ProductTitle from "../../ProductTitle/ProductTitle";
 
 const SearchResultsList = observer(
     ({ resultsHeight, searchInnerRef }: { resultsHeight?: number; searchInnerRef: RefObject<HTMLDivElement> }) => {
@@ -81,7 +82,7 @@ const SearchResultsList = observer(
                                     </div>
                                     <div className="search-results__text-wrap">
                                         <p className="search-results__title">
-                                            {title}, {color}, {memory}
+                                            <ProductTitle itemData={item} />
                                         </p>
                                         <p className="search-results__price">{fullPrice - discountAmount} р.</p>
                                     </div>

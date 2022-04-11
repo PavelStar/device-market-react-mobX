@@ -1,18 +1,13 @@
-import { spawn } from "child_process";
-import { toJS } from "mobx";
 import { observer } from "mobx-react-lite";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { IItemData } from "../../interfaces/IItemData";
-import ItemDataState from "../../store/ItemDataState";
 import ProductPrice from "../ProductPrice/ProductPrice";
 import ProductRating from "../ProductRating/ProductRating";
 import ToCartBtn from "../buttons/ToCartBtn/ToCartBtn";
-import CartState from "../../store/CartState";
-import ResponseDataState from "../../store/ResponseDataState";
 import ToItemLink from "../buttons/ToItemLink/ToItemLink";
+import ProductTitle from "../ProductTitle/ProductTitle";
 import "./ItemCard.scss";
-import PageWidthState from "../../store/PageWidthState";
 
 interface ICardTypeOfView {
     inPageView?: string;
@@ -21,25 +16,17 @@ interface ICardTypeOfView {
     isBtnLite?: boolean;
 }
 
-const ItemCard: React.FC<ICardTypeOfView> = observer(({ inPageView, inSliderView, item, isBtnLite }) => {
-    const { cartItems } = CartState;
-    const { responseData } = ResponseDataState;
-    const { itemCardWidth } = PageWidthState;
+const ItemCard: React.FC<ICardTypeOfView> = observer(({ item, isBtnLite }) => {
 
     const itemCardRef = useRef<HTMLDivElement>(null);
 
     const {
         images: { snippetImage },
-        title,
         id,
         priceInfo,
-        priceInfo: { discount, discountAmount, fullPrice },
         isAvailable,
         reviewsInfo: { reviews },
-        color,
         rating,
-        categoryType,
-        features: { memory },
     } = item;
 
     return (
@@ -48,7 +35,7 @@ const ItemCard: React.FC<ICardTypeOfView> = observer(({ inPageView, inSliderView
                 <img className="item-card__img" src={snippetImage} alt="img" height="100" />
             </Link>
             <Link className="item-card__title-link" to={`/item/${id}`} >
-                <h3 className="item-card__title">{`${categoryType} ${title} ${color ? color : ""}, ${memory}`}</h3>
+                <ProductTitle itemData={item} />
             </Link>
 
             <Link className="item-card__rating-link" to={`/item/${id}`} >
@@ -61,8 +48,6 @@ const ItemCard: React.FC<ICardTypeOfView> = observer(({ inPageView, inSliderView
             <div className="item-card__buttons">
                 {isAvailable && <ToCartBtn toCartItem={item} isBtnLite={isBtnLite} />}
                 {isBtnLite && (
-                    // <Link to={`/item/${id}`}>
-                    // </Link>
                     <ToItemLink id={id} />
                 )}
             </div>

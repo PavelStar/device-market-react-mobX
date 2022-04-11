@@ -17,16 +17,16 @@ const Features = ({ features }: { features: IFeatures }) => {
                         </p>
                     </li>
                     <li className="features__feature">
-                        <p className="features__feature-text">
+                        {diagonal ? <p className="features__feature-text">
                             <span>Диагональ:</span> <span className="features__dots-line"></span>
                             <span>{diagonal}</span>
-                        </p>
+                        </p> : null}
                     </li>
                     <li className="features__feature">
-                        <p className="features__feature-text">
+                        {memory ? <p className="features__feature-text">
                             <span>Объем памяти:</span> <span className="features__dots-line"></span>
                             <span>{memory}</span>
-                        </p>
+                        </p> : null}
                     </li>
                 </ul>
             </div>

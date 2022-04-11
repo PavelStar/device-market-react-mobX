@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { observer } from "mobx-react-lite";
 import ToCartBtn from "../../components/buttons/ToCartBtn/ToCartBtn";
 import ItemDataState from "../../store/ItemDataState";
@@ -8,16 +8,13 @@ import ProductPrice from "../../components/ProductPrice/ProductPrice";
 import ProductRating from "../../components/ProductRating/ProductRating";
 import Features from "../../components/Features/Features";
 import TabsList from "../../components/TabsList/TabsList";
-
 import "react-image-gallery/styles/css/image-gallery.css";
-import ProductSelectsState from "../../store/ProductSelectsState";
-import "./ProductPage.scss";
 import ProductSelects from "../../components/Product/ProductSelects/ProductSelects";
 import ProductGallery from "../../components/Product/ProductGallery/ProductGallery";
 import ApiService from "../../API/ApiService";
 import ResponseDataState from "../../store/ResponseDataState";
-import { IItemData } from "../../interfaces/IItemData";
-import NotFound from "../NotFound/NotFound";
+import ProductTitle from "../../components/ProductTitle/ProductTitle";
+import "./ProductPage.scss";
 
 const ProductPage: React.FunctionComponent = observer(() => {
 	const apiService = new ApiService();
@@ -83,8 +80,7 @@ const ProductPage: React.FunctionComponent = observer(() => {
 										</div>
 										<div className="product-page__about-wrap">
 											<h1 className="product-page__title">
-												{`${itemData.categoryType} ${itemData.title}, ${itemData.features.memory}`}
-												<span>{itemData.color && `, ${itemData.color}`}</span>
+												<ProductTitle itemData={itemData} />
 											</h1>
 											<div className="product-page__price-wrap">
 												<ProductRating rating={itemData.rating} />

@@ -51,10 +51,8 @@ const SearchBar = observer(({ setIsNavShown, headerRef }: { setIsNavShown?: Reac
                             <SearchResultsList searchInnerRef={searchInnerRef} />
 
                         )}
-                        {/* <button onClick={() => setIsNavShown && setIsNavShown(false)} className="search-bar__close-btn"><CloseBtn /></button> */}
                         <button onClick={() => SearchState.setIsSearchShown(false)} className="search-bar__close-btn"><CloseBtn /></button>
                     </div>
-                    {/* <SearchBarBtn /> */}
                 </div>
             </div>
         </div>

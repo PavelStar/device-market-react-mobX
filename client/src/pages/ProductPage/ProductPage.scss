@@ -72,8 +72,13 @@
 	}
 
 	&__title {
-		padding: 0;
-		padding-bottom: 20px;
+		
+		.product-title {
+			padding: 0;
+			padding-bottom: 20px;
+			font-size: 30px;
+			font-weight: 700;
+		}
 	}
 	&__price-wrap {
 		display: flex;
