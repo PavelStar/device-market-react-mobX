@@ -30,14 +30,11 @@ const App = observer(() => {
 
     return (
         <HashRouter>
-
             <Header />
             <ScrollToTop >
                 <AppRouter />
             </ScrollToTop>
             <Footer />
-
-
         </HashRouter>
     );
 })
