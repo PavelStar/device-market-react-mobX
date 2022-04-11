@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/device-market-react-mobX/static/css/main.d0a38b9e.chunk.css",
-    "main.js": "/device-market-react-mobX/static/js/main.2e99a6f5.chunk.js",
-    "main.js.map": "/device-market-react-mobX/static/js/main.2e99a6f5.chunk.js.map",
+    "main.js": "/device-market-react-mobX/static/js/main.559a77aa.chunk.js",
+    "main.js.map": "/device-market-react-mobX/static/js/main.559a77aa.chunk.js.map",
     "runtime-main.js": "/device-market-react-mobX/static/js/runtime-main.e5756d4c.js",
     "runtime-main.js.map": "/device-market-react-mobX/static/js/runtime-main.e5756d4c.js.map",
     "static/css/2.0c7300ec.chunk.css": "/device-market-react-mobX/static/css/2.0c7300ec.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.0c7300ec.chunk.css",
     "static/js/2.71f4f89f.chunk.js",
     "static/css/main.d0a38b9e.chunk.css",
-    "static/js/main.2e99a6f5.chunk.js"
+    "static/js/main.559a77aa.chunk.js"
   ]
 }
