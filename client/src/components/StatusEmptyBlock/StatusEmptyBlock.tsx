@@ -1,6 +1,3 @@
-import React from 'react'
-import CatalogLink from '../buttons/CatalogLink/CatalogLink'
-import EmptyCart from '../svg/EmptyCart'
 import './StatusEmptyBlock.scss'
 
 const StatusEmpty = ({ title, image }: { title: string, image: JSX.Element }) => {
@@ -10,7 +7,6 @@ const StatusEmpty = ({ title, image }: { title: string, image: JSX.Element }) =>
             <div className="empty-cart-block__img-wrap">
                 {image}
             </div>
-            {/* <CatalogLink btnName="Перейти в каталог" /> */}
         </div>
     )
 }
