@@ -1,6 +1,6 @@
 import { observer } from "mobx-react-lite";
 import ResponseDataState from "../../store/ResponseDataState";
-import { sortByCategory } from "./../../Utils/sortByCategory";
+import { sortByCategory } from "../../Utils/sortByCategory";
 import Logo from "../Logo/Logo";
 import { sortByBrand } from "../../Utils/sortByBrand";
 import { useEffect, useState } from "react";
