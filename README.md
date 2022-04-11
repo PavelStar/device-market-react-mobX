@@ -18,7 +18,7 @@
 
 ## Демо
 
-### Домяшняя страница
+### Домашняя страница
 ![home (online-video-cutter com)](https://user-images.githubusercontent.com/42155287/162731756-fbb84db0-22d0-41f7-afaf-485e02bdfe84.gif)
  
 ### Каталог
