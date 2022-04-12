@@ -59,11 +59,6 @@ const UserNav = observer(() => {
                         </Link>
                     </li>
                     <li className='settings-list__item'>
-                        <a className='settings-list__link' href="">
-                            Настройки профиля
-                        </a>
-                    </li>
-                    <li className='settings-list__item'>
                         <a className='settings-list__link' onClick={logOut}>
                             Выйти
                         </a>
